@@ -1,0 +1,17 @@
+name|type|data|command|depend|seed|path|time|size|bytes|format|iteration|parent|children|seconds|warnings|error
+create_plot|function|e61c6a8da66f7057||||||||||||||
+raw_data_file|stem|eac4be650daf552d|cbbcdc99e6139936|c3b5fc02cdc369c1|2110307107|C:/Users/skourtis/OneDrive - CRG - Centre de Regulacio Genomica/Bioinformatics Projects/Project_Templates/Datasets/Raw/raw_data.csv|47c963b779fb1145|20920dbb1a6fc21c|3044|file|vector|||0||
+dataset|stem|f13566c79b81ce59|a8d01d6f5107071f|3231d3eb2c5eb031|914614260|_targets/objects/dataset|47ab10173825b87d|9b0159aade793684|179|rds|vector|||0.02||
+raw_data|stem|61d8681b3b24210f|000ed0cc054f0d35|30735c814d24b25d|-979620141|_targets/objects/raw_data|442cf825092ac5ee|a97d6e8847e768fe|1506|rds|vector|||0.09||
+data|stem|f48ef8b55643e0ae|df3101ce91c63e21|84389287dd8d2ca2|1588979285|_targets/objects/data|deafcece7dfda748|0379c188128bbe87|1505|rds|vector|||0.01||
+hist|stem|ed61f2dbfa66f5d8|68877181ab74e51e|4706135c2164f0f2|-1026346201|_targets/objects/hist|ca555af228141179|139c7eb6bf23fe1c|44875|rds|vector|||0.01||
+fit|stem|465fe038b645ff82|aa0df6c5dbd10537|7d53713f6a5cf419|1780184594|_targets/objects/fit|b7662c915418c14c|5f048c881922f08c|1966|rds|vector|||0||
+report|stem|660e1ac050b33815|9d217c579c37125f|3bc84b0a13b07e0f|-237041703|Output/report.html*Output/report.Rmd|f6ce6bf5b9e6944e||630612|file|vector|||0.95||need finite xlim values
+create_plot|function|e61c6a8da66f7057
+raw_data_file|stem|eac4be650daf552d|cbbcdc99e6139936|c3b5fc02cdc369c1|2110307107|C:/Users/skourtis/OneDrive - CRG - Centre de Regulacio Genomica/Bioinformatics Projects/Project_Templates/Datasets/Raw/raw_data.csv|47c963b779fb1145|20920dbb1a6fc21c|3044|file|vector|||0||
+dataset|stem|f13566c79b81ce59|a8d01d6f5107071f|3231d3eb2c5eb031|914614260|_targets/objects/dataset|47ab10173825b87d|9b0159aade793684|179|rds|vector|||0.02||
+raw_data|stem|61d8681b3b24210f|000ed0cc054f0d35|30735c814d24b25d|-979620141|_targets/objects/raw_data|442cf825092ac5ee|a97d6e8847e768fe|1506|rds|vector|||0.09||
+data|stem|f48ef8b55643e0ae|df3101ce91c63e21|84389287dd8d2ca2|1588979285|_targets/objects/data|deafcece7dfda748|0379c188128bbe87|1505|rds|vector|||0.01||
+hist|stem|ed61f2dbfa66f5d8|68877181ab74e51e|4706135c2164f0f2|-1026346201|_targets/objects/hist|ca555af228141179|139c7eb6bf23fe1c|44875|rds|vector|||0.01||
+fit|stem|465fe038b645ff82|aa0df6c5dbd10537|7d53713f6a5cf419|1780184594|_targets/objects/fit|b7662c915418c14c|5f048c881922f08c|1966|rds|vector|||0||
+report|stem|7998efce640388ac|9d217c579c37125f|3bc84b0a13b07e0f|-237041703|Output/report.html*Output/report.Rmd|aa3999e94c7afb52|4322b60e5c71f80a|663459|file|vector|||2.78||
