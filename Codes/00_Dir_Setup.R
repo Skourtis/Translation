@@ -4,7 +4,7 @@ options(repos = getOption("repos")["CRAN"])
 # install.packages("PTXQC")
 install.packages("pacman")
 pacman::p_load(piggyback, renv, here, tidyverse, targets,
-               visNetwork)
+               visNetwork,matrixStats,magick,testthat)
 renv::init()
 testthat::use_test()
 
@@ -14,10 +14,10 @@ piggyback::pb_track(c("Datasets/Raw/*.txt",
                       "Datasets/Raw/*.dat",
                       "Datasets/Raw/*.zip",
                       "Datasets/Raw/*.csv",
-                      "Datasets/Raw/*.RData"))
-
-piggyback::pb_track() %>%
-    pb_upload(repo = "Skourtis/Project_Template")
+                      "Datasets/Raw/*.RData",
+                      "_targets/meta/*",
+                      "_targets/objects/*"))%>%
+    pb_upload(repo = "Skourtis/Translation")
 
 ##end
 renv::snapshot()

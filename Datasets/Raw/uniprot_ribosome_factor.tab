@@ -1,0 +1,239 @@
+Entry	Entry name	Protein names	Gene names
+P62987	RL40_HUMAN	Ubiquitin-60S ribosomal protein L40 (CEP52) (Ubiquitin A-52 residue ribosomal protein fusion product 1) [Cleaved into: Ubiquitin; 60S ribosomal protein L40 (Large ribosomal subunit protein eL40)]	UBA52 UBCEP2
+Q8IXM3	RM41_HUMAN	39S ribosomal protein L41, mitochondrial (L41mt) (MRP-L41) (39S ribosomal protein L27 homolog) (Bcl-2-interacting mitochondrial ribosomal protein L41) (Cell proliferation-inducing gene 3 protein) (MRP-L27 homolog) (Mitochondrial large ribosomal subunit protein mL41)	MRPL41 BMRP MRPL27 RPML27 PIG3
+P23443	KS6B1_HUMAN	Ribosomal protein S6 kinase beta-1 (S6K-beta-1) (S6K1) (EC 2.7.11.1) (70 kDa ribosomal protein S6 kinase 1) (P70S6K1) (p70-S6K 1) (Ribosomal protein S6 kinase I) (Serine/threonine-protein kinase 14A) (p70 ribosomal S6 kinase alpha) (p70 S6 kinase alpha) (p70 S6K-alpha) (p70 S6KA)	RPS6KB1 STK14A
+P46782	RS5_HUMAN	40S ribosomal protein S5 (Small ribosomal subunit protein uS7) [Cleaved into: 40S ribosomal protein S5, N-terminally processed]	RPS5
+P27635	RL10_HUMAN	60S ribosomal protein L10 (Laminin receptor homolog) (Large ribosomal subunit protein uL16) (Protein QM) (Ribosomal protein L10) (Tumor suppressor QM)	RPL10 DXS648E QM
+P62829	RL23_HUMAN	60S ribosomal protein L23 (60S ribosomal protein L17) (Large ribosomal subunit protein uL14)	RPL23
+P62979	RS27A_HUMAN	Ubiquitin-40S ribosomal protein S27a (Ubiquitin carboxyl extension protein 80) [Cleaved into: Ubiquitin; 40S ribosomal protein S27a (Small ribosomal subunit protein eS31)]	RPS27A UBA80 UBCEP1
+O75676	KS6A4_HUMAN	Ribosomal protein S6 kinase alpha-4 (S6K-alpha-4) (EC 2.7.11.1) (90 kDa ribosomal protein S6 kinase 4) (Nuclear mitogen- and stress-activated protein kinase 2) (Ribosomal protein kinase B) (RSKB)	RPS6KA4 MSK2
+P36578	RL4_HUMAN	60S ribosomal protein L4 (60S ribosomal protein L1) (Large ribosomal subunit protein uL4)	RPL4 RPL1
+P83731	RL24_HUMAN	60S ribosomal protein L24 (60S ribosomal protein L30) (Large ribosomal subunit protein eL24)	RPL24
+P05388	RLA0_HUMAN	60S acidic ribosomal protein P0 (60S ribosomal protein L10E) (Large ribosomal subunit protein uL10)	RPLP0
+P15880	RS2_HUMAN	40S ribosomal protein S2 (40S ribosomal protein S4) (Protein LLRep3) (Small ribosomal subunit protein uS5)	RPS2 RPS4
+Q9Y676	RT18B_HUMAN	28S ribosomal protein S18b, mitochondrial (MRP-S18-b) (Mrps18-b) (S18mt-b) (28S ribosomal protein S18-2, mitochondrial) (MRP-S18-2) (Mitochondrial small ribosomal subunit protein bS18b) (Mitochondrial small ribosomal subunit protein mS40)	MRPS18B C6orf14 HSPC183 PTD017
+Q9UBS0	KS6B2_HUMAN	Ribosomal protein S6 kinase beta-2 (S6K-beta-2) (S6K2) (EC 2.7.11.1) (70 kDa ribosomal protein S6 kinase 2) (P70S6K2) (p70-S6K 2) (S6 kinase-related kinase) (SRK) (Serine/threonine-protein kinase 14B) (p70 ribosomal S6 kinase beta) (S6K-beta) (p70 S6 kinase beta) (p70 S6K-beta) (p70 S6KB) (p70-beta)	RPS6KB2 STK14B
+Q16540	RM23_HUMAN	39S ribosomal protein L23, mitochondrial (L23mt) (MRP-L23) (L23 mitochondrial-related protein) (Mitochondrial large ribosomal subunit protein uL23m) (Ribosomal protein L23-like)	MRPL23 L23MRP RPL23L
+Q7Z7H8	RM10_HUMAN	39S ribosomal protein L10, mitochondrial (L10mt) (MRP-L10) (39S ribosomal protein L8, mitochondrial) (L8mt) (MRP-L8) (Mitochondrial large ribosomal subunit protein uL10m)	MRPL10 MRPL8 RPML8
+Q92552	RT27_HUMAN	28S ribosomal protein S27, mitochondrial (MRP-S27) (S27mt) (Mitochondrial ribosomal protein S27) (Mitochondrial small ribosomal subunit protein mS27)	MRPS27 KIAA0264
+P51812	KS6A3_HUMAN	Ribosomal protein S6 kinase alpha-3 (S6K-alpha-3) (EC 2.7.11.1) (90 kDa ribosomal protein S6 kinase 3) (p90-RSK 3) (p90RSK3) (Insulin-stimulated protein kinase 1) (ISPK-1) (MAP kinase-activated protein kinase 1b) (MAPK-activated protein kinase 1b) (MAPKAP kinase 1b) (MAPKAPK-1b) (Ribosomal S6 kinase 2) (RSK-2) (pp90RSK2)	RPS6KA3 ISPK1 MAPKAPK1B RSK2
+Q15418	KS6A1_HUMAN	Ribosomal protein S6 kinase alpha-1 (S6K-alpha-1) (EC 2.7.11.1) (90 kDa ribosomal protein S6 kinase 1) (p90-RSK 1) (p90RSK1) (p90S6K) (MAP kinase-activated protein kinase 1a) (MAPK-activated protein kinase 1a) (MAPKAP kinase 1a) (MAPKAPK-1a) (Ribosomal S6 kinase 1) (RSK-1)	RPS6KA1 MAPKAPK1A RSK1
+Q8N983	RM43_HUMAN	39S ribosomal protein L43, mitochondrial (L43mt) (MRP-L43) (Mitochondrial large ribosomal subunit protein mL43) (Mitochondrial ribosomal protein bMRP36a)	MRPL43
+O75582	KS6A5_HUMAN	Ribosomal protein S6 kinase alpha-5 (S6K-alpha-5) (EC 2.7.11.1) (90 kDa ribosomal protein S6 kinase 5) (Nuclear mitogen- and stress-activated protein kinase 1) (RSK-like protein kinase) (RSKL)	RPS6KA5 MSK1
+Q9UK32	KS6A6_HUMAN	Ribosomal protein S6 kinase alpha-6 (S6K-alpha-6) (EC 2.7.11.1) (90 kDa ribosomal protein S6 kinase 6) (p90-RSK 6) (p90RSK6) (Ribosomal S6 kinase 4) (RSK-4) (pp90RSK4)	RPS6KA6 RSK4
+Q15349	KS6A2_HUMAN	Ribosomal protein S6 kinase alpha-2 (S6K-alpha-2) (EC 2.7.11.1) (90 kDa ribosomal protein S6 kinase 2) (p90-RSK 2) (p90RSK2) (MAP kinase-activated protein kinase 1c) (MAPK-activated protein kinase 1c) (MAPKAP kinase 1c) (MAPKAPK-1c) (Ribosomal S6 kinase 3) (RSK-3) (pp90RSK3)	RPS6KA2 MAPKAPK1C RSK3
+Q9NYK5	RM39_HUMAN	39S ribosomal protein L39, mitochondrial (L39mt) (MRP-L39) (39S ribosomal protein L5, mitochondrial) (L5mt) (MRP-L5) (Mitochondrial large ribosomal subunit protein mL39)	MRPL39 C21orf92 MRPL5 RPML5 MSTP003 PRED22
+P23396	RS3_HUMAN	40S ribosomal protein S3 (EC 4.2.99.18) (Small ribosomal subunit protein uS3)	RPS3 OK/SW-cl.26
+P46777	RL5_HUMAN	60S ribosomal protein L5 (Large ribosomal subunit protein uL18)	RPL5 MSTP030
+Q96EY7	PTCD3_HUMAN	Pentatricopeptide repeat domain-containing protein 3, mitochondrial (28S ribosomal protein S39, mitochondrial) (MRP-S39) (Mitochondrial small ribosomal subunit protein mS39) (Transformation-related gene 15 protein) (TRG-15)	PTCD3 MRPS39 TRG15
+P50914	RL14_HUMAN	60S ribosomal protein L14 (CAG-ISL 7) (Large ribosomal subunit protein eL14)	RPL14
+Q969Q0	RL36L_HUMAN	60S ribosomal protein L36a-like (Large ribosomal subunit protein eL42-like)	RPL36AL
+O15381	NVL_HUMAN	Nuclear valosin-containing protein-like (NVLp) (Nuclear VCP-like protein)	NVL NVL2
+P62888	RL30_HUMAN	60S ribosomal protein L30 (Large ribosomal subunit protein eL30)	RPL30
+Q9P015	RM15_HUMAN	39S ribosomal protein L15, mitochondrial (L15mt) (MRP-L15) (Mitochondrial large ribosomal subunit protein uL15m)	MRPL15 HSPC145
+Q9Y3U8	RL36_HUMAN	60S ribosomal protein L36 (Large ribosomal subunit protein eL36)	RPL36
+P62081	RS7_HUMAN	40S ribosomal protein S7 (Small ribosomal subunit protein eS7)	RPS7
+P82650	RT22_HUMAN	28S ribosomal protein S22, mitochondrial (MRP-S22) (S22mt) (Mitochondrial small ribosomal subunit protein mS22)	MRPS22 C3orf5 RPMS22 GK002
+Q59GN2	R39L5_HUMAN	Putative 60S ribosomal protein L39-like 5 (60S ribosomal protein L39 pseudogene 5)	RPL39P5
+P18621	RL17_HUMAN	60S ribosomal protein L17 (60S ribosomal protein L23) (Large ribosomal subunit protein uL22) (PD-1)	RPL17
+Q96EL3	RM53_HUMAN	39S ribosomal protein L53, mitochondrial (L53mt) (MRP-L53) (Mitochondrial large ribosomal subunit protein mL53)	MRPL53
+P62945	RL41_HUMAN	60S ribosomal protein L41 (HG12) (Large ribosomal subunit protein eL41)	RPL41
+Q96L21	RL10L_HUMAN	60S ribosomal protein L10-like (Large ribosomal subunit protein uL16-like)	RPL10L
+Q96DV4	RM38_HUMAN	39S ribosomal protein L38, mitochondrial (L38mt) (MRP-L38) (Mitochondrial large ribosomal subunit protein mL38)	MRPL38 HSPC262
+Q9BYD3	RM04_HUMAN	39S ribosomal protein L4, mitochondrial (L4mt) (MRP-L4) (Mitochondrial large ribosomal subunit protein uL4m)	MRPL4 CDABP0091 CGI-28
+P26373	RL13_HUMAN	60S ribosomal protein L13 (Breast basic conserved protein 1) (Large ribosomal subunit protein eL13)	RPL13 BBC1 OK/SW-cl.46
+P61353	RL27_HUMAN	60S ribosomal protein L27 (Large ribosomal subunit protein eL27)	RPL27
+P61254	RL26_HUMAN	60S ribosomal protein L26 (Large ribosomal subunit protein uL24)	RPL26
+Q9BYC8	RM32_HUMAN	39S ribosomal protein L32, mitochondrial (L32mt) (MRP-L32) (Mitochondrial large ribosomal subunit protein bL32m)	MRPL32 HSPC283
+Q9BYD6	RM01_HUMAN	39S ribosomal protein L1, mitochondrial (L1mt) (MRP-L1) (Mitochondrial large ribosomal subunit protein uL1m)	MRPL1 BM-022
+Q5VY09	IER5_HUMAN	Immediate early response gene 5 protein	IER5 PP4583 SBBI48
+Q9P0M9	RM27_HUMAN	39S ribosomal protein L27, mitochondrial (L27mt) (MRP-L27) (Mitochondrial large ribosomal subunit protein bL27m)	MRPL27 HSPC250
+P62280	RS11_HUMAN	40S ribosomal protein S11 (Small ribosomal subunit protein uS17)	RPS11
+P62273	RS29_HUMAN	40S ribosomal protein S29 (Small ribosomal subunit protein uS14)	RPS29
+Q9ULI2	RIMKB_HUMAN	Beta-citrylglutamate synthase B (EC 6.3.1.17) (N-acetyl-aspartylglutamate synthetase B) (NAAG synthetase B) (NAAGS) (EC 6.3.2.41) (Ribosomal protein S6 modification-like protein B)	RIMKLB FAM80B KIAA1238
+O75394	RM33_HUMAN	39S ribosomal protein L33, mitochondrial (L33mt) (MRP-L33) (Mitochondrial large ribosomal subunit protein bL33m)	MRPL33 C2orf1
+P05386	RLA1_HUMAN	60S acidic ribosomal protein P1 (Large ribosomal subunit protein P1)	RPLP1 RRP1
+Q9Y3D3	RT16_HUMAN	28S ribosomal protein S16, mitochondrial (MRP-S16) (S16mt) (Mitochondrial small ribosomal subunit protein bS16m)	MRPS16 RPMS16 CGI-132
+P51398	RT29_HUMAN	28S ribosomal protein S29, mitochondrial (MRP-S29) (S29mt) (Death-associated protein 3) (DAP-3) (Ionizing radiation resistance conferring protein) (Mitochondrial small ribosomal subunit protein mS29)	DAP3 MRPS29
+P82921	RT21_HUMAN	28S ribosomal protein S21, mitochondrial (MRP-S21) (S21mt) (Mitochondrial small ribosomal subunit protein bS21m)	MRPS21 RPMS21 MDS016
+P82673	RT35_HUMAN	28S ribosomal protein S35, mitochondrial (MRP-S35) (S35mt) (28S ribosomal protein S28, mitochondrial) (MRP-S28) (S28mt) (Mitochondrial small ribosomal subunit protein mS35)	MRPS35 MRPS28 HDCMD11P MDS023 PSEC0213
+Q9Y3D5	RT18C_HUMAN	28S ribosomal protein S18c, mitochondrial (MRP-S18-c) (Mrps18-c) (S18mt-c) (28S ribosomal protein S18-1, mitochondrial) (MRP-S18-1) (Mitochondrial small ribosomal subunit protein bS18c) (Mitochondrial small ribosomal subunit protein bS18m)	MRPS18C CGI-134
+P63244	RACK1_HUMAN	Receptor of activated protein C kinase 1 (Cell proliferation-inducing gene 21 protein) (Guanine nucleotide-binding protein subunit beta-2-like 1) (Guanine nucleotide-binding protein subunit beta-like protein 12.3) (Human lung cancer oncogene 7 protein) (HLC-7) (Receptor for activated C kinase) (Small ribosomal subunit protein RACK1) [Cleaved into: Receptor of activated protein C kinase 1, N-terminally processed (Guanine nucleotide-binding protein subunit beta-2-like 1, N-terminally processed)]	RACK1 GNB2L1 HLC7 PIG21
+P61927	RL37_HUMAN	60S ribosomal protein L37 (G1.16) (Large ribosomal subunit protein eL37)	RPL37
+P60866	RS20_HUMAN	40S ribosomal protein S20 (Small ribosomal subunit protein uS10)	RPS20
+Q5JNZ5	RS26L_HUMAN	Putative 40S ribosomal protein S26-like 1	RPS26P11 RPS26L1
+P82914	RT15_HUMAN	28S ribosomal protein S15, mitochondrial (MRP-S15) (S15mt) (Mitochondrial small ribosomal subunit protein uS15m)	MRPS15 RPMS15 DC37
+P82909	RT36_HUMAN	28S ribosomal protein S36, mitochondrial (MRP-S36) (S36mt) (Alpha-ketoglutarate dehydrogenase component 4)	MRPS36 KGD4 DC47
+Q9BQC6	RT63_HUMAN	Ribosomal protein 63, mitochondrial (hMRP63) (Mitochondrial large ribosomal subunit protein mL63) (Mitochondrial ribosomal protein 63) (Mitochondrial ribosomal protein L57)	MRPL57 MRP63
+P84098	RL19_HUMAN	60S ribosomal protein L19 (Large ribosomal subunit protein eL19)	RPL19
+P42766	RL35_HUMAN	60S ribosomal protein L35 (Large ribosomal subunit protein uL29)	RPL35
+P62277	RS13_HUMAN	40S ribosomal protein S13 (Small ribosomal subunit protein uS15)	RPS13
+P82932	RT06_HUMAN	28S ribosomal protein S6, mitochondrial (MRP-S6) (S6mt) (Mitochondrial small ribosomal subunit protein bS6m)	MRPS6 C21orf101 RPMS6
+Q07020	RL18_HUMAN	60S ribosomal protein L18 (Large ribosomal subunit protein eL18)	RPL18
+P08708	RS17_HUMAN	40S ribosomal protein S17 (Small ribosomal subunit protein eS17)	RPS17 RPS17L
+Q9BYN8	RT26_HUMAN	28S ribosomal protein S26, mitochondrial (MRP-S26) (S26mt) (28S ribosomal protein S13, mitochondrial) (MRP-S13) (S13mt) (Mitochondrial small ribosomal subunit protein mS26)	MRPS26 C20orf193 RPMS13
+P08865	RSSA_HUMAN	40S ribosomal protein SA (37 kDa laminin receptor precursor) (37LRP) (37/67 kDa laminin receptor) (LRP/LR) (67 kDa laminin receptor) (67LR) (Colon carcinoma laminin-binding protein) (Laminin receptor 1) (LamR) (Laminin-binding protein precursor p40) (LBP/p40) (Multidrug resistance-associated protein MGr1-Ag) (NEM/1CHD4) (Small ribosomal subunit protein uS2)	RPSA LAMBR LAMR1
+P62906	RL10A_HUMAN	60S ribosomal protein L10a (CSA-19) (Large ribosomal subunit protein uL1) (Neural precursor cell expressed developmentally down-regulated protein 6) (NEDD-6)	RPL10A NEDD6
+P62861	RS30_HUMAN	40S ribosomal protein S30 (Small ribosomal subunit protein eS30)	FAU
+Q96EL2	RT24_HUMAN	28S ribosomal protein S24, mitochondrial (MRP-S24) (S24mt) (Mitochondrial small ribosomal subunit protein uS3m) (bMRP-47) (bMRP47)	MRPS24 HSPC335
+Q9Y2Q9	RT28_HUMAN	28S ribosomal protein S28, mitochondrial (MRP-S28) (S28mt) (28S ribosomal protein S35, mitochondrial) (MRP-S35) (S35mt) (Mitochondrial small ribosomal subunit protein bS1m)	MRPS28 MRPS35 HSPC007
+P49207	RL34_HUMAN	60S ribosomal protein L34 (Large ribosomal subunit protein eL34)	RPL34
+P62424	RL7A_HUMAN	60S ribosomal protein L7a (Large ribosomal subunit protein eL8) (PLA-X polypeptide) (Surfeit locus protein 3)	RPL7A SURF-3 SURF3
+Q9H6W3	RIOX1_HUMAN	Ribosomal oxygenase 1 (60S ribosomal protein L8 histidine hydroxylase) (Bifunctional lysine-specific demethylase and histidyl-hydroxylase NO66) (EC 1.14.11.-) (EC 1.14.11.27) (Histone lysine demethylase NO66) (Myc-associated protein with JmjC domain) (Nucleolar protein 66) (hsNO66) (Ribosomal oxygenase NO66) (ROX)	RIOX1 C14orf169 MAPJD NO66
+Q4U2R6	RM51_HUMAN	39S ribosomal protein L51, mitochondrial (L51mt) (MRP-L51) (Mitochondrial large ribosomal subunit protein mL51) (bMRP-64) (bMRP64)	MRPL51 MRP64 CDA09 HSPC241
+P62851	RS25_HUMAN	40S ribosomal protein S25 (Small ribosomal subunit protein eS25)	RPS25
+P62701	RS4X_HUMAN	40S ribosomal protein S4, X isoform (SCR10) (Single copy abundant mRNA protein) (Small ribosomal subunit protein eS4)	RPS4X CCG2 RPS4 SCAR
+P22090	RS4Y1_HUMAN	40S ribosomal protein S4, Y isoform 1 (Small ribosomal subunit protein eS4)	RPS4Y1 RPS4Y PRO2646
+A6NKH3	RL37L_HUMAN	Putative 60S ribosomal protein L37a-like protein (Ribosomal protein L37a pseudogene 8)	RPL37AP8 RPL37L
+P25398	RS12_HUMAN	40S ribosomal protein S12 (Small ribosomal subunit protein eS12)	RPS12
+Q71UM5	RS27L_HUMAN	40S ribosomal protein S27-like (Small ribosomal subunit protein eS27-like)	RPS27L
+Q9P0J6	RM36_HUMAN	39S ribosomal protein L36, mitochondrial (L36mt) (MRP-L36) (BRCA1-interacting protein 1) (Mitochondrial large ribosomal subunit protein bL36m)	MRPL36 BRIP1
+P35268	RL22_HUMAN	60S ribosomal protein L22 (EBER-associated protein) (EAP) (Epstein-Barr virus small RNA-associated protein) (Heparin-binding protein HBp15) (Large ribosomal subunit protein eL22)	RPL22
+P39023	RL3_HUMAN	60S ribosomal protein L3 (HIV-1 TAR RNA-binding protein B) (TARBP-B) (Large ribosomal subunit protein uL3)	RPL3 OK/SW-cl.32
+P62891	RL39_HUMAN	60S ribosomal protein L39 (Large ribosomal subunit protein eL39)	RPL39
+Q92901	RL3L_HUMAN	60S ribosomal protein L3-like (Large ribosomal subunit protein uL3-like)	RPL3L
+Q9BZE1	RM37_HUMAN	39S ribosomal protein L37, mitochondrial (L37mt) (MRP-L37) (39S ribosomal protein L2, mitochondrial) (L2mt) (MRP-L2) (Mitochondrial large ribosomal subunit protein mL37)	MRPL37 MRPL2 RPML2 HSPC235
+Q02878	RL6_HUMAN	60S ribosomal protein L6 (Large ribosomal subunit protein eL6) (Neoplasm-related protein C140) (Tax-responsive enhancer element-binding protein 107) (TaxREB107)	RPL6 TXREB1
+Q86TS9	RM52_HUMAN	39S ribosomal protein L52, mitochondrial (L52mt) (MRP-L52) (Mitochondrial large ribosomal subunit protein mL52)	MRPL52
+P62263	RS14_HUMAN	40S ribosomal protein S14 (Small ribosomal subunit protein uS11)	RPS14 PRO2640
+P62857	RS28_HUMAN	40S ribosomal protein S28 (Small ribosomal subunit protein eS28)	RPS28
+P46778	RL21_HUMAN	60S ribosomal protein L21 (Large ribosomal subunit protein eL21)	RPL21
+P49406	RM19_HUMAN	39S ribosomal protein L19, mitochondrial (L19mt) (MRP-L19) (39S ribosomal protein L15, mitochondrial) (L15mt) (MRP-L15) (Mitochondrial large ribosomal subunit protein bL19m)	MRPL19 KIAA0104 MRPL15
+Q6P161	RM54_HUMAN	39S ribosomal protein L54, mitochondrial (L54mt) (MRP-L54) (Mitochondrial large ribosomal subunit protein mL54)	MRPL54
+P62249	RS16_HUMAN	40S ribosomal protein S16 (Small ribosomal subunit protein uS9)	RPS16
+Q6NVV1	R13P3_HUMAN	Putative 60S ribosomal protein L13a protein RPL13AP3 (60S ribosomal protein L13a pseudogene 3)	RPL13AP3
+P62913	RL11_HUMAN	60S ribosomal protein L11 (CLL-associated antigen KW-12) (Large ribosomal subunit protein uL5)	RPL11
+P46783	RS10_HUMAN	40S ribosomal protein S10 (Small ribosomal subunit protein eS10)	RPS10
+P62269	RS18_HUMAN	40S ribosomal protein S18 (Ke-3) (Ke3) (Small ribosomal subunit protein uS13)	RPS18 D6S218E
+P62244	RS15A_HUMAN	40S ribosomal protein S15a (Small ribosomal subunit protein uS8)	RPS15A OK/SW-cl.82
+P46781	RS9_HUMAN	40S ribosomal protein S9 (Small ribosomal subunit protein uS4)	RPS9
+Q8TD47	RS4Y2_HUMAN	40S ribosomal protein S4, Y isoform 2 (Small ribosomal subunit protein eS4)	RPS4Y2 RPS4Y2P
+Q9Y2R5	RT17_HUMAN	28S ribosomal protein S17, mitochondrial (MRP-S17) (S17mt) (Mitochondrial small ribosomal subunit protein uS17m)	MRPS17 RPMS17 HSPC011
+Q9Y3D9	RT23_HUMAN	28S ribosomal protein S23, mitochondrial (MRP-S23) (S23mt) (Mitochondrial small ribosomal subunit protein mS23)	MRPS23 CGI-138 HSPC329
+P62753	RS6_HUMAN	40S ribosomal protein S6 (Phosphoprotein NP33) (Small ribosomal subunit protein eS6)	RPS6 OK/SW-cl.2
+P62899	RL31_HUMAN	60S ribosomal protein L31 (Large ribosomal subunit protein eL31)	RPL31
+Q6P1L8	RM14_HUMAN	39S ribosomal protein L14, mitochondrial (L14mt) (MRP-L14) (39S ribosomal protein L32, mitochondrial) (L32mt) (MRP-L32) (Mitochondrial large ribosomal subunit protein uL14m)	MRPL14 MRPL32 RPML32
+P52815	RM12_HUMAN	39S ribosomal protein L12, mitochondrial (L12mt) (MRP-L12) (5c5-2) (Mitochondrial large ribosomal subunit protein bL12m)	MRPL12 MRPL7 RPML12
+Q96A35	RM24_HUMAN	39S ribosomal protein L24, mitochondrial (L24mt) (MRP-L24) (Mitochondrial large ribosomal subunit protein uL24m)	MRPL24
+P46779	RL28_HUMAN	60S ribosomal protein L28 (Large ribosomal subunit protein eL28)	RPL28
+Q13405	RM49_HUMAN	39S ribosomal protein L49, mitochondrial (L49mt) (MRP-L49) (Mitochondrial large ribosomal subunit protein mL49) (Neighbor of FAU) (NOF) (Protein NOF1)	MRPL49 C11orf4 NOF1 OK/SW-cl.67
+Q9UHA3	RLP24_HUMAN	Probable ribosome biogenesis protein RLP24 (Ribosomal L24 domain-containing protein 1) (Ribosomal protein L24-like)	RSL24D1 C15orf15 RPL24L My024
+Q9BRJ2	RM45_HUMAN	39S ribosomal protein L45, mitochondrial (L45mt) (MRP-L45) (Mitochondrial large ribosomal subunit protein mL45)	MRPL45
+Q9NVS2	RT18A_HUMAN	39S ribosomal protein S18a, mitochondrial (MRP-S18-a) (Mrps18a) (S18mt-a) (39S ribosomal protein S18-3, mitochondrial) (MRP-S18-3) (Mitochondrial large ribosomal subunit protein bS18a) (Mitochondrial large ribosomal subunit protein mL66)	MRPS18A
+O15235	RT12_HUMAN	28S ribosomal protein S12, mitochondrial (MRP-S12) (S12mt) (MT-RPS12) (Mitochondrial small ribosomal subunit protein uS12m)	MRPS12 RPMS12 RPSM12
+P46776	RL27A_HUMAN	60S ribosomal protein L27a (Large ribosomal subunit protein uL15)	RPL27A
+P32969	RL9_HUMAN	60S ribosomal protein L9 (Large ribosomal subunit protein uL6)	RPL9 OK/SW-cl.103; RPL9P7; RPL9P8; RPL9P9
+Q9Y6S9	RPKL1_HUMAN	Ribosomal protein S6 kinase-like 1 (EC 2.7.11.1)	RPS6KL1
+Q9NZE8	RM35_HUMAN	39S ribosomal protein L35, mitochondrial (L35mt) (MRP-L35) (Mitochondrial large ribosomal subunit protein bL35m)	MRPL35 BM-007
+Q9Y291	RT33_HUMAN	28S ribosomal protein S33, mitochondrial (MRP-S33) (S33mt) (Mitochondrial small ribosomal subunit protein mS33)	MRPS33 CGI-139 PTD003
+P82933	RT09_HUMAN	28S ribosomal protein S9, mitochondrial (MRP-S9) (S9mt) (Mitochondrial small ribosomal subunit protein uS9m)	MRPS9 RPMS9
+Q96EH5	RL39L_HUMAN	60S ribosomal protein L39-like (60S ribosomal protein L39-2) (Large ribosomal subunit protein eL39-like)	RPL39L RPL39L1
+P47914	RL29_HUMAN	60S ribosomal protein L29 (Cell surface heparin-binding protein HIP) (Large ribosomal subunit protein eL29)	RPL29
+Q9BYC9	RM20_HUMAN	39S ribosomal protein L20, mitochondrial (L20mt) (MRP-L20) (Mitochondrial large ribosomal subunit protein bL20m)	MRPL20
+Q9BQ48	RM34_HUMAN	39S ribosomal protein L34, mitochondrial (L34mt) (MRP-L34) (Mitochondrial large ribosomal subunit protein bL34m)	MRPL34
+P63220	RS21_HUMAN	40S ribosomal protein S21 (Small ribosomal subunit protein eS21)	RPS21
+P82930	RT34_HUMAN	28S ribosomal protein S34, mitochondrial (MRP-S34) (S34mt) (Mitochondrial small ribosomal subunit protein mS34)	MRPS34
+Q8N543	OGFD1_HUMAN	Prolyl 3-hydroxylase OGFOD1 (EC 1.14.11.-) (2-oxoglutarate and iron-dependent oxygenase domain-containing protein 1) (Termination and polyadenylation 1 homolog) (uS12 prolyl 3-hydroxylase)	OGFOD1 KIAA1612 TPA1
+P61513	RL37A_HUMAN	60S ribosomal protein L37a (Large ribosomal subunit protein eL43)	RPL37A
+Q9H0U6	RM18_HUMAN	39S ribosomal protein L18, mitochondrial (L18mt) (MRP-L18) (Mitochondrial large ribosomal subunit protein uL18m)	MRPL18 HSPC071
+Q9H2W6	RM46_HUMAN	39S ribosomal protein L46, mitochondrial (L46mt) (MRP-L46) (Mitochondrial large ribosomal subunit protein mL46) (P2ECSL)	MRPL46 C15orf4 LIECG2
+Q13084	RM28_HUMAN	39S ribosomal protein L28, mitochondrial (L28mt) (MRP-L28) (Melanoma antigen p15) (Melanoma-associated antigen recognized by T-lymphocytes) (Mitochondrial large ribosomal subunit protein bL28m)	MRPL28 MAAT1
+P78345	RPP38_HUMAN	Ribonuclease P protein subunit p38 (RNaseP protein p38) (EC 3.1.26.5)	RPP38
+O96006	ZBED1_HUMAN	E3 SUMO-protein ligase ZBED1 (EC 2.3.2.-) (DNA replication-related element-binding factor) (Putative Ac-like transposable element) (Zinc finger BED domain-containing protein 1) (dREF homolog)	ZBED1 ALTE DREF hDREF KIAA0785 TRAMP
+Q16762	THTR_HUMAN	Thiosulfate sulfurtransferase (EC 2.8.1.1) (Rhodanese)	TST
+P62847	RS24_HUMAN	40S ribosomal protein S24 (Small ribosomal subunit protein eS24)	RPS24
+P42677	RS27_HUMAN	40S ribosomal protein S27 (Metallopan-stimulin 1) (MPS-1) (Small ribosomal subunit protein eS27)	RPS27 MPS1
+P61313	RL15_HUMAN	60S ribosomal protein L15 (Large ribosomal subunit protein eL15)	RPL15 EC45 TCBAP0781
+P62854	RS26_HUMAN	40S ribosomal protein S26 (Small ribosomal subunit protein eS26)	RPS26
+Q6P5R6	RL22L_HUMAN	60S ribosomal protein L22-like 1 (Large ribosomal subunit protein eL22-like 1)	RPL22L1
+Q9Y3B7	RM11_HUMAN	39S ribosomal protein L11, mitochondrial (L11mt) (MRP-L11) (Mitochondrial large ribosomal subunit protein uL11m)	MRPL11 CGI-113
+Q8NHW5	RLA0L_HUMAN	60S acidic ribosomal protein P0-like (Large ribosomal subunit protein uL10-like)	RPLP0P6
+P62266	RS23_HUMAN	40S ribosomal protein S23 (Small ribosomal subunit protein uS12)	RPS23
+P62841	RS15_HUMAN	40S ribosomal protein S15 (RIG protein) (Small ribosomal subunit protein uS19)	RPS15 RIG
+P83881	RL36A_HUMAN	60S ribosomal protein L36a (60S ribosomal protein L44) (Cell growth-inhibiting gene 15 protein) (Cell migration-inducing gene 6 protein) (Large ribosomal subunit protein eL42)	RPL36A RPL44 GIG15 MIG6
+Q8TCC3	RM30_HUMAN	39S ribosomal protein L30, mitochondrial (L30mt) (MRP-L30) (39S ribosomal protein L28, mitochondrial) (L28mt) (MRP-L28) (Mitochondrial large ribosomal subunit protein uL30m)	MRPL30 MRPL28 RPML28 HSPC249
+Q86UK7	ZN598_HUMAN	E3 ubiquitin-protein ligase ZNF598 (EC 2.3.2.27) (Zinc finger protein 598)	ZNF598
+P22670	RFX1_HUMAN	MHC class II regulatory factor RFX1 (Enhancer factor C) (EF-C) (Regulatory factor X 1) (RFX) (Transcription factor RFX1)	RFX1
+P62750	RL23A_HUMAN	60S ribosomal protein L23a (Large ribosomal subunit protein uL23)	RPL23A
+Q5T653	RM02_HUMAN	39S ribosomal protein L2, mitochondrial (L2mt) (MRP-L2) (Mitochondrial large ribosomal subunit protein uL2m)	MRPL2 CGI-22
+Q7Z2W9	RM21_HUMAN	39S ribosomal protein L21, mitochondrial (L21mt) (MRP-L21) (Mitochondrial large ribosomal subunit protein bL21m)	MRPL21
+Q9UNX3	RL26L_HUMAN	60S ribosomal protein L26-like 1 (Large ribosomal subunit protein uL24-like 1)	RPL26L1 RPL26P1
+Q8IXN7	RIMKA_HUMAN	N-acetylaspartylglutamate synthase A (NAAG synthetase A) (NAAGS) (EC 6.3.2.41) (N-acetylaspartylglutamylglutamate synthase A) (EC 6.3.2.42) (Ribosomal protein S6 modification-like protein A)	RIMKLA FAM80A
+Q02543	RL18A_HUMAN	60S ribosomal protein L18a (Large ribosomal subunit protein eL20)	RPL18A
+P40429	RL13A_HUMAN	60S ribosomal protein L13a (23 kDa highly basic protein) (Large ribosomal subunit protein uL13)	RPL13A
+P18124	RL7_HUMAN	60S ribosomal protein L7 (Large ribosomal subunit protein uL30)	RPL7
+Q9NX20	RM16_HUMAN	39S ribosomal protein L16, mitochondrial (L16mt) (MRP-L16) (Mitochondrial large ribosomal subunit protein uL16m)	MRPL16 PNAS-111
+Q7Z7F7	RM55_HUMAN	39S ribosomal protein L55, mitochondrial (L55mt) (MRP-L55) (Mitochondrial large ribosomal subunit protein bL31m) (Mitochondrial large ribosomal subunit protein mL55)	MRPL55 UNQ5835/PRO19675
+Q8N5N7	RM50_HUMAN	39S ribosomal protein L50, mitochondrial (L50mt) (MRP-L50) (Mitochondrial large ribosomal subunit protein mL50)	MRPL50
+P61247	RS3A_HUMAN	40S ribosomal protein S3a (Small ribosomal subunit protein eS1) (v-fos transformation effector protein) (Fte-1)	RPS3A FTE1 MFTL
+P82663	RT25_HUMAN	28S ribosomal protein S25, mitochondrial (MRP-S25) (S25mt) (Mitochondrial small ribosomal subunit protein mS25)	MRPS25 RPMS25
+Q9Y2R9	RT07_HUMAN	28S ribosomal protein S7, mitochondrial (MRP-S7) (S7mt) (Mitochondrial small ribosomal subunit protein uS7m) (bMRP-27a) (bMRP27a)	MRPS7
+O60783	RT14_HUMAN	28S ribosomal protein S14, mitochondrial (MRP-S14) (S14mt) (Mitochondrial small ribosomal subunit protein uS14m)	MRPS14
+P82912	RT11_HUMAN	28S ribosomal protein S11, mitochondrial (MRP-S11) (S11mt) (Cervical cancer proto-oncogene 2 protein) (HCC-2) (Mitochondrial small ribosomal subunit protein uS11m)	MRPS11 RPMS11 HCC2
+P62910	RL32_HUMAN	60S ribosomal protein L32 (Large ribosomal subunit protein eL32)	RPL32 PP9932
+Q9NQ39	RS10L_HUMAN	Putative 40S ribosomal protein S10-like	RPS10P5 RPS10L
+Q13177	PAK2_HUMAN	Serine/threonine-protein kinase PAK 2 (EC 2.7.11.1) (Gamma-PAK) (PAK65) (S6/H4 kinase) (p21-activated kinase 2) (PAK-2) (p58) [Cleaved into: PAK-2p27 (p27); PAK-2p34 (p34) (C-t-PAK2)]	PAK2
+P62917	RL8_HUMAN	60S ribosomal protein L8 (Large ribosomal subunit protein uL2)	RPL8
+O76021	RL1D1_HUMAN	Ribosomal L1 domain-containing protein 1 (CATX-11) (Cellular senescence-inhibited gene protein) (Protein PBK1)	RSL1D1 CATX11 CSIG PBK1 L12
+Q92665	RT31_HUMAN	28S ribosomal protein S31, mitochondrial (MRP-S31) (S31mt) (Imogen 38) (Mitochondrial small ribosomal subunit protein mS31)	MRPS31 IMOGN38
+Q92979	NEP1_HUMAN	Ribosomal RNA small subunit methyltransferase NEP1 (EC 2.1.1.-) (18S rRNA (pseudouridine(1248)-N1)-methyltransferase) (18S rRNA Psi1248 methyltransferase) (Nucleolar protein EMG1 homolog) (Protein C2f) (Ribosome biogenesis protein NEP1)	EMG1 C2F
+Q9HD33	RM47_HUMAN	39S ribosomal protein L47, mitochondrial (L47mt) (MRP-L47) (Mitochondrial large ribosomal subunit protein uL29m) (Nasopharyngeal carcinoma metastasis-related protein 1)	MRPL47 NCM1 CGI-204
+Q96GC5	RM48_HUMAN	39S ribosomal protein L48, mitochondrial (L48mt) (MRP-L48) (Mitochondrial large ribosomal subunit protein mL48)	MRPL48 CGI-118 HSPC290
+Q9Y399	RT02_HUMAN	28S ribosomal protein S2, mitochondrial (MRP-S2) (S2mt) (Mitochondrial small ribosomal subunit protein uS2m)	MRPS2 CGI-91
+P82675	RT05_HUMAN	28S ribosomal protein S5, mitochondrial (MRP-S5) (S5mt) (Mitochondrial small ribosomal subunit protein uS5m)	MRPS5
+P82664	RT10_HUMAN	28S ribosomal protein S10, mitochondrial (MRP-S10) (S10mt) (Mitochondrial small ribosomal subunit protein uS10m)	MRPS10 MSTP040
+P30050	RL12_HUMAN	60S ribosomal protein L12 (Large ribosomal subunit protein uL11)	RPL12
+P62241	RS8_HUMAN	40S ribosomal protein S8 (Small ribosomal subunit protein eS8)	RPS8 OK/SW-cl.83
+Q9NP92	RT30_HUMAN	39S ribosomal protein S30, mitochondrial (MRP-S30) (S30mt) (Mitochondrial large ribosomal subunit protein mL65) (Mitochondrial large ribosomal subunit protein mS30) (Programmed cell death protein 9)	MRPS30 PDCD9 BM-047
+Q9NX24	NHP2_HUMAN	H/ACA ribonucleoprotein complex subunit 2 (Nucleolar protein family A member 2) (snoRNP protein NHP2)	NHP2 NOLA2 HSPC286
+O00410	IPO5_HUMAN	Importin-5 (Imp5) (Importin subunit beta-3) (Karyopherin beta-3) (Ran-binding protein 5) (RanBP5)	IPO5 KPNB3 RANBP5
+O15530	PDPK1_HUMAN	3-phosphoinositide-dependent protein kinase 1 (hPDK1) (EC 2.7.11.1)	PDPK1 PDK1
+Q96EH3	MASU1_HUMAN	Mitochondrial assembly of ribosomal large subunit protein 1	MALSU1 C7orf30
+Q00987	MDM2_HUMAN	E3 ubiquitin-protein ligase Mdm2 (EC 2.3.2.27) (Double minute 2 protein) (Hdm2) (Oncoprotein Mdm2) (RING-type E3 ubiquitin transferase Mdm2) (p53-binding protein Mdm2)	MDM2
+P55769	NH2L1_HUMAN	NHP2-like protein 1 (High mobility group-like nuclear protein 2 homolog 1) (OTK27) (SNU13 homolog) (hSNU13) (U4/U6.U5 small nuclear ribonucleoprotein SNU13) (U4/U6.U5 tri-snRNP 15.5 kDa protein) [Cleaved into: NHP2-like protein 1, N-terminally processed]	SNU13 NHP2L1
+Q6DKI1	RL7L_HUMAN	60S ribosomal protein L7-like 1 (Large ribosomal subunit protein uL30-like 1)	RPL7L1
+Q9NWU5	RM22_HUMAN	39S ribosomal protein L22, mitochondrial (L22mt) (MRP-L22) (39S ribosomal protein L25, mitochondrial) (L25mt) (MRP-L25) (Mitochondrial large ribosomal subunit protein uL22m)	MRPL22 MRPL25 RPML25 HSPC158
+P35544	UBIM_HUMAN	Ubiquitin-like protein FUBI	FAU
+P39019	RS19_HUMAN	40S ribosomal protein S19 (Small ribosomal subunit protein eS19)	RPS19
+P18077	RL35A_HUMAN	60S ribosomal protein L35a (Cell growth-inhibiting gene 33 protein) (Large ribosomal subunit protein eL33)	RPL35A GIG33
+Q9NQ50	RM40_HUMAN	39S ribosomal protein L40, mitochondrial (L40mt) (MRP-L40) (Mitochondrial large ribosomal subunit protein mL40) (Nuclear localization signal-containing protein deleted in velocardiofacial syndrome) (Up-regulated in metastasis)	MRPL40 NLVCF URIM
+P06748	NPM_HUMAN	Nucleophosmin (NPM) (Nucleolar phosphoprotein B23) (Nucleolar protein NO38) (Numatrin)	NPM1 NPM
+O00391	QSOX1_HUMAN	Sulfhydryl oxidase 1 (hQSOX) (EC 1.8.3.2) (Quiescin Q6)	QSOX1 QSCN6 UNQ2520/PRO6013
+Q8IUF8	RIOX2_HUMAN	Ribosomal oxygenase 2 (60S ribosomal protein L27a histidine hydroxylase) (Bifunctional lysine-specific demethylase and histidyl-hydroxylase MINA) (EC 1.14.11.-) (Histone lysine demethylase MINA) (MYC-induced nuclear antigen) (Mineral dust-induced gene protein) (Nucleolar protein 52) (Ribosomal oxygenase MINA) (ROX)	RIOX2 MDIG MINA MINA53 NO52
+O95478	NSA2_HUMAN	Ribosome biogenesis protein NSA2 homolog (Hairy cell leukemia protein 1) (TGF-beta-inducible nuclear protein 1)	NSA2 TINP1 HUSSY-29
+P42345	MTOR_HUMAN	Serine/threonine-protein kinase mTOR (EC 2.7.11.1) (FK506-binding protein 12-rapamycin complex-associated protein 1) (FKBP12-rapamycin complex-associated protein) (Mammalian target of rapamycin) (mTOR) (Mechanistic target of rapamycin) (Rapamycin and FKBP12 target 1) (Rapamycin target protein 1)	MTOR FRAP FRAP1 FRAP2 RAFT1 RAPT1
+Q14197	ICT1_HUMAN	Peptidyl-tRNA hydrolase ICT1, mitochondrial (EC 3.1.1.29) (39S ribosomal protein L58, mitochondrial) (MRP-L58) (Digestion substraction 1) (DS-1) (Immature colon carcinoma transcript 1 protein) (Mitochondrial large ribosomal subunit protein mL62)	MRPL58 DS1 ICT1
+Q8TAE8	G45IP_HUMAN	Growth arrest and DNA damage-inducible proteins-interacting protein 1 (39S ribosomal protein L59, mitochondrial) (MRP-L59) (CKII beta-associating protein) (CR6-interacting factor 1) (CRIF1) (Mitochondrial large ribosomal subunit protein mL64) (Papillomavirus L2-interacting nuclear protein 1) (PLINP) (PLINP-1) (p53-responsive gene 6 protein)	GADD45GIP1 MRPL59 PLINP1 PRG6
+O14744	ANM5_HUMAN	Protein arginine N-methyltransferase 5 (PRMT5) (EC 2.1.1.320) (72 kDa ICln-binding protein) (Histone-arginine N-methyltransferase PRMT5) (Jak-binding protein 1) (Shk1 kinase-binding protein 1 homolog) (SKB1 homolog) (SKB1Hs) [Cleaved into: Protein arginine N-methyltransferase 5, N-terminally processed]	PRMT5 HRMT1L5 IBP72 JBP1 SKB1
+P46527	CDN1B_HUMAN	Cyclin-dependent kinase inhibitor 1B (Cyclin-dependent kinase inhibitor p27) (p27Kip1)	CDKN1B KIP1
+Q06787	FMR1_HUMAN	Synaptic functional regulator FMR1 (Fragile X mental retardation protein 1) (FMRP) (Protein FMR-1)	FMR1
+Q96BP2	CHCH1_HUMAN	Coiled-coil-helix-coiled-coil-helix domain-containing protein 1 (28S ribosomal protein S37, mitochondrial) (MRP-S37) (Mitochondrial small ribosomal subunit protein mS37) (Nuclear protein C2360)	CHCHD1 C10orf34 MRPS37
+Q00613	HSF1_HUMAN	Heat shock factor protein 1 (HSF 1) (Heat shock transcription factor 1) (HSTF 1)	HSF1 HSTF1
+O75190	DNJB6_HUMAN	DnaJ homolog subfamily B member 6 (HHDJ1) (Heat shock protein J2) (HSJ-2) (MRJ) (MSJ-1)	DNAJB6 HSJ2 MRJ MSJ1
+Q04695	K1C17_HUMAN	Keratin, type I cytoskeletal 17 (39.1) (Cytokeratin-17) (CK-17) (Keratin-17) (K17)	KRT17
+O60678	ANM3_HUMAN	Protein arginine N-methyltransferase 3 (EC 2.1.1.-) (Heterogeneous nuclear ribonucleoprotein methyltransferase-like protein 3)	PRMT3 HRMT1L3
+Q04917	1433F_HUMAN	14-3-3 protein eta (Protein AS1)	YWHAH YWHA1
+P26641	EF1G_HUMAN	Elongation factor 1-gamma (EF-1-gamma) (eEF-1B gamma)	EEF1G EF1G PRO1608
+Q14974	IMB1_HUMAN	Importin subunit beta-1 (Importin-90) (Karyopherin subunit beta-1) (Nuclear factor p97) (Pore targeting complex 97 kDa subunit) (PTAC97)	KPNB1 NTF97
+Q9NV31	IMP3_HUMAN	U3 small nucleolar ribonucleoprotein protein IMP3 (U3 snoRNP protein IMP3) (BRMS2)	IMP3 C15orf12 MRPS4
+Q96S38	KS6C1_HUMAN	Ribosomal protein S6 kinase delta-1 (S6K-delta-1) (EC 2.7.11.1) (52 kDa ribosomal protein S6 kinase) (Ribosomal S6 kinase-like protein with two PSK domains 118 kDa protein) (SPHK1-binding protein)	RPS6KC1 RPK118
+Q9NWT8	AKIP_HUMAN	Aurora kinase A-interacting protein (AURKA-interacting protein) (28S ribosomal protein S38, mitochondrial) (MRP-S38) (Mitochondrial small ribosomal subunit protein mS38)	AURKAIP1 AIP AKIP MRPS38
+Q86WX3	AROS_HUMAN	Active regulator of SIRT1 (40S ribosomal protein S19-binding protein 1) (RPS19-binding protein 1) (S19BP)	RPS19BP1 AROS
+Q00005	2ABB_HUMAN	Serine/threonine-protein phosphatase 2A 55 kDa regulatory subunit B beta isoform (PP2A subunit B isoform B55-beta) (PP2A subunit B isoform PR55-beta) (PP2A subunit B isoform R2-beta) (PP2A subunit B isoform beta)	PPP2R2B
+P09914	IFIT1_HUMAN	Interferon-induced protein with tetratricopeptide repeats 1 (IFIT-1) (Interferon-induced 56 kDa protein) (IFI-56K) (P56)	IFIT1 G10P1 IFI56 IFNAI1 ISG56
+Q9UI26	IPO11_HUMAN	Importin-11 (Imp11) (Ran-binding protein 11) (RanBP11)	IPO11 RANBP11
+Q96LW2	KS6R_HUMAN	Ribosomal protein S6 kinase-related protein (EC 2.7.11.1) (Sugen kinase 494)	RSKR SGK494
+P22736	NR4A1_HUMAN	Nuclear receptor subfamily 4 group A member 1 (Early response protein NAK1) (Nuclear hormone receptor NUR/77) (Nur77) (Orphan nuclear receptor HMR) (Orphan nuclear receptor TR3) (ST-59) (Testicular receptor 3)	NR4A1 GFRP1 HMR NAK1
+Q9H9Z2	LN28A_HUMAN	Protein lin-28 homolog A (Lin-28A) (Zinc finger CCHC domain-containing protein 1)	LIN28A CSDD1 LIN28 ZCCHC1
+Q9UKD2	MRT4_HUMAN	mRNA turnover protein 4 homolog (Ribosome assembly factor MRTO4)	MRTO4 C1orf33 MRT4
+Q9BY77	PDIP3_HUMAN	Polymerase delta-interacting protein 3 (46 kDa DNA polymerase delta interaction protein) (p46) (S6K1 Aly/REF-like target) (SKAR)	POLDIP3 KIAA1649 PDIP46
+Q13765	NACA_HUMAN	Nascent polypeptide-associated complex subunit alpha (NAC-alpha) (Alpha-NAC) (allergen Hom s 2)	NACA HSD48
+P62380	TBPL1_HUMAN	TATA box-binding protein-like 1 (TBP-like 1) (21 kDa TBP-like protein) (Second TBP of unique DNA protein) (STUD) (TATA box-binding protein-related factor 2) (TBP-related factor 2) (TBP-like factor) (TBP-related protein)	TBPL1 TLF TLP TLP21 TRF2 TRP
+Q9BYD1	RM13_HUMAN	39S ribosomal protein L13, mitochondrial (L13mt) (MRP-L13) (Mitochondrial large ribosomal subunit protein uL13m)	MRPL13
+Q9NRX2	RM17_HUMAN	39S ribosomal protein L17, mitochondrial (L17mt) (MRP-L17) (LYST-interacting protein 2) (Mitochondrial large ribosomal subunit protein bL17m)	MRPL17 LIP2
+Q9Y6G3	RM42_HUMAN	39S ribosomal protein L42, mitochondrial (L42mt) (MRP-L42) (39S ribosomal protein L31, mitochondrial) (L31mt) (MRP-L31) (Mitochondrial large ribosomal subunit protein mL42)	MRPL42 MRPL31 MRPS32 RPML31 HSPC204 PTD007
+Q9H9J2	RM44_HUMAN	39S ribosomal protein L44, mitochondrial (L44mt) (MRP-L44) (EC 3.1.26.-) (Mitochondrial large ribosomal subunit protein mL44)	MRPL44
+P63173	RL38_HUMAN	60S ribosomal protein L38 (Large ribosomal subunit protein eL38)	RPL38
+P09001	RM03_HUMAN	39S ribosomal protein L3, mitochondrial (L3mt) (MRP-L3) (Mitochondrial large ribosomal subunit protein uL3m)	MRPL3 MRL3 RPML3
+Q9BYD2	RM09_HUMAN	39S ribosomal protein L9, mitochondrial (L9mt) (MRP-L9) (Mitochondrial large ribosomal subunit protein bL9m)	MRPL9
+P05387	RLA2_HUMAN	60S acidic ribosomal protein P2 (Large ribosomal subunit protein P2) (Renal carcinoma antigen NY-REN-44)	RPLP2 D11S2243E RPP2

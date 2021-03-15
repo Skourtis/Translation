@@ -1,0 +1,151 @@
+Entry	Entry name	Protein names	Gene names
+O75821	EIF3G_HUMAN	Eukaryotic translation initiation factor 3 subunit G (eIF3g) (Eukaryotic translation initiation factor 3 RNA-binding subunit) (eIF-3 RNA-binding subunit) (Eukaryotic translation initiation factor 3 subunit 4) (eIF-3-delta) (eIF3 p42) (eIF3 p44)	EIF3G EIF3S4
+Q9Y262	EIF3L_HUMAN	Eukaryotic translation initiation factor 3 subunit L (eIF3l) (Eukaryotic translation initiation factor 3 subunit 6-interacting protein) (Eukaryotic translation initiation factor 3 subunit E-interacting protein)	EIF3L EIF3EIP EIF3S6IP HSPC021 HSPC025 MSTP005
+Q9BY44	EIF2A_HUMAN	Eukaryotic translation initiation factor 2A (eIF-2A) (65 kDa eukaryotic translation initiation factor 2A) [Cleaved into: Eukaryotic translation initiation factor 2A, N-terminally processed]	EIF2A CDA02 MSTP004 MSTP089
+O60573	IF4E2_HUMAN	Eukaryotic translation initiation factor 4E type 2 (eIF-4E type 2) (eIF4E type 2) (Eukaryotic translation initiation factor 4E homologous protein) (Eukaryotic translation initiation factor 4E-like 3) (eIF4E-like protein 4E-LP) (mRNA cap-binding protein 4EHP) (h4EHP) (mRNA cap-binding protein type 3)	EIF4E2 EIF4EL3
+Q14152	EIF3A_HUMAN	Eukaryotic translation initiation factor 3 subunit A (eIF3a) (Eukaryotic translation initiation factor 3 subunit 10) (eIF-3-theta) (eIF3 p167) (eIF3 p180) (eIF3 p185)	EIF3A EIF3S10 KIAA0139
+O15371	EIF3D_HUMAN	Eukaryotic translation initiation factor 3 subunit D (eIF3d) (Eukaryotic translation initiation factor 3 subunit 7) (eIF-3-zeta) (eIF3 p66)	EIF3D EIF3S7
+P55884	EIF3B_HUMAN	Eukaryotic translation initiation factor 3 subunit B (eIF3b) (Eukaryotic translation initiation factor 3 subunit 9) (Prt1 homolog) (hPrt1) (eIF-3-eta) (eIF3 p110) (eIF3 p116)	EIF3B EIF3S9
+O00303	EIF3F_HUMAN	Eukaryotic translation initiation factor 3 subunit F (eIF3f) (Deubiquitinating enzyme eIF3f) (EC 3.4.19.12) (Eukaryotic translation initiation factor 3 subunit 5) (eIF-3-epsilon) (eIF3 p47)	EIF3F EIF3S5
+P60228	EIF3E_HUMAN	Eukaryotic translation initiation factor 3 subunit E (eIF3e) (Eukaryotic translation initiation factor 3 subunit 6) (Viral integration site protein INT-6 homolog) (eIF-3 p48)	EIF3E EIF3S6 INT6
+Q13347	EIF3I_HUMAN	Eukaryotic translation initiation factor 3 subunit I (eIF3i) (Eukaryotic translation initiation factor 3 subunit 2) (TGF-beta receptor-interacting protein 1) (TRIP-1) (eIF-3-beta) (eIF3 p36)	EIF3I EIF3S2 TRIP1
+O15372	EIF3H_HUMAN	Eukaryotic translation initiation factor 3 subunit H (eIF3h) (Eukaryotic translation initiation factor 3 subunit 3) (eIF-3-gamma) (eIF3 p40 subunit)	EIF3H EIF3S3
+Q99613	EIF3C_HUMAN	Eukaryotic translation initiation factor 3 subunit C (eIF3c) (Eukaryotic translation initiation factor 3 subunit 8) (eIF3 p110)	EIF3C EIF3S8
+O75822	EIF3J_HUMAN	Eukaryotic translation initiation factor 3 subunit J (eIF3j) (Eukaryotic translation initiation factor 3 subunit 1) (eIF-3-alpha) (eIF3 p35)	EIF3J EIF3S1 PRO0391
+P38919	IF4A3_HUMAN	Eukaryotic initiation factor 4A-III (eIF-4A-III) (eIF4A-III) (EC 3.6.4.13) (ATP-dependent RNA helicase DDX48) (ATP-dependent RNA helicase eIF4A-3) (DEAD box protein 48) (Eukaryotic initiation factor 4A-like NUK-34) (Eukaryotic translation initiation factor 4A isoform 3) (Nuclear matrix protein 265) (NMP 265) (hNMP 265) [Cleaved into: Eukaryotic initiation factor 4A-III, N-terminally processed]	EIF4A3 DDX48 KIAA0111
+Q9UBQ5	EIF3K_HUMAN	Eukaryotic translation initiation factor 3 subunit K (eIF3k) (Eukaryotic translation initiation factor 3 subunit 12) (Muscle-specific gene M9 protein) (PLAC-24) (eIF-3 p25) (eIF-3 p28)	EIF3K EIF3S12 ARG134 HSPC029 MSTP001 PTD001
+P05198	IF2A_HUMAN	Eukaryotic translation initiation factor 2 subunit 1 (Eukaryotic translation initiation factor 2 subunit alpha) (eIF-2-alpha) (eIF-2A) (eIF-2alpha)	EIF2S1 EIF2A
+P41091	IF2G_HUMAN	Eukaryotic translation initiation factor 2 subunit 3 (EC 3.6.5.3) (Eukaryotic translation initiation factor 2 subunit gamma X) (eIF-2-gamma X) (eIF-2gX)	EIF2S3 EIF2G
+Q9NRA8	4ET_HUMAN	Eukaryotic translation initiation factor 4E transporter (4E-T) (eIF4E transporter) (Eukaryotic translation initiation factor 4E nuclear import factor 1)	EIF4ENIF1
+P20042	IF2B_HUMAN	Eukaryotic translation initiation factor 2 subunit 2 (Eukaryotic translation initiation factor 2 subunit beta) (eIF-2-beta)	EIF2S2 EIF2B
+P63241	IF5A1_HUMAN	Eukaryotic translation initiation factor 5A-1 (eIF-5A-1) (eIF-5A1) (Eukaryotic initiation factor 5A isoform 1) (eIF-5A) (Rev-binding factor) (eIF-4D)	EIF5A
+Q9BQI3	E2AK1_HUMAN	Eukaryotic translation initiation factor 2-alpha kinase 1 (EC 2.7.11.1) (Heme-controlled repressor) (HCR) (Heme-regulated eukaryotic initiation factor eIF-2-alpha kinase) (Heme-regulated inhibitor) (hHRI) (Hemin-sensitive initiation factor 2-alpha kinase)	EIF2AK1 HRI KIAA1369 PRO1362
+Q9GZV4	IF5A2_HUMAN	Eukaryotic translation initiation factor 5A-2 (eIF-5A-2) (eIF-5A2) (Eukaryotic initiation factor 5A isoform 2)	EIF5A2
+O60841	IF2P_HUMAN	Eukaryotic translation initiation factor 5B (eIF-5B) (EC 3.6.5.3) (Translation initiation factor IF-2)	EIF5B IF2 KIAA0741
+P06730	IF4E_HUMAN	Eukaryotic translation initiation factor 4E (eIF-4E) (eIF4E) (eIF-4F 25 kDa subunit) (mRNA cap-binding protein)	EIF4E EIF4EL1 EIF4F
+Q04637	IF4G1_HUMAN	Eukaryotic translation initiation factor 4 gamma 1 (eIF-4-gamma 1) (eIF-4G 1) (eIF-4G1) (p220)	EIF4G1 EIF4F EIF4G EIF4GI
+Q7L2H7	EIF3M_HUMAN	Eukaryotic translation initiation factor 3 subunit M (eIF3m) (Fetal lung protein B5) (hFL-B5) (PCI domain-containing protein 1)	EIF3M HFLB5 PCID1 GA17 PNAS-125
+O43432	IF4G3_HUMAN	Eukaryotic translation initiation factor 4 gamma 3 (eIF-4-gamma 3) (eIF-4G 3) (eIF4G 3) (eIF-4-gamma II) (eIF4GII)	EIF4G3
+P23588	IF4B_HUMAN	Eukaryotic translation initiation factor 4B (eIF-4B)	EIF4B
+P78344	IF4G2_HUMAN	Eukaryotic translation initiation factor 4 gamma 2 (eIF-4-gamma 2) (eIF-4G 2) (eIF4G 2) (Death-associated protein 5) (DAP-5) (p97)	EIF4G2 DAP5 OK/SW-cl.75
+Q15056	IF4H_HUMAN	Eukaryotic translation initiation factor 4H (eIF-4H) (Williams-Beuren syndrome chromosomal region 1 protein)	EIF4H KIAA0038 WBSCR1 WSCR1
+Q9NZJ5	E2AK3_HUMAN	Eukaryotic translation initiation factor 2-alpha kinase 3 (EC 2.7.11.1) (PRKR-like endoplasmic reticulum kinase) (Pancreatic eIF2-alpha kinase) (HsPEK)	EIF2AK3 PEK PERK
+Q13541	4EBP1_HUMAN	Eukaryotic translation initiation factor 4E-binding protein 1 (4E-BP1) (eIF4E-binding protein 1) (Phosphorylated heat- and acid-stable protein regulated by insulin 1) (PHAS-I)	EIF4EBP1
+P41214	EIF2D_HUMAN	Eukaryotic translation initiation factor 2D (eIF2d) (Hepatocellular carcinoma-associated antigen 56) (Ligatin)	EIF2D HCA56 LGTN
+Q13542	4EBP2_HUMAN	Eukaryotic translation initiation factor 4E-binding protein 2 (4E-BP2) (eIF4E-binding protein 2)	EIF4EBP2
+P19525	E2AK2_HUMAN	Interferon-induced, double-stranded RNA-activated protein kinase (EC 2.7.11.1) (Eukaryotic translation initiation factor 2-alpha kinase 2) (eIF-2A protein kinase 2) (Interferon-inducible RNA-dependent protein kinase) (P1/eIF-2A protein kinase) (Protein kinase RNA-activated) (PKR) (Protein kinase R) (Tyrosine-protein kinase EIF2AK2) (EC 2.7.10.2) (p68 kinase)	EIF2AK2 PKR PRKR
+Q9P2K8	E2AK4_HUMAN	eIF-2-alpha kinase GCN2 (EC 2.7.11.1) (Eukaryotic translation initiation factor 2-alpha kinase 4) (GCN2-like protein)	EIF2AK4 GCN2 KIAA1338
+P56537	IF6_HUMAN	Eukaryotic translation initiation factor 6 (eIF-6) (B(2)GCN homolog) (B4 integrin interactor) (CAB) (p27(BBP))	EIF6 EIF3A ITGB4BP OK/SW-cl.27
+Q9UKV8	AGO2_HUMAN	Protein argonaute-2 (Argonaute2) (hAgo2) (EC 3.1.26.n2) (Argonaute RISC catalytic component 2) (Eukaryotic translation initiation factor 2C 2) (eIF-2C 2) (eIF2C 2) (PAZ Piwi domain protein) (PPD) (Protein slicer)	AGO2 EIF2C2
+O43324	MCA3_HUMAN	Eukaryotic translation elongation factor 1 epsilon-1 (Aminoacyl tRNA synthetase complex-interacting multifunctional protein 3) (Elongation factor p18) (Multisynthase complex auxiliary component p18)	EEF1E1 AIMP3 P18
+Q9UL18	AGO1_HUMAN	Protein argonaute-1 (Argonaute1) (hAgo1) (Argonaute RISC catalytic component 1) (Eukaryotic translation initiation factor 2C 1) (eIF-2C 1) (eIF2C 1) (Putative RNA-binding protein Q99)	AGO1 EIF2C1
+P55010	IF5_HUMAN	Eukaryotic translation initiation factor 5 (eIF-5)	EIF5
+Q8N9N8	EIF1A_HUMAN	Probable RNA-binding protein EIF1AD (Eukaryotic translation initiation factor 1A domain-containing protein) (Haponin)	EIF1AD
+P41567	EIF1_HUMAN	Eukaryotic translation initiation factor 1 (eIF1) (A121) (Protein translation factor SUI1 homolog) (Sui1iso1)	EIF1 SUI1
+Q9H9G7	AGO3_HUMAN	Protein argonaute-3 (Argonaute3) (hAgo3) (EC 3.1.26.n2) (Argonaute RISC catalytic component 3) (Eukaryotic translation initiation factor 2C 3) (eIF-2C 3) (eIF2C 3)	AGO3 EIF2C3
+Q9HCK5	AGO4_HUMAN	Protein argonaute-4 (Argonaute4) (hAgo4) (Argonaute RISC catalytic component 4) (Eukaryotic translation initiation factor 2C 4) (eIF-2C 4) (eIF2C 4)	AGO4 EIF2C4 KIAA1567
+P62495	ERF1_HUMAN	Eukaryotic peptide chain release factor subunit 1 (Eukaryotic release factor 1) (eRF1) (Protein Cl1) (TB3-1)	ETF1 ERF1 RF1 SUP45L1
+Q8IYD1	ERF3B_HUMAN	Eukaryotic peptide chain release factor GTP-binding subunit ERF3B (Eukaryotic peptide chain release factor subunit 3b) (eRF3b) (G1 to S phase transition protein 2 homolog)	GSPT2 ERF3B
+O00418	EF2K_HUMAN	Eukaryotic elongation factor 2 kinase (eEF-2 kinase) (eEF-2K) (EC 2.7.11.20) (Calcium/calmodulin-dependent eukaryotic elongation factor 2 kinase)	EEF2K
+P15170	ERF3A_HUMAN	Eukaryotic peptide chain release factor GTP-binding subunit ERF3A (Eukaryotic peptide chain release factor subunit 3a) (eRF3a) (G1 to S phase transition protein 1 homolog)	GSPT1 ERF3A
+P68104	EF1A1_HUMAN	Elongation factor 1-alpha 1 (EF-1-alpha-1) (Elongation factor Tu) (EF-Tu) (Eukaryotic elongation factor 1 A-1) (eEF1A-1) (Leukocyte receptor cluster member 7)	EEF1A1 EEF1A EF1A LENG7
+Q05639	EF1A2_HUMAN	Elongation factor 1-alpha 2 (EF-1-alpha-2) (Eukaryotic elongation factor 1 A-2) (eEF1A-2) (Statin-S1)	EEF1A2 EEF1AL STN
+Q2VIR3	IF2GL_HUMAN	Eukaryotic translation initiation factor 2 subunit 3B (EC 3.6.5.3) (Eukaryotic translation initiation factor 2 subunit gamma A) (eIF-2-gamma A) (eIF-2gA)	EIF2S3B
+P60842	IF4A1_HUMAN	Eukaryotic initiation factor 4A-I (eIF-4A-I) (eIF4A-I) (EC 3.6.4.13) (ATP-dependent RNA helicase eIF4A-1)	EIF4A1 DDX2A EIF4A
+Q14240	IF4A2_HUMAN	Eukaryotic initiation factor 4A-II (eIF-4A-II) (eIF4A-II) (EC 3.6.4.13) (ATP-dependent RNA helicase eIF4A-2)	EIF4A2 DDX2B EIF4F
+Q5VTE0	EF1A3_HUMAN	Putative elongation factor 1-alpha-like 3 (EF-1-alpha-like 3) (Eukaryotic elongation factor 1 A-like 3) (eEF1A-like 3) (Eukaryotic translation elongation factor 1 alpha-1 pseudogene 5)	EEF1A1P5 EEF1AL3
+Q13144	EI2BE_HUMAN	Translation initiation factor eIF-2B subunit epsilon (eIF-2B GDP-GTP exchange factor subunit epsilon)	EIF2B5 EIF2BE
+Q9UI10	EI2BD_HUMAN	Translation initiation factor eIF-2B subunit delta (eIF-2B GDP-GTP exchange factor subunit delta)	EIF2B4 EIF2BD
+P49770	EI2BB_HUMAN	Translation initiation factor eIF-2B subunit beta (S20I15) (S20III15) (eIF-2B GDP-GTP exchange factor subunit beta)	EIF2B2 EIF2BB
+Q9NR50	EI2BG_HUMAN	Translation initiation factor eIF-2B subunit gamma (eIF-2B GDP-GTP exchange factor subunit gamma)	EIF2B3
+Q14232	EI2BA_HUMAN	Translation initiation factor eIF-2B subunit alpha (eIF-2B GDP-GTP exchange factor subunit alpha)	EIF2B1 EIF2BA
+P47813	IF1AX_HUMAN	Eukaryotic translation initiation factor 1A, X-chromosomal (eIF-1A X isoform) (Eukaryotic translation initiation factor 4C) (eIF-4C)	EIF1AX EIF1A EIF4C
+O43310	CTIF_HUMAN	CBP80/20-dependent translation initiation factor	CTIF KIAA0427
+O60516	4EBP3_HUMAN	Eukaryotic translation initiation factor 4E-binding protein 3 (4E-BP3) (eIF4E-binding protein 3)	EIF4EBP3
+P57772	SELB_HUMAN	Selenocysteine-specific elongation factor (Elongation factor sec) (Eukaryotic elongation factor, selenocysteine-tRNA-specific)	EEFSEC SELB
+P67809	YBOX1_HUMAN	Y-box-binding protein 1 (YB-1) (CCAAT-binding transcription factor I subunit A) (CBF-A) (DNA-binding protein B) (DBPB) (Enhancer factor I subunit A) (EFI-A) (Nuclease-sensitive element-binding protein 1) (Y-box transcription factor)	YBX1 NSEP1 YB1
+P13639	EF2_HUMAN	Elongation factor 2 (EF-2)	EEF2 EF2
+O60739	EIF1B_HUMAN	Eukaryotic translation initiation factor 1b (eIF1b) (Protein translation factor SUI1 homolog GC20)	EIF1B
+Q6IS14	IF5AL_HUMAN	Eukaryotic translation initiation factor 5A-1-like (eIF-5A-1-like) (eIF-5A1-like) (Eukaryotic initiation factor 5A isoform 1-like)	EIF5AL1
+P29692	EF1D_HUMAN	Elongation factor 1-delta (EF-1-delta) (Antigen NY-CO-4)	EEF1D EF1D
+P50579	MAP2_HUMAN	Methionine aminopeptidase 2 (MAP 2) (MetAP 2) (EC 3.4.11.18) (Initiation factor 2-associated 67 kDa glycoprotein) (p67) (p67eIF2) (Peptidase M)	METAP2 MNPEP P67EIF2
+O95831	AIFM1_HUMAN	Apoptosis-inducing factor 1, mitochondrial (EC 1.6.99.-) (Programmed cell death protein 8)	AIFM1 AIF PDCD8
+P26641	EF1G_HUMAN	Elongation factor 1-gamma (EF-1-gamma) (eEF-1B gamma)	EEF1G EF1G PRO1608
+O43639	NCK2_HUMAN	Cytoplasmic protein NCK2 (Growth factor receptor-bound protein 4) (NCK adaptor protein 2) (Nck-2) (SH2/SH3 adaptor protein NCK-beta)	NCK2 GRB4
+B5ME19	EIFCL_HUMAN	Eukaryotic translation initiation factor 3 subunit C-like protein	EIF3CL
+O14602	IF1AY_HUMAN	Eukaryotic translation initiation factor 1A, Y-chromosomal (eIF-1A Y isoform) (Eukaryotic translation initiation factor 4C) (eIF-4C)	EIF1AY
+P24534	EF1B_HUMAN	Elongation factor 1-beta (EF-1-beta)	EEF1B2 EEF1B EF1B
+Q8N5X7	IF4E3_HUMAN	Eukaryotic translation initiation factor 4E type 3 (eIF-4E type 3) (eIF-4E3) (eIF4E type 3) (eIF4E-3)	EIF4E3
+O00571	DDX3X_HUMAN	ATP-dependent RNA helicase DDX3X (EC 3.6.4.13) (CAP-Rf) (DEAD box protein 3, X-chromosomal) (DEAD box, X isoform) (DBX) (Helicase-like protein 2) (HLP2)	DDX3X DBX DDX3
+Q9HBH9	MKNK2_HUMAN	MAP kinase-interacting serine/threonine-protein kinase 2 (EC 2.7.11.1) (MAP kinase signal-integrating kinase 2) (MAPK signal-integrating kinase 2) (Mnk2)	MKNK2 GPRK7 MNK2
+P62987	RL40_HUMAN	Ubiquitin-60S ribosomal protein L40 (CEP52) (Ubiquitin A-52 residue ribosomal protein fusion product 1) [Cleaved into: Ubiquitin; 60S ribosomal protein L40 (Large ribosomal subunit protein eL40)]	UBA52 UBCEP2
+P62979	RS27A_HUMAN	Ubiquitin-40S ribosomal protein S27a (Ubiquitin carboxyl extension protein 80) [Cleaved into: Ubiquitin; 40S ribosomal protein S27a (Small ribosomal subunit protein eS31)]	RPS27A UBA80 UBCEP1
+Q92905	CSN5_HUMAN	COP9 signalosome complex subunit 5 (SGN5) (Signalosome subunit 5) (EC 3.4.-.-) (Jun activation domain-binding protein 1)	COPS5 CSN5 JAB1
+Q8N6M0	OTU6B_HUMAN	Deubiquitinase OTUD6B (EC 3.4.19.12) (DUBA-5) (OTU domain-containing protein 6B)	OTUD6B DUBA5 CGI-77
+P16333	NCK1_HUMAN	Cytoplasmic protein NCK1 (NCK adaptor protein 1) (Nck-1) (SH2/SH3 adaptor protein NCK-alpha)	NCK1 NCK
+Q9Y5N5	N6MT1_HUMAN	Methyltransferase N6AMT1 (HemK methyltransferase family member 2) (M.HsaHemK2P) (Lysine N-methyltransferase 9) (EC 2.1.1.-) (Methylarsonite methyltransferase N6AMT1) (EC 2.1.1.-) (Protein N(5)-glutamine methyltransferase) (EC 2.1.1.-)	N6AMT1 C21orf127 HEMK2 KMT9 PRED28
+P23443	KS6B1_HUMAN	Ribosomal protein S6 kinase beta-1 (S6K-beta-1) (S6K1) (EC 2.7.11.1) (70 kDa ribosomal protein S6 kinase 1) (P70S6K1) (p70-S6K 1) (Ribosomal protein S6 kinase I) (Serine/threonine-protein kinase 14A) (p70 ribosomal S6 kinase alpha) (p70 S6 kinase alpha) (p70 S6K-alpha) (p70 S6KA)	RPS6KB1 STK14A
+P23396	RS3_HUMAN	40S ribosomal protein S3 (EC 4.2.99.18) (Small ribosomal subunit protein uS3)	RPS3 OK/SW-cl.26
+A6NMX2	I4E1B_HUMAN	Eukaryotic translation initiation factor 4E type 1B	EIF4E1B
+P28482	MK01_HUMAN	Mitogen-activated protein kinase 1 (MAP kinase 1) (MAPK 1) (EC 2.7.11.24) (ERT1) (Extracellular signal-regulated kinase 2) (ERK-2) (MAP kinase isoform p42) (p42-MAPK) (Mitogen-activated protein kinase 2) (MAP kinase 2) (MAPK 2)	MAPK1 ERK2 PRKM1 PRKM2
+P42345	MTOR_HUMAN	Serine/threonine-protein kinase mTOR (EC 2.7.11.1) (FK506-binding protein 12-rapamycin complex-associated protein 1) (FKBP12-rapamycin complex-associated protein) (Mammalian target of rapamycin) (mTOR) (Mechanistic target of rapamycin) (Rapamycin and FKBP12 target 1) (Rapamycin target protein 1)	MTOR FRAP FRAP1 FRAP2 RAFT1 RAPT1
+Q9ULC4	MCTS1_HUMAN	Malignant T-cell-amplified sequence 1 (MCT-1) (Multiple copies T-cell malignancies)	MCTS1 MCT1
+Q7Z478	DHX29_HUMAN	ATP-dependent RNA helicase DHX29 (EC 3.6.4.13) (DEAH box protein 29) (Nucleic acid helicase DDXx)	DHX29 DDX29
+P08865	RSSA_HUMAN	40S ribosomal protein SA (37 kDa laminin receptor precursor) (37LRP) (37/67 kDa laminin receptor) (LRP/LR) (67 kDa laminin receptor) (67LR) (Colon carcinoma laminin-binding protein) (Laminin receptor 1) (LamR) (Laminin-binding protein precursor p40) (LBP/p40) (Multidrug resistance-associated protein MGr1-Ag) (NEM/1CHD4) (Small ribosomal subunit protein uS2)	RPSA LAMBR LAMR1
+P62847	RS24_HUMAN	40S ribosomal protein S24 (Small ribosomal subunit protein eS24)	RPS24
+P45983	MK08_HUMAN	Mitogen-activated protein kinase 8 (MAP kinase 8) (MAPK 8) (EC 2.7.11.24) (JNK-46) (Stress-activated protein kinase 1c) (SAPK1c) (Stress-activated protein kinase JNK1) (c-Jun N-terminal kinase 1)	MAPK8 JNK1 PRKM8 SAPK1 SAPK1C
+Q8NE71	ABCF1_HUMAN	ATP-binding cassette sub-family F member 1 (ATP-binding cassette 50) (TNF-alpha-stimulated ABC protein)	ABCF1 ABC50
+Q09161	NCBP1_HUMAN	Nuclear cap-binding protein subunit 1 (80 kDa nuclear cap-binding protein) (CBP80) (NCBP 80 kDa subunit)	NCBP1 CBP80 NCBP
+P42677	RS27_HUMAN	40S ribosomal protein S27 (Metallopan-stimulin 1) (MPS-1) (Small ribosomal subunit protein eS27)	RPS27 MPS1
+P61247	RS3A_HUMAN	40S ribosomal protein S3a (Small ribosomal subunit protein eS1) (v-fos transformation effector protein) (Fte-1)	RPS3A FTE1 MFTL
+P39019	RS19_HUMAN	40S ribosomal protein S19 (Small ribosomal subunit protein eS19)	RPS19
+Q6PKG0	LARP1_HUMAN	La-related protein 1 (La ribonucleoprotein domain family member 1)	LARP1 KIAA0731 LARP
+Q92616	GCN1_HUMAN	eIF-2-alpha kinase activator GCN1 (GCN1 eIF-2-alpha kinase activator homolog) (GCN1-like protein 1) (General control of amino-acid synthesis 1-like protein 1) (Translational activator GCN1) (HsGCN1)	GCN1 GCN1L1 KIAA0219
+Q8N543	OGFD1_HUMAN	Prolyl 3-hydroxylase OGFOD1 (EC 1.14.11.-) (2-oxoglutarate and iron-dependent oxygenase domain-containing protein 1) (Termination and polyadenylation 1 homolog) (uS12 prolyl 3-hydroxylase)	OGFOD1 KIAA1612 TPA1
+O75807	PR15A_HUMAN	Protein phosphatase 1 regulatory subunit 15A (Growth arrest and DNA damage-inducible protein GADD34) (Myeloid differentiation primary response protein MyD116 homolog)	PPP1R15A GADD34
+Q8N6T7	SIR6_HUMAN	NAD-dependent protein deacetylase sirtuin-6 (EC 2.3.1.286) (Regulatory protein SIR2 homolog 6) (SIR2-like protein 6)	SIRT6 SIR2L6
+Q96G04	EF2KT_HUMAN	Protein-lysine N-methyltransferase EEF2KMT (EC 2.1.1.-) (eEF2-lysine methyltransferase) (eEF2-KMT)	EEF2KMT FAM86A SB153
+P40429	RL13A_HUMAN	60S ribosomal protein L13a (23 kDa highly basic protein) (Large ribosomal subunit protein uL13)	RPL13A
+P11940	PABP1_HUMAN	Polyadenylate-binding protein 1 (PABP-1) (Poly(A)-binding protein 1)	PABPC1 PAB1 PABP1 PABPC2
+Q96RG2	PASK_HUMAN	PAS domain-containing serine/threonine-protein kinase (PAS-kinase) (PASKIN) (hPASK) (EC 2.7.11.1)	PASK KIAA0135
+Q96AZ1	EFMT3_HUMAN	EEF1A lysine methyltransferase 3 (EC 2.1.1.-) (Hepatocellular carcinoma-associated antigen 557a) (Methyltransferase-like protein 21B) (Protein-lysine methyltransferase METTL21B)	EEF1AKMT3 FAM119B HCA557A METTL21B
+Q13283	G3BP1_HUMAN	Ras GTPase-activating protein-binding protein 1 (G3BP-1) (EC 3.6.4.12) (EC 3.6.4.13) (ATP-dependent DNA helicase VIII) (hDH VIII) (GAP SH3 domain-binding protein 1)	G3BP1 G3BP
+A9UHW6	MI4GD_HUMAN	MIF4G domain-containing protein (SLBP-interacting protein 1) (hSLIP1)	MIF4GD SLIP1
+P10275	ANDR_HUMAN	Androgen receptor (Dihydrotestosterone receptor) (Nuclear receptor subfamily 3 group C member 4)	AR DHTR NR3C4
+Q9BUB5	MKNK1_HUMAN	MAP kinase-interacting serine/threonine-protein kinase 1 (EC 2.7.11.1) (MAP kinase signal-integrating kinase 1) (MAPK signal-integrating kinase 1) (Mnk1)	MKNK1 MNK1
+P17252	KPCA_HUMAN	Protein kinase C alpha type (PKC-A) (PKC-alpha) (EC 2.7.11.13)	PRKCA PKCA PRKACA
+P06748	NPM_HUMAN	Nucleophosmin (NPM) (Nucleolar phosphoprotein B23) (Nucleolar protein NO38) (Numatrin)	NPM1 NPM
+P39023	RL3_HUMAN	60S ribosomal protein L3 (HIV-1 TAR RNA-binding protein B) (TARBP-B) (Large ribosomal subunit protein uL3)	RPL3 OK/SW-cl.32
+P15880	RS2_HUMAN	40S ribosomal protein S2 (40S ribosomal protein S4) (Protein LLRep3) (Small ribosomal subunit protein uS5)	RPS2 RPS4
+Q8IXJ6	SIR2_HUMAN	NAD-dependent protein deacetylase sirtuin-2 (EC 2.3.1.286) (Regulatory protein SIR2 homolog 2) (SIR2-like protein 2)	SIRT2 SIR2L SIR2L2
+P19338	NUCL_HUMAN	Nucleolin (Protein C23)	NCL
+Q16539	MK14_HUMAN	Mitogen-activated protein kinase 14 (MAP kinase 14) (MAPK 14) (EC 2.7.11.24) (Cytokine suppressive anti-inflammatory drug-binding protein) (CSAID-binding protein) (CSBP) (MAP kinase MXI2) (MAX-interacting protein 2) (Mitogen-activated protein kinase p38 alpha) (MAP kinase p38 alpha) (Stress-activated protein kinase 2a) (SAPK2a)	MAPK14 CSBP CSBP1 CSBP2 CSPB1 MXI2 SAPK2A
+Q15759	MK11_HUMAN	Mitogen-activated protein kinase 11 (MAP kinase 11) (MAPK 11) (EC 2.7.11.24) (Mitogen-activated protein kinase p38 beta) (MAP kinase p38 beta) (p38b) (Stress-activated protein kinase 2b) (SAPK2b) (p38-2)	MAPK11 PRKM11 SAPK2 SAPK2B
+P08729	K2C7_HUMAN	Keratin, type II cytoskeletal 7 (Cytokeratin-7) (CK-7) (Keratin-7) (K7) (Sarcolectin) (Type-II keratin Kb7)	KRT7 SCL
+Q14444	CAPR1_HUMAN	Caprin-1 (Cell cycle-associated protein 1) (Cytoplasmic activation- and proliferation-associated protein 1) (GPI-anchored membrane protein 1) (GPI-anchored protein p137) (GPI-p137) (p137GPI) (Membrane component chromosome 11 surface marker 1) (RNA granule protein 105)	CAPRIN1 GPIAP1 GPIP137 M11S1 RNG105
+Q13868	EXOS2_HUMAN	Exosome complex component RRP4 (Exosome component 2) (Ribosomal RNA-processing protein 4)	EXOSC2 RRP4
+P62487	RPB7_HUMAN	DNA-directed RNA polymerase II subunit RPB7 (RNA polymerase II subunit B7) (DNA-directed RNA polymerase II subunit G) (RNA polymerase II 19 kDa subunit) (RPB19)	POLR2G RPB7
+O15514	RPB4_HUMAN	DNA-directed RNA polymerase II subunit RPB4 (RNA polymerase II subunit B4) (DNA-directed RNA polymerase II subunit D) (RNA polymerase II 16 kDa subunit) (RPB16)	POLR2D
+Q7L5N1	CSN6_HUMAN	COP9 signalosome complex subunit 6 (SGN6) (Signalosome subunit 6) (JAB1-containing signalosome subunit 6) (MOV34 homolog) (Vpr-interacting protein) (hVIP)	COPS6 CSN6 HVIP
+O43583	DENR_HUMAN	Density-regulated protein (DRP) (Protein DRP1) (Smooth muscle cell-associated protein 3) (SMAP-3)	DENR DRP1 H14
+Q9UI30	TR112_HUMAN	Multifunctional methyltransferase subunit TRM112-like protein (tRNA methyltransferase 112 homolog)	TRMT112 AD-001 HSPC152 HSPC170
+Q5SWA1	PR15B_HUMAN	Protein phosphatase 1 regulatory subunit 15B	PPP1R15B
+Q99933	BAG1_HUMAN	BAG family molecular chaperone regulator 1 (BAG-1) (Bcl-2-associated athanogene 1)	BAG1 HAP
+Q06265	EXOS9_HUMAN	Exosome complex component RRP45 (Autoantigen PM/Scl 1) (Exosome component 9) (P75 polymyositis-scleroderma overlap syndrome-associated autoantigen) (Polymyositis/scleroderma autoantigen 1) (Polymyositis/scleroderma autoantigen 75 kDa) (PM/Scl-75)	EXOSC9 PMSCL1
+Q9Y3B2	EXOS1_HUMAN	Exosome complex component CSL4 (Exosome component 1)	EXOSC1 CSL4 CGI-108
+Q9NPD3	EXOS4_HUMAN	Exosome complex component RRP41 (Exosome component 4) (Ribosomal RNA-processing protein 41) (p12A)	EXOSC4 RRP41 SKI6
+Q9BU89	DOHH_HUMAN	Deoxyhypusine hydroxylase (hDOHH) (EC 1.14.99.29) (Deoxyhypusine dioxygenase) (Deoxyhypusine monooxygenase) (HEAT-like repeat-containing protein 1)	DOHH HLRC1
+Q9HAV4	XPO5_HUMAN	Exportin-5 (Exp5) (Ran-binding protein 21)	XPO5 KIAA1291 RANBP21
+Q96QD8	S38A2_HUMAN	Sodium-coupled neutral amino acid transporter 2 (Amino acid transporter A2) (Protein 40-9-1) (Solute carrier family 38 member 2) (System A amino acid transporter 2) (System A transporter 1) (System N amino acid transporter 2)	SLC38A2 ATA2 KIAA1382 SAT2 SNAT2
+Q5RKV6	EXOS6_HUMAN	Exosome complex component MTR3 (Exosome component 6) (mRNA transport regulator 3 homolog) (hMtr3) (p11)	EXOSC6 MTR3
+P68431	H31_HUMAN	Histone H3.1 (Histone H3/a) (Histone H3/b) (Histone H3/c) (Histone H3/d) (Histone H3/f) (Histone H3/h) (Histone H3/i) (Histone H3/j) (Histone H3/k) (Histone H3/l)	H3C1 H3FA HIST1H3A; H3C2 H3FL HIST1H3B; H3C3 H3FC HIST1H3C; H3C4 H3FB HIST1H3D; H3C6 H3FD HIST1H3E; H3C7 H3FI HIST1H3F; H3C8 H3FH HIST1H3G; H3C10 H3FK HIST1H3H; H3C11 H3FF HIST1H3I; H3C12 H3FJ HIST1H3J
+Q9NQT4	EXOS5_HUMAN	Exosome complex component RRP46 (Chronic myelogenous leukemia tumor antigen 28) (Exosome component 5) (Ribosomal RNA-processing protein 46) (p12B)	EXOSC5 CML28 RRP46
+Q15024	EXOS7_HUMAN	Exosome complex component RRP42 (Exosome component 7) (Ribosomal RNA-processing protein 42) (p8)	EXOSC7 KIAA0116 RRP42
+P19440	GGT1_HUMAN	Glutathione hydrolase 1 proenzyme (EC 3.4.19.13) (Gamma-glutamyltransferase 1) (Gamma-glutamyltranspeptidase 1) (GGT 1) (EC 2.3.2.2) (Leukotriene-C4 hydrolase) (EC 3.4.19.14) (CD antigen CD224) [Cleaved into: Glutathione hydrolase 1 heavy chain; Glutathione hydrolase 1 light chain]	GGT1 GGT
+Q96B26	EXOS8_HUMAN	Exosome complex component RRP43 (Exosome component 8) (Opa-interacting protein 2) (OIP-2) (Ribosomal RNA-processing protein 43) (p9)	EXOSC8 OIP2 RRP43
+Q9NQT5	EXOS3_HUMAN	Exosome complex component RRP40 (Exosome component 3) (Ribosomal RNA-processing protein 40) (p10)	EXOSC3 RRP40 CGI-102
+P62136	PP1A_HUMAN	Serine/threonine-protein phosphatase PP1-alpha catalytic subunit (PP-1A) (EC 3.1.3.16)	PPP1CA PPP1A
+P0DPD7	EFMT4_HUMAN	EEF1A lysine methyltransferase 4 (EC 2.1.1.-)	EEF1AKMT4
+P84098	RL19_HUMAN	60S ribosomal protein L19 (Large ribosomal subunit protein eL19)	RPL19
+Q9Y450	HBS1L_HUMAN	HBS1-like protein (ERFS)	HBS1L HBS1 KIAA1038
+O75794	CD123_HUMAN	Cell division cycle protein 123 homolog (Protein D123) (HT-1080) (PZ32)	CDC123 C10orf7 D123

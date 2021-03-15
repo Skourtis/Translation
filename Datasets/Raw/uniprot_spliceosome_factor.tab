@@ -1,0 +1,357 @@
+Entry	Entry name	Protein names	Gene names
+O75934	SPF27_HUMAN	Pre-mRNA-splicing factor SPF27 (Breast carcinoma-amplified sequence 2) (DNA amplified in mammary carcinoma 1 protein) (Spliceosome-associated protein SPF 27)	BCAS2 DAM1
+Q15393	SF3B3_HUMAN	Splicing factor 3B subunit 3 (Pre-mRNA-splicing factor SF3b 130 kDa subunit) (SF3b130) (STAF130) (Spliceosome-associated protein 130) (SAP 130)	SF3B3 KIAA0017 SAP130
+Q12874	SF3A3_HUMAN	Splicing factor 3A subunit 3 (SF3a60) (Spliceosome-associated protein 61) (SAP 61)	SF3A3 SAP61
+Q15428	SF3A2_HUMAN	Splicing factor 3A subunit 2 (SF3a66) (Spliceosome-associated protein 62) (SAP 62)	SF3A2 SAP62
+Q15459	SF3A1_HUMAN	Splicing factor 3A subunit 1 (SF3a120) (Spliceosome-associated protein 114) (SAP 114)	SF3A1 SAP114
+Q6UX04	CWC27_HUMAN	Spliceosome-associated protein CWC27 homolog (Antigen NY-CO-10) (Probable inactive peptidyl-prolyl cis-trans isomerase CWC27 homolog) (PPIase CWC27) (Serologically defined colon cancer antigen 10)	CWC27 SDCCAG10 UNQ438/PRO871
+Q13435	SF3B2_HUMAN	Splicing factor 3B subunit 2 (Pre-mRNA-splicing factor SF3b 145 kDa subunit) (SF3b145) (Spliceosome-associated protein 145) (SAP 145)	SF3B2 SAP145
+Q9P013	CWC15_HUMAN	Spliceosome-associated protein CWC15 homolog	CWC15 C11orf5 AD-002 HSPC148
+O75533	SF3B1_HUMAN	Splicing factor 3B subunit 1 (Pre-mRNA-splicing factor SF3b 155 kDa subunit) (SF3b155) (Spliceosome-associated protein 155) (SAP 155)	SF3B1 SAP155
+Q15427	SF3B4_HUMAN	Splicing factor 3B subunit 4 (Pre-mRNA-splicing factor SF3b 49 kDa subunit) (Spliceosome-associated protein 49) (SAP 49)	SF3B4 SAP49
+Q9Y3B4	SF3B6_HUMAN	Splicing factor 3B subunit 6 (Pre-mRNA branch site protein p14) (SF3b 14 kDa subunit) (SF3B14a) (Spliceosome-associated protein, 14-kDa) (Splicing factor 3b, subunit 6, 14kDa)	SF3B6 SAP14 SF3B14 SF3B14A CGI-110 HSPC175 HT006
+P55081	MFAP1_HUMAN	Microfibrillar-associated protein 1 (Spliceosome B complex protein MFAP1)	MFAP1
+Q13838	DX39B_HUMAN	Spliceosome RNA helicase DDX39B (EC 3.6.4.13) (56 kDa U2AF65-associated protein) (ATP-dependent RNA helicase p47) (DEAD box protein UAP56) (HLA-B-associated transcript 1 protein)	DDX39B BAT1 UAP56
+Q9NXE8	CWC25_HUMAN	Pre-mRNA-splicing factor CWC25 homolog (Coiled-coil domain-containing protein 49) (Spliceosome-associated protein homolog CWC25)	CWC25 CCDC49
+Q96BP3	PPWD1_HUMAN	Peptidylprolyl isomerase domain and WD repeat-containing protein 1 (EC 5.2.1.8) (Spliceosome-associated cyclophilin)	PPWD1 KIAA0073
+Q13769	THOC5_HUMAN	THO complex subunit 5 homolog (Functional spliceosome-associated protein 79) (fSAP79) (NF2/meningioma region protein pK1.3) (Placental protein 39.2) (PP39.2) (hTREX90)	THOC5 C22orf19 KIAA0983
+Q86W42	THOC6_HUMAN	THO complex subunit 6 homolog (Functional spliceosome-associated protein 35) (fSAP35) (WD repeat-containing protein 58)	THOC6 WDR58 PSEC0006
+Q6I9Y2	THOC7_HUMAN	THO complex subunit 7 homolog (Functional spliceosome-associated protein 24) (fSAP24) (Ngg1-interacting factor 3-like protein 1-binding protein 1) (NIF3L1-binding protein 1) (hTREX30)	THOC7 NIF3L1BP1
+Q6P2Q9	PRP8_HUMAN	Pre-mRNA-processing-splicing factor 8 (220 kDa U5 snRNP-specific protein) (PRP8 homolog) (Splicing factor Prp8) (p220)	PRPF8 PRPC8
+O75643	U520_HUMAN	U5 small nuclear ribonucleoprotein 200 kDa helicase (EC 3.6.4.13) (Activating signal cointegrator 1 complex subunit 3-like 1) (BRR2 homolog) (U5 snRNP-specific 200 kDa protein) (U5-200KD)	SNRNP200 ASCC3L1 HELIC2 KIAA0788
+P09661	RU2A_HUMAN	U2 small nuclear ribonucleoprotein A' (U2 snRNP A')	SNRPA1
+Q9UMS4	PRP19_HUMAN	Pre-mRNA-processing factor 19 (EC 2.3.2.27) (Nuclear matrix protein 200) (PRP19/PSO4 homolog) (hPso4) (RING-type E3 ubiquitin transferase PRP19) (Senescence evasion factor)	PRPF19 NMP200 PRP19 SNEV
+Q96DI7	SNR40_HUMAN	U5 small nuclear ribonucleoprotein 40 kDa protein (U5 snRNP 40 kDa protein) (U5-40K) (38 kDa-splicing factor) (Prp8-binding protein) (hPRP8BP) (U5 snRNP-specific 40 kDa protein) (WD repeat-containing protein 57)	SNRNP40 PRP8BP SFP38 WDR57
+P62304	RUXE_HUMAN	Small nuclear ribonucleoprotein E (snRNP-E) (Sm protein E) (Sm-E) (SmE)	SNRPE
+Q9HCG8	CWC22_HUMAN	Pre-mRNA-splicing factor CWC22 homolog (Nucampholin homolog) (fSAPb)	CWC22 KIAA1604 NCM
+P62318	SMD3_HUMAN	Small nuclear ribonucleoprotein Sm D3 (Sm-D3) (snRNP core protein D3)	SNRPD3
+Q6NWY9	PR40B_HUMAN	Pre-mRNA-processing factor 40 homolog B (Huntingtin yeast partner C) (Huntingtin-interacting protein C)	PRPF40B HYPC
+P57723	PCBP4_HUMAN	Poly(rC)-binding protein 4 (Alpha-CP4)	PCBP4
+Q9UKM9	RALY_HUMAN	RNA-binding protein Raly (Autoantigen p542) (Heterogeneous nuclear ribonucleoprotein C-like 2) (hnRNP core protein C-like 2) (hnRNP associated with lethal yellow protein homolog)	RALY HNRPCL2 P542
+Q13151	ROA0_HUMAN	Heterogeneous nuclear ribonucleoprotein A0 (hnRNP A0)	HNRNPA0 HNRPA0
+Q9Y3C6	PPIL1_HUMAN	Peptidyl-prolyl cis-trans isomerase-like 1 (PPIase) (EC 5.2.1.8) (Rotamase PPIL1)	PPIL1 CYPL1 CGI-124 UNQ2425/PRO4984
+Q9NWB1	RFOX1_HUMAN	RNA binding protein fox-1 homolog 1 (Ataxin-2-binding protein 1) (Fox-1 homolog A) (Hexaribonucleotide-binding protein 1)	RBFOX1 A2BP A2BP1 FOX1 HRNBP1
+Q9BZI7	REN3B_HUMAN	Regulator of nonsense transcripts 3B (Nonsense mRNA reducing factor 3B) (Up-frameshift suppressor 3 homolog B) (hUpf3B) (Up-frameshift suppressor 3 homolog on chromosome X) (hUpf3p-X)	UPF3B RENT3B UPF3X
+P14678	RSMB_HUMAN	Small nuclear ribonucleoprotein-associated proteins B and B' (snRNP-B) (Sm protein B/B') (Sm-B/B') (SmB/B')	SNRPB COD SNRPB1
+Q13123	RED_HUMAN	Protein Red (Cytokine IK) (IK factor) (Protein RER)	IK RED RER
+O15514	RPB4_HUMAN	DNA-directed RNA polymerase II subunit RPB4 (RNA polymerase II subunit B4) (DNA-directed RNA polymerase II subunit D) (RNA polymerase II 16 kDa subunit) (RPB16)	POLR2D
+O60828	PQBP1_HUMAN	Polyglutamine-binding protein 1 (PQBP-1) (38 kDa nuclear protein containing a WW domain) (Npw38) (Polyglutamine tract-binding protein 1)	PQBP1 NPW38 JM26
+Q15415	RBY1F_HUMAN	RNA-binding motif protein, Y chromosome, family 1 member F/J (Y chromosome RNA recognition motif 2)	RBMY1F YRRM2; RBMY1J
+Q99633	PRP18_HUMAN	Pre-mRNA-splicing factor 18 (PRP18 homolog) (hPRP18)	PRPF18 HPRP18
+A6NFN3	RFOX3_HUMAN	RNA binding protein fox-1 homolog 3 (Fox-1 homolog C) (Neuronal nuclei antigen) (NeuN antigen)	RBFOX3
+O43660	PLRG1_HUMAN	Pleiotropic regulator 1	PLRG1
+Q9NW64	RBM22_HUMAN	Pre-mRNA-splicing factor RBM22 (RNA-binding motif protein 22) (Zinc finger CCCH domain-containing protein 16)	RBM22 ZC3H16 199G4
+P36954	RPB9_HUMAN	DNA-directed RNA polymerase II subunit RPB9 (RNA polymerase II subunit B9) (DNA-directed RNA polymerase II subunit I) (RNA polymerase II 14.5 kDa subunit) (RPB14.5)	POLR2I
+Q6UN15	FIP1_HUMAN	Pre-mRNA 3'-end-processing factor FIP1 (hFip1) (FIP1-like 1 protein) (Factor interacting with PAP) (Rearranged in hypereosinophilia)	FIP1L1 FIP1 RHE
+Q92917	GPKOW_HUMAN	G-patch domain and KOW motifs-containing protein (G-patch domain-containing protein 5) (Protein MOS2 homolog) (Protein T54)	GPKOW GPATC5 GPATCH5 T54
+P52948	NUP98_HUMAN	Nuclear pore complex protein Nup98-Nup96 (EC 3.4.21.-) [Cleaved into: Nuclear pore complex protein Nup98 (98 kDa nucleoporin) (Nucleoporin Nup98) (Nup98); Nuclear pore complex protein Nup96 (96 kDa nucleoporin) (Nucleoporin Nup96) (Nup96)]	NUP98 ADAR2
+O95758	PTBP3_HUMAN	Polypyrimidine tract-binding protein 3 (Regulator of differentiation 1) (Rod1)	PTBP3 ROD1
+Q9H307	PININ_HUMAN	Pinin (140 kDa nuclear and cell adhesion-related phosphoprotein) (Desmosome-associated protein) (Domain-rich serine protein) (DRS protein) (DRSP) (Melanoma metastasis clone A protein) (Nuclear protein SDK3) (SR-like protein)	PNN DRS MEMA
+O60508	PRP17_HUMAN	Pre-mRNA-processing factor 17 (Cell division cycle 40 homolog) (EH-binding protein 3) (Ehb3) (PRP17 homolog) (hPRP17)	CDC40 EHB3 PRP17 PRPF17
+Q8IWZ8	SUGP1_HUMAN	SURP and G-patch domain-containing protein 1 (RNA-binding protein RBP) (Splicing factor 4)	SUGP1 SF4
+P35269	T2FA_HUMAN	General transcription factor IIF subunit 1 (General transcription factor IIF 74 kDa subunit) (Transcription initiation factor IIF subunit alpha) (TFIIF-alpha) (Transcription initiation factor RAP74)	GTF2F1 RAP74
+Q9BQ04	RBM4B_HUMAN	RNA-binding protein 4B (RNA-binding motif protein 30) (RNA-binding motif protein 4B) (RNA-binding protein 30)	RBM4B RBM30
+Q6ZMH5	S39A5_HUMAN	Zinc transporter ZIP5 (Solute carrier family 39 member 5) (Zrt- and Irt-like protein 5) (ZIP-5)	SLC39A5 ZIP5
+A7MD48	SRRM4_HUMAN	Serine/arginine repetitive matrix protein 4 (Medulloblastoma antigen MU-MB-2.76) (Neural-specific serine/arginine repetitive splicing factor of 100 kDa) (Neural-specific SR-related protein of 100 kDa) (nSR100)	SRRM4 KIAA1853
+Q9BWF3	RBM4_HUMAN	RNA-binding protein 4 (Lark homolog) (hLark) (RNA-binding motif protein 4) (RNA-binding motif protein 4a)	RBM4 RBM4A
+P62306	RUXF_HUMAN	Small nuclear ribonucleoprotein F (snRNP-F) (Sm protein F) (Sm-F) (SmF)	SNRPF PBSCF
+Q9BWG6	SCNM1_HUMAN	Sodium channel modifier 1	SCNM1
+Q8WVK2	SNR27_HUMAN	U4/U6.U5 small nuclear ribonucleoprotein 27 kDa protein (U4/U6.U5 snRNP 27 kDa protein) (U4/U6.U5-27K) (Nucleic acid-binding protein RY-1) (U4/U6.U5 tri-snRNP-associated 27 kDa protein) (27K) (U4/U6.U5 tri-snRNP-associated protein 3)	SNRNP27
+Q2TAY7	SMU1_HUMAN	WD40 repeat-containing protein SMU1 (Smu-1 suppressor of mec-8 and unc-52 protein homolog) [Cleaved into: WD40 repeat-containing protein SMU1, N-terminally processed]	SMU1
+Q08170	SRSF4_HUMAN	Serine/arginine-rich splicing factor 4 (Pre-mRNA-splicing factor SRP75) (SRP001LB) (Splicing factor, arginine/serine-rich 4)	SRSF4 SFRS4 SRP75
+A6NDE4	RBY1B_HUMAN	RNA-binding motif protein, Y chromosome, family 1 member B	RBMY1B
+O95391	SLU7_HUMAN	Pre-mRNA-splicing factor SLU7 (hSlu7)	SLU7
+Q9BXP5	SRRT_HUMAN	Serrate RNA effector molecule homolog (Arsenite-resistance protein 2)	SRRT ARS2 ASR2
+Q9HCS7	SYF1_HUMAN	Pre-mRNA-splicing factor SYF1 (Protein HCNP) (XPA-binding protein 2)	XAB2 HCNP KIAA1177 SYF1 PP3898
+O75400	PR40A_HUMAN	Pre-mRNA-processing factor 40 homolog A (Fas ligand-associated factor 1) (Formin-binding protein 11) (Formin-binding protein 3) (Huntingtin yeast partner A) (Huntingtin-interacting protein 10) (HIP-10) (Huntingtin-interacting protein A) (Renal carcinoma antigen NY-REN-6)	PRPF40A FBP11 FLAF1 FNBP3 HIP10 HYPA HSPC225
+Q8NAV1	PR38A_HUMAN	Pre-mRNA-splicing factor 38A	PRPF38A
+P22626	ROA2_HUMAN	Heterogeneous nuclear ribonucleoproteins A2/B1 (hnRNP A2/B1)	HNRNPA2B1 HNRPA2B1
+P19388	RPAB1_HUMAN	DNA-directed RNA polymerases I, II, and III subunit RPABC1 (RNA polymerases I, II, and III subunit ABC1) (DNA-directed RNA polymerase II 23 kDa polypeptide) (DNA-directed RNA polymerase II subunit E) (RPB5 homolog) (XAP4)	POLR2E
+Q9Y5S9	RBM8A_HUMAN	RNA-binding protein 8A (Binder of OVCA1-1) (BOV-1) (RNA-binding motif protein 8A) (RNA-binding protein Y14) (Ribonucleoprotein RBM8A)	RBM8A RBM8 HSPC114 MDS014
+Q6IEG0	SNR48_HUMAN	U11/U12 small nuclear ribonucleoprotein 48 kDa protein (U11/U12 snRNP 48 kDa protein) (U11/U12-48K)	SNRNP48 C6orf151
+P78332	RBM6_HUMAN	RNA-binding protein 6 (Lung cancer antigen NY-LU-12) (Protein G16) (RNA-binding motif protein 6) (RNA-binding protein DEF-3)	RBM6 DEF3
+P98179	RBM3_HUMAN	RNA-binding protein 3 (RNA-binding motif protein 3) (RNPL)	RBM3 RNPL
+O43251	RFOX2_HUMAN	RNA binding protein fox-1 homolog 2 (Fox-1 homolog B) (Hexaribonucleotide-binding protein 2) (RNA-binding motif protein 9) (RNA-binding protein 9) (Repressor of tamoxifen transcriptional activity)	RBFOX2 FOX2 HRNBP2 RBM9 RTA
+Q96I25	SPF45_HUMAN	Splicing factor 45 (45 kDa-splicing factor) (RNA-binding motif protein 17)	RBM17 SPF45
+P30041	PRDX6_HUMAN	Peroxiredoxin-6 (EC 1.11.1.27) (1-Cys peroxiredoxin) (1-Cys PRX) (24 kDa protein) (Acidic calcium-independent phospholipase A2) (aiPLA2) (EC 3.1.1.4) (Antioxidant protein 2) (Glutathione-dependent peroxiredoxin) (Liver 2D page spot 40) (Lysophosphatidylcholine acyltransferase 5) (LPC acyltransferase 5) (LPCAT-5) (Lyso-PC acyltransferase 5) (EC 2.3.1.23) (Non-selenium glutathione peroxidase) (NSGPx) (Red blood cells page spot 12)	PRDX6 AOP2 KIAA0106
+Q13573	SNW1_HUMAN	SNW domain-containing protein 1 (Nuclear protein SkiP) (Nuclear receptor coactivator NCoA-62) (Ski-interacting protein)	SNW1 SKIIP SKIP
+O43395	PRPF3_HUMAN	U4/U6 small nuclear ribonucleoprotein Prp3 (Pre-mRNA-splicing factor 3) (hPrp3) (U4/U6 snRNP 90 kDa protein)	PRPF3 HPRP3 PRP3
+O75494	SRS10_HUMAN	Serine/arginine-rich splicing factor 10 (40 kDa SR-repressor protein) (SRrp40) (FUS-interacting serine-arginine-rich protein 1) (Splicing factor SRp38) (Splicing factor, arginine/serine-rich 13A) (TLS-associated protein with Ser-Arg repeats) (TASR) (TLS-associated protein with SR repeats) (TLS-associated serine-arginine protein) (TLS-associated SR protein)	SRSF10 FUSIP1 FUSIP2 SFRS13A TASR
+P09234	RU1C_HUMAN	U1 small nuclear ribonucleoprotein C (U1 snRNP C) (U1-C) (U1C)	SNRPC
+Q13247	SRSF6_HUMAN	Serine/arginine-rich splicing factor 6 (Pre-mRNA-splicing factor SRP55) (Splicing factor, arginine/serine-rich 6)	SRSF6 SFRS6 SRP55
+Q9NX01	TXN4B_HUMAN	Thioredoxin-like protein 4B (Dim1-like protein)	TXNL4B DIM2 DLP
+Q96IZ7	RSRC1_HUMAN	Serine/Arginine-related protein 53 (SRrp53) (Arginine/serine-rich coiled-coil protein 1)	RSRC1 SRRP53 BM-011
+P08579	RU2B_HUMAN	U2 small nuclear ribonucleoprotein B'' (U2 snRNP B'')	SNRPB2
+O00422	SAP18_HUMAN	Histone deacetylase complex subunit SAP18 (18 kDa Sin3-associated polypeptide) (2HOR0202) (Cell growth-inhibiting gene 38 protein) (Sin3-associated polypeptide p18)	SAP18 GIG38
+Q8IYB3	SRRM1_HUMAN	Serine/arginine repetitive matrix protein 1 (SR-related nuclear matrix protein of 160 kDa) (SRm160) (Ser/Arg-related nuclear matrix protein)	SRRM1 SRM160
+Q13243	SRSF5_HUMAN	Serine/arginine-rich splicing factor 5 (Delayed-early protein HRS) (Pre-mRNA-splicing factor SRP40) (Splicing factor, arginine/serine-rich 5)	SRSF5 HRS SFRS5 SRP40
+Q92733	PRCC_HUMAN	Proline-rich protein PRCC (Papillary renal cell carcinoma translocation-associated gene protein)	PRCC TPRC
+O94906	PRP6_HUMAN	Pre-mRNA-processing factor 6 (Androgen receptor N-terminal domain-transactivating protein 1) (ANT-1) (PRP6 homolog) (U5 snRNP-associated 102 kDa protein) (U5-102 kDa protein)	PRPF6 C20orf14
+O43290	SNUT1_HUMAN	U4/U6.U5 tri-snRNP-associated protein 1 (SNU66 homolog) (hSnu66) (Squamous cell carcinoma antigen recognized by T-cells 1) (SART-1) (hSART-1) (U4/U6.U5 tri-snRNP-associated 110 kDa protein) (allergen Hom s 1)	SART1
+P98175	RBM10_HUMAN	RNA-binding protein 10 (G patch domain-containing protein 9) (RNA-binding motif protein 10) (RNA-binding protein S1-1) (S1-1)	RBM10 DXS8237E GPATC9 GPATCH9 KIAA0122
+P52434	RPAB3_HUMAN	DNA-directed RNA polymerases I, II, and III subunit RPABC3 (RNA polymerases I, II, and III subunit ABC3) (DNA-directed RNA polymerase II subunit H) (DNA-directed RNA polymerases I, II, and III 17.1 kDa polypeptide) (RPB17) (RPB8 homolog) (hRPB8)	POLR2H
+Q9NW13	RBM28_HUMAN	RNA-binding protein 28 (RNA-binding motif protein 28)	RBM28
+P84103	SRSF3_HUMAN	Serine/arginine-rich splicing factor 3 (Pre-mRNA-splicing factor SRP20) (Splicing factor, arginine/serine-rich 3)	SRSF3 SFRS3 SRP20
+Q8NDT2	RB15B_HUMAN	Putative RNA-binding protein 15B (One-twenty two protein 3) (HsOTT3) (HuOTT3) (RNA-binding motif protein 15B)	RBM15B OTT3
+Q12972	PP1R8_HUMAN	Nuclear inhibitor of protein phosphatase 1 (NIPP-1) (Protein phosphatase 1 regulatory inhibitor subunit 8) [Includes: Activator of RNA decay (EC 3.1.4.-) (ARD-1)]	PPP1R8 ARD1 NIPP1
+P26368	U2AF2_HUMAN	Splicing factor U2AF 65 kDa subunit (U2 auxiliary factor 65 kDa subunit) (hU2AF(65)) (hU2AF65) (U2 snRNP auxiliary factor large subunit)	U2AF2 U2AF65
+O43447	PPIH_HUMAN	Peptidyl-prolyl cis-trans isomerase H (PPIase H) (EC 5.2.1.8) (Rotamase H) (Small nuclear ribonucleoprotein particle-specific cyclophilin H) (CypH) (U-snRNP-associated cyclophilin SnuCyp-20) (USA-CYP)	PPIH CYP20 CYPH
+Q53GS9	SNUT2_HUMAN	U4/U6.U5 tri-snRNP-associated protein 2 (Inactive ubiquitin-specific peptidase 39) (SAD1 homolog) (U4/U6.U5 tri-snRNP-associated 65 kDa protein) (65K)	USP39 CGI-21 HSPC332 PRO2855
+Q8IWL8	STH_HUMAN	Saitohin	STH
+Q5VZF2	MBNL2_HUMAN	Muscleblind-like protein 2 (Muscleblind-like protein 1) (Muscleblind-like protein-like) (Muscleblind-like protein-like 39)	MBNL2 MBLL MBLL39 MLP1
+O75526	RMXL2_HUMAN	RNA-binding motif protein, X-linked-like-2 (Testis-specific heterogeneous nuclear ribonucleoprotein G-T) (hnRNP G-T)	RBMXL2 HNRNPGT
+Q16560	U1SBP_HUMAN	U11/U12 small nuclear ribonucleoprotein 35 kDa protein (U11/U12 snRNP 35 kDa protein) (U11/U12-35K) (Protein HM-1) (U1 snRNP-binding protein homolog)	SNRNP35 HM1 U1SNRNPBP
+Q96LT9	RNPC3_HUMAN	RNA-binding region-containing protein 3 (RNA-binding motif protein 40) (RNA-binding protein 40) (U11/U12 small nuclear ribonucleoprotein 65 kDa protein) (U11/U12 snRNP 65 kDa protein) (U11/U12-65K)	RNPC3 KIAA1839 RBM40 RNP SNRNP65
+O15042	SR140_HUMAN	U2 snRNP-associated SURP motif-containing protein (140 kDa Ser/Arg-rich domain protein) (U2-associated protein SR140)	U2SURP KIAA0332 SR140
+Q9BTD8	RBM42_HUMAN	RNA-binding protein 42 (RNA-binding motif protein 42)	RBM42
+Q8TAD8	SNIP1_HUMAN	Smad nuclear-interacting protein 1 (FHA domain-containing protein SNIP1)	SNIP1
+Q9Y388	RBMX2_HUMAN	RNA-binding motif protein, X-linked 2	RBMX2 CGI-79
+Q9BX46	RBM24_HUMAN	RNA-binding protein 24 (RNA-binding motif protein 24) (RNA-binding region-containing protein 6)	RBM24 RNPC6
+Q16637	SMN_HUMAN	Survival motor neuron protein (Component of gems 1) (Gemin-1)	SMN1 SMN SMNT; SMN2 SMNC
+Q13242	SRSF9_HUMAN	Serine/arginine-rich splicing factor 9 (Pre-mRNA-splicing factor SRp30C) (Splicing factor, arginine/serine-rich 9)	SRSF9 SFRS9 SRP30C
+P09651	ROA1_HUMAN	Heterogeneous nuclear ribonucleoprotein A1 (hnRNP A1) (Helix-destabilizing protein) (Single-strand RNA-binding protein) (hnRNP core protein A1) [Cleaved into: Heterogeneous nuclear ribonucleoprotein A1, N-terminally processed]	HNRNPA1 HNRPA1
+Q9BWJ5	SF3B5_HUMAN	Splicing factor 3B subunit 5 (SF3b5) (Pre-mRNA-splicing factor SF3b 10 kDa subunit)	SF3B5 SF3B10
+P62314	SMD1_HUMAN	Small nuclear ribonucleoprotein Sm D1 (Sm-D1) (Sm-D autoantigen) (snRNP core protein D1)	SNRPD1
+P78362	SRPK2_HUMAN	SRSF protein kinase 2 (EC 2.7.11.1) (SFRS protein kinase 2) (Serine/arginine-rich protein-specific kinase 2) (SR-protein-specific kinase 2) [Cleaved into: SRSF protein kinase 2 N-terminal; SRSF protein kinase 2 C-terminal]	SRPK2
+Q8WXA9	SREK1_HUMAN	Splicing regulatory glutamine/lysine-rich protein 1 (Serine/arginine-rich-splicing regulatory protein 86) (SRrp86) (Splicing factor, arginine/serine-rich 12) (Splicing regulatory protein 508) (SRrp508)	SREK1 SFRS12 SRRP86
+Q16629	SRSF7_HUMAN	Serine/arginine-rich splicing factor 7 (Splicing factor 9G8) (Splicing factor, arginine/serine-rich 7)	SRSF7 SFRS7
+P62487	RPB7_HUMAN	DNA-directed RNA polymerase II subunit RPB7 (RNA polymerase II subunit B7) (DNA-directed RNA polymerase II subunit G) (RNA polymerase II 19 kDa subunit) (RPB19)	POLR2G RPB7
+P19387	RPB3_HUMAN	DNA-directed RNA polymerase II subunit RPB3 (RNA polymerase II subunit 3) (RNA polymerase II subunit B3) (DNA-directed RNA polymerase II 33 kDa polypeptide) (RPB33) (DNA-directed RNA polymerase II subunit C) (RPB31)	POLR2C A-152E5.7
+Q9Y3F4	STRAP_HUMAN	Serine-threonine kinase receptor-associated protein (MAP activator with WD repeats) (UNR-interacting protein) (WD-40 repeat protein PT-WD)	STRAP MAWD UNRIP
+O75940	SPF30_HUMAN	Survival of motor neuron-related-splicing factor 30 (30 kDa splicing factor SMNrp) (SMN-related protein) (Survival motor neuron domain-containing protein 1)	SMNDC1 SMNR SPF30
+Q13127	REST_HUMAN	RE1-silencing transcription factor (Neural-restrictive silencer factor) (X2 box repressor)	REST NRSF XBR
+P61218	RPAB2_HUMAN	DNA-directed RNA polymerases I, II, and III subunit RPABC2 (RNA polymerases I, II, and III subunit ABC2) (DNA-directed RNA polymerase II subunit F) (DNA-directed RNA polymerases I, II, and III 14.4 kDa polypeptide) (RPABC14.4) (RPB14.4) (RPB6 homolog) (RPC15)	POLR2F POLRF
+P30876	RPB2_HUMAN	DNA-directed RNA polymerase II subunit RPB2 (EC 2.7.7.6) (DNA-directed RNA polymerase II 140 kDa polypeptide) (DNA-directed RNA polymerase II subunit B) (RNA polymerase II subunit 2) (RNA polymerase II subunit B2)	POLR2B
+Q15020	SART3_HUMAN	Squamous cell carcinoma antigen recognized by T-cells 3 (SART-3) (Tat-interacting protein of 110 kDa) (Tip110) (p110 nuclear RNA-binding protein)	SART3 KIAA0156 TIP110
+Q9BV90	SNR25_HUMAN	U11/U12 small nuclear ribonucleoprotein 25 kDa protein (U11/U12 snRNP 25 kDa protein) (U11/U12-25K) (Minus-99 protein)	SNRNP25 C16orf33
+P62308	RUXG_HUMAN	Small nuclear ribonucleoprotein G (snRNP-G) (Sm protein G) (Sm-G) (SmG)	SNRPG PBSCG
+A8MWD9	RUXGL_HUMAN	Putative small nuclear ribonucleoprotein G-like protein 15	SNRPGP15
+Q8WWY3	PRP31_HUMAN	U4/U6 small nuclear ribonucleoprotein Prp31 (Pre-mRNA-processing factor 31) (Serologically defined breast cancer antigen NY-BR-99) (U4/U6 snRNP 61 kDa protein) (Protein 61K) (hPrp31)	PRPF31 PRP31
+P52435	RPB11_HUMAN	DNA-directed RNA polymerase II subunit RPB11-a (RNA polymerase II subunit B11-a) (RPB11a) (DNA-directed RNA polymerase II subunit J-1) (RNA polymerase II 13.3 kDa subunit)	POLR2J POLR2J1
+Q9UQ35	SRRM2_HUMAN	Serine/arginine repetitive matrix protein 2 (300 kDa nuclear matrix antigen) (Serine/arginine-rich splicing factor-related nuclear matrix protein of 300 kDa) (SR-related nuclear matrix protein of 300 kDa) (Ser/Arg-related nuclear matrix protein of 300 kDa) (Splicing coactivator subunit SRm300) (Tax-responsive enhancer element-binding protein 803) (TaxREB803)	SRRM2 KIAA0324 SRL300 SRM300 HSPC075
+Q9BRL6	SRSF8_HUMAN	Serine/arginine-rich splicing factor 8 (Pre-mRNA-splicing factor SRP46) (Splicing factor SRp46) (Splicing factor, arginine/serine-rich 2B)	SRSF8 SFRS2B SRP46
+O15541	R113A_HUMAN	E3 ubiquitin-protein ligase RNF113A (EC 2.3.2.27) (Cwc24 homolog) (RING finger protein 113A) (Zinc finger protein 183)	RNF113A RNF113 ZNF183
+P09012	SNRPA_HUMAN	U1 small nuclear ribonucleoprotein A (U1 snRNP A) (U1-A) (U1A)	SNRPA
+Q86V81	THOC4_HUMAN	THO complex subunit 4 (Tho4) (Ally of AML-1 and LEF-1) (Aly/REF export factor) (Transcriptional coactivator Aly/REF) (bZIP-enhancing factor BEF)	ALYREF ALY BEF THOC4
+P0DN76	U2AF5_HUMAN	Splicing factor U2AF 35 kDa subunit-like protein (U2 small nuclear RNA auxiliary factor 1-like protein 5)	U2AF1L5
+O95926	SYF2_HUMAN	Pre-mRNA-splicing factor SYF2 (CCNDBP1-interactor) (p29)	SYF2 CBPIN GCIPIP
+P62316	SMD2_HUMAN	Small nuclear ribonucleoprotein Sm D2 (Sm-D2) (snRNP core protein D2)	SNRPD2 SNRPD1
+P83876	TXN4A_HUMAN	Thioredoxin-like protein 4A (DIM1 protein homolog) (Spliceosomal U5 snRNP-specific 15 kDa protein) (Thioredoxin-like U5 snRNP protein U5-15kD)	TXNL4A DIM1 TXNL4
+P62875	RPAB5_HUMAN	DNA-directed RNA polymerases I, II, and III subunit RPABC5 (RNA polymerases I, II, and III subunit ABC5) (DNA-directed RNA polymerase III subunit L) (RNA polymerase II 7.6 kDa subunit) (RPB7.6) (RPB10 homolog)	POLR2L
+Q9H2H8	PPIL3_HUMAN	Peptidyl-prolyl cis-trans isomerase-like 3 (PPIase) (EC 5.2.1.8) (Cyclophilin J) (CyPJ) (Cyclophilin-like protein PPIL3) (Rotamase PPIL3)	PPIL3
+O95365	ZBT7A_HUMAN	Zinc finger and BTB domain-containing protein 7A (Factor binding IST protein 1) (FBI-1) (Factor that binds to inducer of short transcripts protein 1) (HIV-1 1st-binding protein 1) (Leukemia/lymphoma-related factor) (POZ and Krueppel erythroid myeloid ontogenic factor) (POK erythroid myeloid ontogenic factor) (Pokemon) (Pokemon 1) (TTF-I-interacting peptide 21) (TIP21) (Zinc finger protein 857A)	ZBTB7A FBI1 LRF ZBTB7 ZNF857A
+Q96SB4	SRPK1_HUMAN	SRSF protein kinase 1 (EC 2.7.11.1) (SFRS protein kinase 1) (Serine/arginine-rich protein-specific kinase 1) (SR-protein-specific kinase 1)	SRPK1
+P67809	YBOX1_HUMAN	Y-box-binding protein 1 (YB-1) (CCAAT-binding transcription factor I subunit A) (CBF-A) (DNA-binding protein B) (DBPB) (Enhancer factor I subunit A) (EFI-A) (Nuclease-sensitive element-binding protein 1) (Y-box transcription factor)	YBX1 NSEP1 YB1
+Q05519	SRS11_HUMAN	Serine/arginine-rich splicing factor 11 (Arginine-rich 54 kDa nuclear protein) (p54) (Splicing factor, arginine/serine-rich 11)	SRSF11 SFRS11
+Q92797	SYMPK_HUMAN	Symplekin	SYMPK SPK
+Q9UBB9	TFP11_HUMAN	Tuftelin-interacting protein 11 (Septin and tuftelin-interacting protein 1) (STIP-1)	TFIP11 STIP HSPC006
+O75554	WBP4_HUMAN	WW domain-binding protein 4 (WBP-4) (Formin-binding protein 21) (WW domain-containing-binding protein 4)	WBP4 FBP21 FNBP21
+P31483	TIA1_HUMAN	Nucleolysin TIA-1 isoform p40 (RNA-binding protein TIA-1) (T-cell-restricted intracellular antigen-1) (TIA-1) (p40-TIA-1)	TIA1
+Q9UDW3	ZMAT5_HUMAN	Zinc finger matrin-type protein 5 (U11/U12 small nuclear ribonucleoprotein 20 kDa protein) (U11/U12 snRNP 20 kDa protein) (U11/U12-20K)	ZMAT5
+P49756	RBM25_HUMAN	RNA-binding protein 25 (Arg/Glu/Asp-rich protein of 120 kDa) (RED120) (Protein S164) (RNA-binding motif protein 25) (RNA-binding region-containing protein 7)	RBM25 RNPC7
+P53803	RPAB4_HUMAN	DNA-directed RNA polymerases I, II, and III subunit RPABC4 (RNA polymerases I, II, and III subunit ABC4) (ABC10-alpha) (DNA-directed RNA polymerase II subunit K) (RNA polymerase II 7.0 kDa subunit) (RPB7.0) (RPB10alpha)	POLR2K
+Q9Y4C8	RBM19_HUMAN	Probable RNA-binding protein 19 (RNA-binding motif protein 19)	RBM19 KIAA0682
+Q8WXF1	PSPC1_HUMAN	Paraspeckle component 1 (Paraspeckle protein 1)	PSPC1 PSP1
+P18583	SON_HUMAN	Protein SON (Bax antagonist selected in saccharomyces 1) (BASS1) (Negative regulatory element-binding protein) (NRE-binding protein) (Protein DBP-5) (SON3)	SON C21orf50 DBP5 KIAA1019 NREBP HSPC310 HSPC312
+Q32P51	RA1L2_HUMAN	Heterogeneous nuclear ribonucleoprotein A1-like 2 (hnRNP A1-like 2) (hnRNP core protein A1-like 2)	HNRNPA1L2 HNRNPA1L
+Q99590	SCAFB_HUMAN	Protein SCAF11 (CTD-associated SR protein 11) (Renal carcinoma antigen NY-REN-40) (SC35-interacting protein 1) (SR-related and CTD-associated factor 11) (SRSF2-interacting protein) (Serine/arginine-rich splicing factor 2-interacting protein) (Splicing factor, arginine/serine-rich 2-interacting protein) (Splicing regulatory protein 129) (SRrp129)	SCAF11 CASP11 SFRS2IP SIP1 SRSF2IP
+P08621	RU17_HUMAN	U1 small nuclear ribonucleoprotein 70 kDa (U1 snRNP 70 kDa) (U1-70K) (snRNP70)	SNRNP70 RNPU1Z RPU1 SNRP70 U1AP1
+Q15365	PCBP1_HUMAN	Poly(rC)-binding protein 1 (Alpha-CP1) (Heterogeneous nuclear ribonucleoprotein E1) (hnRNP E1) (Nucleic acid-binding protein SUB2.3)	PCBP1
+Q86U42	PABP2_HUMAN	Polyadenylate-binding protein 2 (PABP-2) (Poly(A)-binding protein 2) (Nuclear poly(A)-binding protein 1) (Poly(A)-binding protein II) (PABII) (Polyadenylate-binding nuclear protein 1)	PABPN1 PAB2 PABP2
+P26599	PTBP1_HUMAN	Polypyrimidine tract-binding protein 1 (PTB) (57 kDa RNA-binding protein PPTB-1) (Heterogeneous nuclear ribonucleoprotein I) (hnRNP I)	PTBP1 PTB
+Q8N7X1	RMXL3_HUMAN	RNA-binding motif protein, X-linked-like-3	RBMXL3 CXorf55
+Q15637	SF01_HUMAN	Splicing factor 1 (Mammalian branch point-binding protein) (BBP) (mBBP) (Transcription factor ZFM1) (Zinc finger gene in MEN1 locus) (Zinc finger protein 162)	SF1 ZFM1 ZNF162
+P51003	PAPOA_HUMAN	Poly(A) polymerase alpha (PAP-alpha) (EC 2.7.7.19) (Polynucleotide adenylyltransferase alpha)	PAPOLA PAP
+Q15287	RNPS1_HUMAN	RNA-binding protein with serine-rich domain 1 (SR-related protein LDC2)	RNPS1 LDC2
+Q12872	SFSWA_HUMAN	Splicing factor, suppressor of white-apricot homolog (Splicing factor, arginine/serine-rich 8) (Suppressor of white apricot protein homolog)	SFSWAP SFRS8 SWAP
+P23246	SFPQ_HUMAN	Splicing factor, proline- and glutamine-rich (100 kDa DNA-pairing protein) (hPOMp100) (DNA-binding p52/p100 complex, 100 kDa subunit) (Polypyrimidine tract-binding protein-associated-splicing factor) (PSF) (PTB-associated-splicing factor)	SFPQ PSF
+O60341	KDM1A_HUMAN	Lysine-specific histone demethylase 1A (EC 1.14.99.66) (BRAF35-HDAC complex protein BHC110) (Flavin-containing amine oxidase domain-containing protein 2) ([histone H3]-dimethyl-L-lysine(4) FAD-dependent demethylase 1A)	KDM1A AOF2 KDM1 KIAA0601 LSD1
+Q8IY67	RAVR1_HUMAN	Ribonucleoprotein PTB-binding 1 (Protein raver-1)	RAVER1 KIAA1978
+Q9Y580	RBM7_HUMAN	RNA-binding protein 7 (RNA-binding motif protein 7)	RBM7
+P63162	RSMN_HUMAN	Small nuclear ribonucleoprotein-associated protein N (snRNP-N) (Sm protein D) (Sm-D) (Sm protein N) (Sm-N) (SmN) (Tissue-specific-splicing protein)	SNRPN HCERN3 SMN
+Q9ULR0	ISY1_HUMAN	Pre-mRNA-splicing factor ISY1 homolog	ISY1 KIAA1160
+P51513	NOVA1_HUMAN	RNA-binding protein Nova-1 (Neuro-oncological ventral antigen 1) (Onconeural ventral antigen 1) (Paraneoplastic Ri antigen) (Ventral neuron-specific protein 1)	NOVA1
+Q7Z7F0	KHDC4_HUMAN	KH homology domain-containing protein 4 (Brings lots of money 7) (Pre-mRNA splicing factor protein KHDC4)	KHDC4 BLOM7 KIAA0907 SNORA80EHG
+Q9BUJ2	HNRL1_HUMAN	Heterogeneous nuclear ribonucleoprotein U-like protein 1 (Adenovirus early region 1B-associated protein 5) (E1B-55 kDa-associated protein 5) (E1B-AP5)	HNRNPUL1 E1BAP5 HNRPUL1
+Q9Y333	LSM2_HUMAN	U6 snRNA-associated Sm-like protein LSm2 (Protein G7b) (Small nuclear ribonuclear protein D homolog) (snRNP core Sm-like protein Sm-x5)	LSM2 C6orf28 G7B
+O95777	LSM8_HUMAN	U6 snRNA-associated Sm-like protein LSm8	LSM8
+P62312	LSM6_HUMAN	U6 snRNA-associated Sm-like protein LSm6	LSM6
+Q9UK45	LSM7_HUMAN	U6 snRNA-associated Sm-like protein LSm7	LSM7
+Q92620	PRP16_HUMAN	Pre-mRNA-splicing factor ATP-dependent RNA helicase PRP16 (EC 3.6.4.13) (ATP-dependent RNA helicase DHX38) (DEAH box protein 38)	DHX38 DDX38 KIAA0224 PRP16
+Q9NUK0	MBNL3_HUMAN	Muscleblind-like protein 3 (Cys3His CCG1-required protein) (Muscleblind-like X-linked protein) (Protein HCHCR)	MBNL3 CHCR MBLX39 MBXL
+Q6NYC1	JMJD6_HUMAN	Bifunctional arginine demethylase and lysyl-hydroxylase JMJD6 (EC 1.14.11.-) (Histone arginine demethylase JMJD6) (JmjC domain-containing protein 6) (Jumonji domain-containing protein 6) (Lysyl-hydroxylase JMJD6) (Peptide-lysine 5-dioxygenase JMJD6) (Phosphatidylserine receptor) (Protein PTDSR)	JMJD6 KIAA0585 PSR PTDSR
+Q9Y4Y9	LSM5_HUMAN	U6 snRNA-associated Sm-like protein LSm5	LSM5
+O94913	PCF11_HUMAN	Pre-mRNA cleavage complex 2 protein Pcf11 (Pre-mRNA cleavage complex II protein Pcf11)	PCF11 KIAA0824
+P62310	LSM3_HUMAN	U6 snRNA-associated Sm-like protein LSm3	LSM3 MDS017
+P17931	LEG3_HUMAN	Galectin-3 (Gal-3) (35 kDa lectin) (Carbohydrate-binding protein 35) (CBP 35) (Galactose-specific lectin 3) (Galactoside-binding protein) (GALBP) (IgE-binding protein) (L-31) (Laminin-binding protein) (Lectin L-29) (Mac-2 antigen)	LGALS3 MAC2
+P15172	MYOD1_HUMAN	Myoblast determination protein 1 (Class C basic helix-loop-helix protein 1) (bHLHc1) (Myogenic factor 3) (Myf-3)	MYOD1 BHLHC1 MYF3 MYOD
+Q09161	NCBP1_HUMAN	Nuclear cap-binding protein subunit 1 (80 kDa nuclear cap-binding protein) (CBP80) (NCBP 80 kDa subunit)	NCBP1 CBP80 NCBP
+Q9UNW9	NOVA2_HUMAN	RNA-binding protein Nova-2 (Astrocytic NOVA1-like RNA-binding protein) (Neuro-oncological ventral antigen 2)	NOVA2 ANOVA NOVA3
+P19338	NUCL_HUMAN	Nucleolin (Protein C23)	NCL
+P11940	PABP1_HUMAN	Polyadenylate-binding protein 1 (PABP-1) (Poly(A)-binding protein 1)	PABPC1 PAB1 PABP1 PABPC2
+P54105	ICLN_HUMAN	Methylosome subunit pICln (Chloride channel, nucleotide sensitive 1A) (Chloride conductance regulatory protein ICln) (I(Cln)) (Chloride ion current inducer protein) (ClCI) (Reticulocyte pICln)	CLNS1A CLCI ICLN
+Q15233	NONO_HUMAN	Non-POU domain-containing octamer-binding protein (NonO protein) (54 kDa nuclear RNA- and DNA-binding protein) (55 kDa nuclear protein) (DNA-binding p52/p100 complex, 52 kDa subunit) (NMT55) (p54(nrb)) (p54nrb)	NONO NRB54
+Q4G0J3	LARP7_HUMAN	La-related protein 7 (La ribonucleoprotein domain family member 7) (hLARP7) (P-TEFb-interaction protein for 7SK stability) (PIP7S)	LARP7 HDCMA18P
+Q9NR56	MBNL1_HUMAN	Muscleblind-like protein 1 (Triplet-expansion RNA-binding protein)	MBNL1 EXP KIAA0428 MBNL
+P55769	NH2L1_HUMAN	NHP2-like protein 1 (High mobility group-like nuclear protein 2 homolog 1) (OTK27) (SNU13 homolog) (hSNU13) (U4/U6.U5 small nuclear ribonucleoprotein SNU13) (U4/U6.U5 tri-snRNP 15.5 kDa protein) [Cleaved into: NHP2-like protein 1, N-terminally processed]	SNU13 NHP2L1
+P24928	RPB1_HUMAN	DNA-directed RNA polymerase II subunit RPB1 (RNA polymerase II subunit B1) (EC 2.7.7.6) (DNA-directed RNA polymerase II subunit A) (DNA-directed RNA polymerase III largest subunit) (RNA-directed RNA polymerase II subunit RPB1) (EC 2.7.7.48)	POLR2A POLR2
+P13984	T2FB_HUMAN	General transcription factor IIF subunit 2 (EC 3.6.4.12) (ATP-dependent helicase GTF2F2) (General transcription factor IIF 30 kDa subunit) (Transcription initiation factor IIF subunit beta) (TFIIF-beta) (Transcription initiation factor RAP30)	GTF2F2 RAP30
+Q7RTV0	PHF5A_HUMAN	PHD finger-like domain-containing protein 5A (PHD finger-like domain protein 5A) (Splicing factor 3B-associated 14 kDa protein) (SF3b14b)	PHF5A
+O60522	TDRD6_HUMAN	Tudor domain-containing protein 6 (Antigen NY-CO-45) (Cancer/testis antigen 41.2) (CT41.2)	TDRD6
+Q15695	U2AFL_HUMAN	Putative U2 small nuclear ribonucleoprotein auxiliary factor 35 kDa subunit-related protein 1 (CCCH type zinc finger, RNA-binding motif and serine/arginine rich protein 1) (U2(RNU2) small nuclear RNA auxiliary factor 1-like 1)	ZRSR2P1 U2AF1-RS1 U2AF1L1 U2AF1P U2AF1RS1 U2AFBPL ZRSR1
+Q9UNY4	TTF2_HUMAN	Transcription termination factor 2 (EC 3.6.4.-) (Lodestar homolog) (RNA polymerase II termination factor) (Transcription release factor 2) (F2) (HuF2)	TTF2
+Q01130	SRSF2_HUMAN	Serine/arginine-rich splicing factor 2 (Protein PR264) (Splicing component, 35 kDa) (Splicing factor SC35) (SC-35) (Splicing factor, arginine/serine-rich 2)	SRSF2 SFRS2
+Q70CQ1	UBP49_HUMAN	Ubiquitin carboxyl-terminal hydrolase 49 (EC 3.4.19.12) (Deubiquitinating enzyme 49) (Ubiquitin thioesterase 49) (Ubiquitin-specific-processing protease 49)	USP49
+Q9C0J8	WDR33_HUMAN	pre-mRNA 3' end processing protein WDR33 (WD repeat-containing protein 33) (WD repeat-containing protein of 146 kDa)	WDR33 WDC146
+P52756	RBM5_HUMAN	RNA-binding protein 5 (Protein G15) (Putative tumor suppressor LUCA15) (RNA-binding motif protein 5) (Renal carcinoma antigen NY-REN-9)	RBM5 H37 LUCA15
+Q14011	CIRBP_HUMAN	Cold-inducible RNA-binding protein (A18 hnRNP) (Glycine-rich RNA-binding protein CIRP)	CIRBP A18HNRNP CIRP
+O60506	HNRPQ_HUMAN	Heterogeneous nuclear ribonucleoprotein Q (hnRNP Q) (Glycine- and tyrosine-rich RNA-binding protein) (GRY-RBP) (NS1-associated protein 1) (Synaptotagmin-binding, cytoplasmic RNA-interacting protein)	SYNCRIP HNRPQ NSAP1
+A6PVI3	NCB2L_HUMAN	Nuclear cap-binding protein subunit 2-like	NCBP2L
+Q96PU8	QKI_HUMAN	Protein quaking (Hqk) (HqkI)	QKI HKQ
+Q14498	RBM39_HUMAN	RNA-binding protein 39 (CAPER alpha) (CAPERalpha) (Hepatocellular carcinoma protein 1) (RNA-binding motif protein 39) (RNA-binding region-containing protein 2) (Splicing factor HCC1)	RBM39 HCC1 RNPC2
+Q86U06	RBM23_HUMAN	Probable RNA-binding protein 23 (CAPER beta) (CAPERbeta) (RNA-binding motif protein 23) (RNA-binding region-containing protein 4) (Splicing factor SF2)	RBM23 RNPC4 PP239
+P57052	RBM11_HUMAN	Splicing regulator RBM11 (RNA-binding motif protein 11)	RBM11
+Q9UHX1	PUF60_HUMAN	Poly(U)-binding-splicing factor PUF60 (60 kDa poly(U)-binding-splicing factor) (FUSE-binding protein-interacting repressor) (FBP-interacting repressor) (Ro-binding protein 1) (RoBP1) (Siah-binding protein 1) (Siah-BP1)	PUF60 FIR ROBPI SIAHBP1
+Q13523	PRP4B_HUMAN	Serine/threonine-protein kinase PRP4 homolog (EC 2.7.11.1) (PRP4 kinase) (PRP4 pre-mRNA-processing factor 4 homolog)	PRPF4B KIAA0536 PRP4 PRP4H PRP4K
+P0DJD3	RBY1A_HUMAN	RNA-binding motif protein, Y chromosome, family 1 member A1 (RNA-binding motif protein 1) (RNA-binding motif protein 2) (Y chromosome RNA recognition motif 1) (hRBMY)	RBMY1A1 RBM1 RBM2 YRRM1 YRRM2
+P38159	RBMX_HUMAN	RNA-binding motif protein, X chromosome (Glycoprotein p43) (Heterogeneous nuclear ribonucleoprotein G) (hnRNP G) [Cleaved into: RNA-binding motif protein, X chromosome, N-terminally processed]	RBMX HNRPG RBMXP1
+Q96T37	RBM15_HUMAN	RNA-binding protein 15 (One-twenty two protein 1) (RNA-binding motif protein 15)	RBM15 OTT OTT1
+Q96IZ5	RBM41_HUMAN	RNA-binding protein 41 (RNA-binding motif protein 41)	RBM41
+P16383	GCFC2_HUMAN	Intron Large complex component GCFC2 (GC-rich sequence DNA-binding factor) (GC-rich sequence DNA-binding factor 2) (Transcription factor 9) (TCF-9)	GCFC2 C2orf3 GCF TCF9
+Q00839	HNRPU_HUMAN	Heterogeneous nuclear ribonucleoprotein U (hnRNP U) (GRIP120) (Nuclear p120 ribonucleoprotein) (Scaffold-attachment factor A) (SAF-A) (p120) (pp120)	HNRNPU C1orf199 HNRPU SAFA U21.1
+P61978	HNRPK_HUMAN	Heterogeneous nuclear ribonucleoprotein K (hnRNP K) (Transformation up-regulated nuclear protein) (TUNP)	HNRNPK HNRPK
+P0C5Y9	H2AB1_HUMAN	Histone H2A-Bbd type 1 (H2A Barr body-deficient) (H2A.B) (H2A.Bbd)	H2AB1 H2AFB1
+Q9Y312	AAR2_HUMAN	Protein AAR2 homolog (AAR2 splicing factor homolog)	AAR2 C20orf4 CGI-23 PRO0225
+Q9UK59	DBR1_HUMAN	Lariat debranching enzyme (EC 3.1.-.-)	DBR1
+Q9NWZ8	GEMI8_HUMAN	Gem-associated protein 8 (Gemin-8) (Protein FAM51A1)	GEMIN8 FAM51A1
+P0C5Z0	H2AB2_HUMAN	Histone H2A-Bbd type 2/3 (H2A Barr body-deficient) (H2A.Bbd)	H2AB2 H2AFB2; H2AB3 H2ABBD H2AFB H2AFB3
+Q8WUQ7	CATIN_HUMAN	Cactin (Renal carcinoma antigen NY-REN-24)	CACTIN C19orf29
+Q96DF8	ESS2_HUMAN	Splicing factor ESS-2 homolog (DiGeorge syndrome critical region 13) (DiGeorge syndrome critical region 14) (DiGeorge syndrome protein H) (DGS-H) (Protein ES2)	ESS2 DGCR13 DGCR14 DGSH DGSI ES2
+Q10570	CPSF1_HUMAN	Cleavage and polyadenylation specificity factor subunit 1 (Cleavage and polyadenylation specificity factor 160 kDa subunit) (CPSF 160 kDa subunit)	CPSF1 CPSF160
+P35637	FUS_HUMAN	RNA-binding protein FUS (75 kDa DNA-pairing protein) (Oncogene FUS) (Oncogene TLS) (POMp75) (Translocated in liposarcoma protein)	FUS TLS
+Q96AE4	FUBP1_HUMAN	Far upstream element-binding protein 1 (FBP) (FUSE-binding protein 1) (DNA helicase V) (hDH V)	FUBP1
+P51116	FXR2_HUMAN	Fragile X mental retardation syndrome-related protein 2	FXR2 FMR1L2
+Q9H840	GEMI7_HUMAN	Gem-associated protein 7 (Gemin-7) (SIP3)	GEMIN7
+O14893	GEMI2_HUMAN	Gem-associated protein 2 (Gemin-2) (Component of gems 2) (Survival of motor neuron protein-interacting protein 1) (SMN-interacting protein 1)	GEMIN2 SIP1
+Q9BRR8	GPTC1_HUMAN	G patch domain-containing protein 1 (Evolutionarily conserved G-patch domain-containing protein)	GPATCH1 ECGP GPATC1
+Q12926	ELAV2_HUMAN	ELAV-like protein 2 (ELAV-like neuronal protein 1) (Hu-antigen B) (HuB) (Nervous system-specific RNA-binding protein Hel-N1)	ELAVL2 HUB
+Q15717	ELAV1_HUMAN	ELAV-like protein 1 (Hu-antigen R) (HuR)	ELAVL1 HUR
+Q14331	FRG1_HUMAN	Protein FRG1 (FSHD region gene 1 protein)	FRG1
+P57678	GEMI4_HUMAN	Gem-associated protein 4 (Gemin-4) (Component of gems 4) (p97)	GEMIN4
+Q86XP3	DDX42_HUMAN	ATP-dependent RNA helicase DDX42 (EC 3.6.4.13) (DEAD box protein 42) (RNA helicase-like protein) (RHELP) (RNA helicase-related protein) (RNAHP) (SF3b DEAD box protein) (Splicing factor 3B-associated 125 kDa protein) (SF3b125)	DDX42
+Q5SZQ8	CELF3_HUMAN	CUGBP Elav-like family member 3 (CELF-3) (Bruno-like protein 1) (CAG repeat protein 4) (CUG-BP- and ETR-3-like factor 3) (ELAV-type RNA-binding protein 1) (ETR-1) (Expanded repeat domain protein CAG/CTG 4) (RNA-binding protein BRUNOL-1) (Trinucleotide repeat-containing gene 4 protein)	CELF3 BRUNOL1 CAGH4 ERDA4 TNRC4
+Q8WUF8	F172A_HUMAN	Cotranscriptional regulator FAM172A (Protein FAM172A)	FAM172A C5orf21
+Q9H1I8	ASCC2_HUMAN	Activating signal cointegrator 1 complex subunit 2 (ASC-1 complex subunit p100) (Trip4 complex subunit p100)	ASCC2 ASC1P100
+O14744	ANM5_HUMAN	Protein arginine N-methyltransferase 5 (PRMT5) (EC 2.1.1.320) (72 kDa ICln-binding protein) (Histone-arginine N-methyltransferase PRMT5) (Jak-binding protein 1) (Shk1 kinase-binding protein 1 homolog) (SKB1 homolog) (SKB1Hs) [Cleaved into: Protein arginine N-methyltransferase 5, N-terminally processed]	PRMT5 HRMT1L5 IBP72 JBP1 SKB1
+O95400	CD2B2_HUMAN	CD2 antigen cytoplasmic tail-binding protein 2 (CD2 cytoplasmic domain-binding protein 2) (CD2 tail-binding protein 2) (U5 snRNP 52K protein) (U5-52K)	CD2BP2 KIAA1178
+Q9BZC1	CELF4_HUMAN	CUGBP Elav-like family member 4 (CELF-4) (Bruno-like protein 4) (CUG-BP- and ETR-3-like factor 4) (RNA-binding protein BRUNOL-4)	CELF4 BRUNOL4
+Q8N6W0	CELF5_HUMAN	CUGBP Elav-like family member 5 (CELF-5) (Bruno-like protein 5) (CUG-BP- and ETR-3-like factor 5) (RNA-binding protein BRUNOL-5)	CELF5 BRUNOL5
+Q06787	FMR1_HUMAN	Synaptic functional regulator FMR1 (Fragile X mental retardation protein 1) (FMRP) (Protein FMR-1)	FMR1
+Q96J87	CELF6_HUMAN	CUGBP Elav-like family member 6 (CELF-6) (Bruno-like protein 6) (CUG-BP- and ETR-3-like factor 6) (RNA-binding protein BRUNOL-6)	CELF6 BRUNOL6
+Q92879	CELF1_HUMAN	CUGBP Elav-like family member 1 (CELF-1) (50 kDa nuclear polyadenylated RNA-binding protein) (Bruno-like protein 2) (CUG triplet repeat RNA-binding protein 1) (CUG-BP1) (CUG-BP- and ETR-3-like factor 1) (Deadenylation factor CUG-BP) (Embryo deadenylation element-binding protein homolog) (EDEN-BP homolog) (RNA-binding protein BRUNOL-2)	CELF1 BRUNOL2 CUGBP CUGBP1 NAB50
+Q9UJV9	DDX41_HUMAN	Probable ATP-dependent RNA helicase DDX41 (EC 3.6.4.13) (DEAD box protein 41) (DEAD box protein abstrakt homolog)	DDX41 ABS
+Q9P2I0	CPSF2_HUMAN	Cleavage and polyadenylation specificity factor subunit 2 (Cleavage and polyadenylation specificity factor 100 kDa subunit) (CPSF 100 kDa subunit)	CPSF2 CPSF100 KIAA1367
+Q14562	DHX8_HUMAN	ATP-dependent RNA helicase DHX8 (EC 3.6.4.13) (DEAH box protein 8) (RNA helicase HRH1)	DHX8 DDX8
+Q9H6T0	ESRP2_HUMAN	Epithelial splicing regulatory protein 2 (RNA-binding motif protein 35B) (RNA-binding protein 35B)	ESRP2 RBM35B PP7059
+Q07021	C1QBP_HUMAN	Complement component 1 Q subcomponent-binding protein, mitochondrial (ASF/SF2-associated protein p32) (Glycoprotein gC1qBP) (C1qBP) (Hyaluronan-binding protein 1) (Mitochondrial matrix protein p32) (gC1q-R protein) (p33) (SF2AP32)	C1QBP GC1QBP HABP1 SF2P32
+P52597	HNRPF_HUMAN	Heterogeneous nuclear ribonucleoprotein F (hnRNP F) (Nucleolin-like protein mcs94-1) [Cleaved into: Heterogeneous nuclear ribonucleoprotein F, N-terminally processed]	HNRNPF HNRPF
+Q15007	FL2D_HUMAN	Pre-mRNA-splicing regulator WTAP (Female-lethal(2)D homolog) (hFL(2)D) (WT1-associated protein) (Wilms tumor 1-associating protein)	WTAP KIAA0105
+Q7L014	DDX46_HUMAN	Probable ATP-dependent RNA helicase DDX46 (EC 3.6.4.13) (DEAD box protein 46) (PRP5 homolog)	DDX46 KIAA0801
+P38919	IF4A3_HUMAN	Eukaryotic initiation factor 4A-III (eIF-4A-III) (eIF4A-III) (EC 3.6.4.13) (ATP-dependent RNA helicase DDX48) (ATP-dependent RNA helicase eIF4A-3) (DEAD box protein 48) (Eukaryotic initiation factor 4A-like NUK-34) (Eukaryotic translation initiation factor 4A isoform 3) (Nuclear matrix protein 265) (NMP 265) (hNMP 265) [Cleaved into: Eukaryotic initiation factor 4A-III, N-terminally processed]	EIF4A3 DDX48 KIAA0111
+Q07666	KHDR1_HUMAN	KH domain-containing, RNA-binding, signal transduction-associated protein 1 (GAP-associated tyrosine phosphoprotein p62) (Src-associated in mitosis 68 kDa protein) (Sam68) (p21 Ras GTPase-activating protein-associated p62) (p68)	KHDRBS1 SAM68
+O43143	DHX15_HUMAN	Pre-mRNA-splicing factor ATP-dependent RNA helicase DHX15 (EC 3.6.4.13) (ATP-dependent RNA helicase #46) (DEAH box protein 15)	DHX15 DBP1 DDX15
+Q8IWX8	CHERP_HUMAN	Calcium homeostasis endoplasmic reticulum protein (ERPROT 213-21) (SR-related CTD-associated factor 6)	CHERP DAN26 SCAF6
+Q9BRD0	BUD13_HUMAN	BUD13 homolog	BUD13
+Q02040	AK17A_HUMAN	A-kinase anchor protein 17A (AKAP-17A) (721P) (B-lymphocyte antigen) (Protein XE7) (Protein kinase A-anchoring protein 17A) (PRKA17A) (Splicing factor, arginine/serine-rich 17A)	AKAP17A CXYorf3 DXYS155E SFRS17A XE7
+O60306	AQR_HUMAN	RNA helicase aquarius (EC 3.6.4.13) (Intron-binding protein of 160 kDa) (IBP160)	AQR KIAA0560
+Q08211	DHX9_HUMAN	ATP-dependent RNA helicase A (EC 3.6.4.13) (DEAH box protein 9) (DExH-box helicase 9) (Leukophysin) (LKP) (Nuclear DNA helicase II) (NDH II) (RNA helicase A)	DHX9 DDX9 LKP NDH2
+Q9H5Z1	DHX35_HUMAN	Probable ATP-dependent RNA helicase DHX35 (EC 3.6.4.13) (DEAH box protein 35)	DHX35 C20orf15 DDX35
+O95319	CELF2_HUMAN	CUGBP Elav-like family member 2 (CELF-2) (Bruno-like protein 3) (CUG triplet repeat RNA-binding protein 2) (CUG-BP2) (CUG-BP- and ETR-3-like factor 2) (ELAV-type RNA-binding protein 3) (ETR-3) (Neuroblastoma apoptosis-related RNA-binding protein) (hNAPOR) (RNA-binding protein BRUNOL-3)	CELF2 BRUNOL3 CUGBP2 ETR3 NAPOR
+P33240	CSTF2_HUMAN	Cleavage stimulation factor subunit 2 (CF-1 64 kDa subunit) (Cleavage stimulation factor 64 kDa subunit) (CSTF 64 kDa subunit) (CstF-64)	CSTF2
+O75937	DNJC8_HUMAN	DnaJ homolog subfamily C member 8 (Splicing protein spf31)	DNAJC8 SPF31 HSPC315 HSPC331
+Q92989	CLP1_HUMAN	Polyribonucleotide 5'-hydroxyl-kinase Clp1 (EC 2.7.1.78) (Polyadenylation factor Clp1) (Polynucleotide kinase Clp1) (Pre-mRNA cleavage complex II protein Clp1)	CLP1 HEAB
+O43809	CPSF5_HUMAN	Cleavage and polyadenylation specificity factor subunit 5 (Cleavage and polyadenylation specificity factor 25 kDa subunit) (CPSF 25 kDa subunit) (Cleavage factor Im complex 25 kDa subunit) (CFIm25) (Nucleoside diphosphate-linked moiety X motif 21) (Nudix motif 21) (Nudix hydrolase 21) (Pre-mRNA cleavage factor Im 68 kDa subunit)	NUDT21 CFIM25 CPSF25 CPSF5
+Q9BZJ0	CRNL1_HUMAN	Crooked neck-like protein 1 (Crooked neck homolog) (hCrn)	CRNKL1 CRN CGI-201 MSTP021
+Q13627	DYR1A_HUMAN	Dual specificity tyrosine-phosphorylation-regulated kinase 1A (EC 2.7.12.1) (Dual specificity YAK1-related kinase) (HP86) (Protein kinase minibrain homolog) (MNBH) (hMNB)	DYRK1A DYRK MNB MNBH
+Q9BUQ8	DDX23_HUMAN	Probable ATP-dependent RNA helicase DDX23 (EC 3.6.4.13) (100 kDa U5 snRNP-specific protein) (DEAD box protein 23) (PRP28 homolog) (U5-100kD)	DDX23
+Q96EP5	DAZP1_HUMAN	DAZ-associated protein 1 (Deleted in azoospermia-associated protein 1)	DAZAP1
+Q99459	CDC5L_HUMAN	Cell division cycle 5-like protein (Cdc5-like protein) (Pombe cdc5-related protein)	CDC5L KIAA0432 PCDC5RP
+O95639	CPSF4_HUMAN	Cleavage and polyadenylation specificity factor subunit 4 (Cleavage and polyadenylation specificity factor 30 kDa subunit) (CPSF 30 kDa subunit) (NS1 effector domain-binding protein 1) (Neb-1) (No arches homolog)	CPSF4 CPSF30 NAR NEB1
+Q2TBE0	C19L2_HUMAN	CWF19-like protein 2	CWF19L2
+Q05048	CSTF1_HUMAN	Cleavage stimulation factor subunit 1 (CF-1 50 kDa subunit) (Cleavage stimulation factor 50 kDa subunit) (CSTF 50 kDa subunit) (CstF-50)	CSTF1
+Q12996	CSTF3_HUMAN	Cleavage stimulation factor subunit 3 (CF-1 77 kDa subunit) (Cleavage stimulation factor 77 kDa subunit) (CSTF 77 kDa subunit) (CstF-77)	CSTF3
+Q14004	CDK13_HUMAN	Cyclin-dependent kinase 13 (EC 2.7.11.22) (EC 2.7.11.23) (CDC2-related protein kinase 5) (Cell division cycle 2-like protein kinase 5) (Cell division protein kinase 13) (hCDK13) (Cholinesterase-related cell division controller)	CDK13 CDC2L CDC2L5 CHED KIAA1791
+O60231	DHX16_HUMAN	Pre-mRNA-splicing factor ATP-dependent RNA helicase DHX16 (EC 3.6.4.13) (ATP-dependent RNA helicase #3) (DEAH-box protein 16)	DHX16 DBP2 DDX16 KIAA0577 PRP2
+Q9UKV3	ACINU_HUMAN	Apoptotic chromatin condensation inducer in the nucleus (Acinus)	ACIN1 ACINUS KIAA0670
+Q69YN2	C19L1_HUMAN	CWF19-like protein 1 (C19L1)	CWF19L1
+Q8IX12	CCAR1_HUMAN	Cell division cycle and apoptosis regulator protein 1 (Cell cycle and apoptosis regulatory protein 1) (CARP-1) (Death inducer with SAP domain)	CCAR1 CARP1 DIS
+P11142	HSP7C_HUMAN	Heat shock cognate 71 kDa protein (EC 3.6.4.10) (Heat shock 70 kDa protein 8) (Lipopolysaccharide-associated protein 1) (LAP-1) (LPS-associated protein 1)	HSPA8 HSC70 HSP73 HSPA10
+P31942	HNRH3_HUMAN	Heterogeneous nuclear ribonucleoprotein H3 (hnRNP H3) (Heterogeneous nuclear ribonucleoprotein 2H9) (hnRNP 2H9)	HNRNPH3 HNRPH3
+P55795	HNRH2_HUMAN	Heterogeneous nuclear ribonucleoprotein H2 (hnRNP H2) (FTP-3) (Heterogeneous nuclear ribonucleoprotein H') (hnRNP H') [Cleaved into: Heterogeneous nuclear ribonucleoprotein H2, N-terminally processed]	HNRNPH2 FTP3 HNRPH2
+O43390	HNRPR_HUMAN	Heterogeneous nuclear ribonucleoprotein R (hnRNP R)	HNRNPR HNRPR
+P61326	MGN_HUMAN	Protein mago nashi homolog	MAGOH MAGOHA
+P35659	DEK_HUMAN	Protein DEK	DEK
+P17844	DDX5_HUMAN	Probable ATP-dependent RNA helicase DDX5 (EC 3.6.4.13) (DEAD box protein 5) (RNA helicase p68)	DDX5 G17P1 HELR HLR1
+Q8TEQ6	GEMI5_HUMAN	Gem-associated protein 5 (Gemin5)	GEMIN5
+Q14103	HNRPD_HUMAN	Heterogeneous nuclear ribonucleoprotein D0 (hnRNP D0) (AU-rich element RNA-binding protein 1)	HNRNPD AUF1 HNRPD
+Q5VWX1	KHDR2_HUMAN	KH domain-containing, RNA-binding, signal transduction-associated protein 2 (Sam68-like mammalian protein 1) (SLM-1) (hSLM-1)	KHDRBS2 SLM1
+P52272	HNRPM_HUMAN	Heterogeneous nuclear ribonucleoprotein M (hnRNP M)	HNRNPM HNRPM NAGR1
+A2RU54	HMX2_HUMAN	Homeobox protein HMX2 (Homeobox protein H6 family member 2)	HMX2
+Q8WXD5	GEMI6_HUMAN	Gem-associated protein 6 (Gemin-6) (SIP2)	GEMIN6
+P42285	MTREX_HUMAN	Exosome RNA helicase MTR4 (EC 3.6.4.13) (ATP-dependent RNA helicase DOB1) (ATP-dependent RNA helicase SKIV2L2) (Superkiller viralicidic activity 2-like 2) (TRAMP-like complex helicase)	MTREX DOB1 KIAA0052 MTR4 SKIV2L2
+Q8N684	CPSF7_HUMAN	Cleavage and polyadenylation specificity factor subunit 7 (Cleavage and polyadenylation specificity factor 59 kDa subunit) (CPSF 59 kDa subunit) (Cleavage factor Im complex 59 kDa subunit) (CFIm59) (Pre-mRNA cleavage factor Im 59 kDa subunit)	CPSF7
+Q92841	DDX17_HUMAN	Probable ATP-dependent RNA helicase DDX17 (EC 3.6.4.13) (DEAD box protein 17) (DEAD box protein p72) (DEAD box protein p82) (RNA-dependent helicase p72)	DDX17
+P07910	HNRPC_HUMAN	Heterogeneous nuclear ribonucleoproteins C1/C2 (hnRNP C1/C2)	HNRNPC HNRPC
+P51114	FXR1_HUMAN	Fragile X mental retardation syndrome-related protein 1 (hFXR1p)	FXR1
+O43719	HTSF1_HUMAN	HIV Tat-specific factor 1 (Tat-SF1)	HTATSF1
+Q9HCE5	MET14_HUMAN	N6-adenosine-methyltransferase non-catalytic subunit (Methyltransferase-like protein 14) (hMETTL14)	METTL14 KIAA1627
+Q86U44	MTA70_HUMAN	N6-adenosine-methyltransferase catalytic subunit (EC 2.1.1.348) (Methyltransferase-like protein 3) (hMETTL3) (N6-adenosine-methyltransferase 70 kDa subunit) (MT-A70)	METTL3 MTA70
+Q8WYA6	CTBL1_HUMAN	Beta-catenin-like protein 1 (Nuclear-associated protein) (NAP) (Testis development protein NYD-SP19)	CTNNBL1 C20orf33 PP8304
+P31943	HNRH1_HUMAN	Heterogeneous nuclear ribonucleoprotein H (hnRNP H) [Cleaved into: Heterogeneous nuclear ribonucleoprotein H, N-terminally processed]	HNRNPH1 HNRPH HNRPH1
+Q9Y4Z0	LSM4_HUMAN	U6 snRNA-associated Sm-like protein LSm4 (Glycine-rich protein) (GRP)	LSM4
+Q86W50	MET16_HUMAN	RNA N6-adenosine-methyltransferase METTL16 (Methyltransferase 10 domain-containing protein) (Methyltransferase-like protein 16) (N6-adenosine-methyltransferase METTL16) (EC 2.1.1.348) (U6 small nuclear RNA (adenine-(43)-N(6))-methyltransferase) (EC 2.1.1.346)	METTL16 METT10D
+Q9GZX7	AICDA_HUMAN	Single-stranded DNA cytosine deaminase (EC 3.5.4.38) (Activation-induced cytidine deaminase) (AID) (Cytidine aminohydrolase)	AICDA AID
+O00148	DX39A_HUMAN	ATP-dependent RNA helicase DDX39A (EC 3.6.4.13) (DEAD box protein 39) (Nuclear RNA helicase URH49)	DDX39A DDX39
+P41223	BUD31_HUMAN	Protein BUD31 homolog (Protein EDG-2) (Protein G10 homolog)	BUD31 EDG2
+Q9UHI6	DDX20_HUMAN	Probable ATP-dependent RNA helicase DDX20 (EC 3.6.4.13) (Component of gems 3) (DEAD box protein 20) (DEAD box protein DP 103) (Gemin-3)	DDX20 DP103 GEMIN3
+O15234	CASC3_HUMAN	Protein CASC3 (Cancer susceptibility candidate gene 3 protein) (Metastatic lymph node gene 51 protein) (MLN 51) (Protein barentsz) (Btz)	CASC3 MLN51
+Q9UKF6	CPSF3_HUMAN	Cleavage and polyadenylation specificity factor subunit 3 (EC 3.1.27.-) (Cleavage and polyadenylation specificity factor 73 kDa subunit) (CPSF 73 kDa subunit) (mRNA 3'-end-processing endonuclease CPSF-73)	CPSF3 CPSF73
+Q96T58	MINT_HUMAN	Msx2-interacting protein (SMART/HDAC1-associated repressor protein) (SPEN homolog)	SPEN KIAA0929 MINT SHARP
+Q15366	PCBP2_HUMAN	Poly(rC)-binding protein 2 (Alpha-CP2) (Heterogeneous nuclear ribonucleoprotein E2) (hnRNP E2)	PCBP2
+Q14680	MELK_HUMAN	Maternal embryonic leucine zipper kinase (hMELK) (EC 2.7.11.1) (Protein kinase Eg3) (pEg3 kinase) (Protein kinase PK38) (hPK38) (Tyrosine-protein kinase MELK) (EC 2.7.10.2)	MELK KIAA0175
+Q9H0G5	NSRP1_HUMAN	Nuclear speckle splicing regulatory protein 1 (Coiled-coil domain-containing protein 55) (Nuclear speckle-related protein 70) (NSrp70)	NSRP1 CCDC55 NSRP70
+Q9HCJ3	RAVR2_HUMAN	Ribonucleoprotein PTB-binding 2 (Protein raver-2)	RAVER2 KIAA1579
+Q9H0L4	CSTFT_HUMAN	Cleavage stimulation factor subunit 2 tau variant (CF-1 64 kDa subunit tau variant) (Cleavage stimulation factor 64 kDa subunit tau variant) (CSTF 64 kDa subunit tau variant) (TauCstF-64)	CSTF2T KIAA0689
+Q96C86	DCPS_HUMAN	m7GpppX diphosphatase (EC 3.6.1.59) (DCS-1) (Decapping scavenger enzyme) (Hint-related 7meGMP-directed hydrolase) (Histidine triad nucleotide-binding protein 5) (Histidine triad protein member 5) (HINT-5) (Scavenger mRNA-decapping enzyme DcpS)	DCPS DCS1 HINT5 HSPC015
+P14866	HNRPL_HUMAN	Heterogeneous nuclear ribonucleoprotein L (hnRNP L)	HNRNPL HNRPL P/OKcl.14
+O75525	KHDR3_HUMAN	KH domain-containing, RNA-binding, signal transduction-associated protein 3 (RNA-binding protein T-Star) (Sam68-like mammalian protein 2) (SLM-2) (Sam68-like phosphotyrosine protein)	KHDRBS3 SALP SLM2
+O43172	PRP4_HUMAN	U4/U6 small nuclear ribonucleoprotein Prp4 (PRP4 homolog) (hPrp4) (U4/U6 snRNP 60 kDa protein) (WD splicing factor Prp4)	PRPF4 PRP4
+Q5VTL8	PR38B_HUMAN	Pre-mRNA-splicing factor 38B (Sarcoma antigen NY-SAR-27)	PRPF38B
+Q8N8D1	PDCD7_HUMAN	Programmed cell death protein 7 (ES18) (hES18)	PDCD7
+P52298	NCBP2_HUMAN	Nuclear cap-binding protein subunit 2 (20 kDa nuclear cap-binding protein) (Cell proliferation-inducing gene 55 protein) (NCBP 20 kDa subunit) (CBP20) (NCBP-interacting protein 1) (NIP1)	NCBP2 CBP20 PIG55
+Q9UNP9	PPIE_HUMAN	Peptidyl-prolyl cis-trans isomerase E (PPIase E) (EC 5.2.1.8) (Cyclophilin E) (Cyclophilin-33) (Rotamase E)	PPIE CYP33
+Q96A72	MGN2_HUMAN	Protein mago nashi homolog 2	MAGOHB MAGOH2
+Q9H875	PKRI1_HUMAN	PRKR-interacting protein 1	PRKRIP1
+Q15029	U5S1_HUMAN	116 kDa U5 small nuclear ribonucleoprotein component (Elongation factor Tu GTP-binding domain-containing protein 2) (SNU114 homolog) (hSNU114) (U5 snRNP-specific protein, 116 kDa) (U5-116 kDa)	EFTUD2 KIAA0031 SNRP116
+Q8TBF4	ZCRB1_HUMAN	Zinc finger CCHC-type and RNA-binding motif-containing protein 1 (U11/U12 small nuclear ribonucleoprotein 31 kDa protein) (U11/U12 snRNP 31 kDa protein) (U11/U12-31K)	ZCRB1
+Q6NZY4	ZCHC8_HUMAN	Zinc finger CCHC domain-containing protein 8 (TRAMP-like complex RNA-binding factor ZCCHC8)	ZCCHC8
+Q9BRX9	WDR83_HUMAN	WD repeat domain-containing protein 83 (Mitogen-activated protein kinase organizer 1) (MAPK organizer 1)	WDR83 MORG1
+Q15696	U2AFM_HUMAN	U2 small nuclear ribonucleoprotein auxiliary factor 35 kDa subunit-related protein 2 (CCCH type zinc finger, RNA-binding motif and serine/arginine rich protein 2) (Renal carcinoma antigen NY-REN-20) (U2(RNU2) small nuclear RNA auxiliary factor 1-like 2) (U2AF35-related protein) (URP)	ZRSR2 U2AF1-RS2 U2AF1L2 U2AF1RS2 URP
+Q96NC0	ZMAT2_HUMAN	Zinc finger matrin-type protein 2	ZMAT2
+Q96MU7	YTDC1_HUMAN	YTH domain-containing protein 1 (Splicing factor YT521) (YT521-B)	YTHDC1 KIAA1966 YT521
+Q96NB3	ZN830_HUMAN	Zinc finger protein 830 (Coiled-coil domain-containing protein 16)	ZNF830 CCDC16
+Q9BW85	YJU2_HUMAN	Splicing factor YJU2 (Coiled-coil domain-containing protein 94)	YJU2 CCDC94
+Q9Y2W2	WBP11_HUMAN	WW domain-binding protein 11 (WBP-11) (Npw38-binding protein) (NpwBP) (SH3 domain-binding protein SNP70) (Splicing factor that interacts with PQBP-1 and PP1)	WBP11 NPWBP SIPP1 SNP70
+Q9BZL1	UBL5_HUMAN	Ubiquitin-like protein 5	UBL5
+Q8WU68	U2AF4_HUMAN	Splicing factor U2AF 26 kDa subunit (U2 auxiliary factor 26) (U2 small nuclear RNA auxiliary factor 1-like protein 4) (U2AF1-like 4) (U2(RNU2) small nuclear RNA auxiliary factor 1-like protein 3) (U2 small nuclear RNA auxiliary factor 1-like protein 3) (U2AF1-like protein 3)	U2AF1L4 U2AF1-RS3 U2AF1L3
+Q9NZ63	TLS1_HUMAN	Telomere length and silencing protein 1 homolog (Hepatocellular carcinoma-associated antigen 59)	C9orf78 HCA59
+Q13107	UBP4_HUMAN	Ubiquitin carboxyl-terminal hydrolase 4 (EC 3.4.19.12) (Deubiquitinating enzyme 4) (Ubiquitin thioesterase 4) (Ubiquitin-specific-processing protease 4) (Ubiquitous nuclear protein homolog)	USP4 UNP UNPH
+Q01081	U2AF1_HUMAN	Splicing factor U2AF 35 kDa subunit (U2 auxiliary factor 35 kDa subunit) (U2 small nuclear RNA auxiliary factor 1) (U2 snRNP auxiliary factor small subunit)	U2AF1 U2AF35 U2AFBP FP793
+P62995	TRA2B_HUMAN	Transformer-2 protein homolog beta (TRA-2 beta) (TRA2-beta) (hTRA2-beta) (Splicing factor, arginine/serine-rich 10) (Transformer-2 protein homolog B)	TRA2B SFRS10
+Q13595	TRA2A_HUMAN	Transformer-2 protein homolog alpha (TRA-2 alpha) (TRA2-alpha) (Transformer-2 protein homolog A)	TRA2A
+Q96E39	RMXL1_HUMAN	RNA binding motif protein, X-linked-like-1 (Heterogeneous nuclear ribonucleoprotein G-like 1)	RBMXL1
+Q8WXF0	SRS12_HUMAN	Serine/arginine-rich splicing factor 12 (35 kDa SR repressor protein) (SRrp35) (Splicing factor, arginine/serine-rich 13B) (Splicing factor, arginine/serine-rich 19)	SRSF12 SFRS13B SFRS19 SRRP35
+Q07955	SRSF1_HUMAN	Serine/arginine-rich splicing factor 1 (Alternative-splicing factor 1) (ASF-1) (Splicing factor, arginine/serine-rich 1) (pre-mRNA-splicing factor SF2, P33 subunit)	SRSF1 ASF SF2 SF2P33 SFRS1 OK/SW-cl.3
+Q9Y2W1	TR150_HUMAN	Thyroid hormone receptor-associated protein 3 (BCLAF1 and THRAP3 family member 2) (Thyroid hormone receptor-associated protein complex 150 kDa component) (Trap150)	THRAP3 BCLAF2 TRAP150
+Q96K80	ZC3HA_HUMAN	Zinc finger CCCH domain-containing protein 10	ZC3H10 ZC3HDC10
+P51991	ROA3_HUMAN	Heterogeneous nuclear ribonucleoprotein A3 (hnRNP A3)	HNRNPA3 HNRPA3
