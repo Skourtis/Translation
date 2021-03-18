@@ -5,13 +5,14 @@ output: html_document
 
 ```{r}
 library(targets)
-tar_read(dataset)
-tar_read(dataset)
-tar_read(hist) 
+testthat::test_file(here::here("tests","test_functions.R"))
 ```
 I have seen the hist, and it shows....
 
-```{r}
+```{r heatmaps, fig.width = 18, fig.height=18}
+#map(tar_read(omics), ~.x$Sample_Corr$Histogram)
+#map(tar_read(omics), ~.x$Feature_Corr$Histogram)
+#map(tar_read(omics), ~.x$Heatmap$Plot_Heatmap)
 
 ```
 

@@ -27,6 +27,35 @@ loading_CCLE_prot <- function(x){
     CCLE_proteins %>% .[index_to_keep,] # removing lines with more than 75% NA]
 }
 
+loading_CCLE_TPM <- function(x){
+    RNA_seq <- read_tsv(x) %>% dplyr::select(-transcript_ids) %>% 
+        mutate(gene_id = str_remove_all(gene_id,"\\.[:graph:]*$")) %>%
+        column_to_rownames("gene_id") %>% 
+        set_names(str_remove_all(colnames(.),"_[:graph:]*$")) 
+    RNA_seq <- RNA_seq[rowSums(RNA_seq == 0) <= (ncol(RNA_seq)*0.75), ] %>%
+        .[rowSums(.)>100,] %>% 
+        rownames_to_column("gene_id")%>%
+        left_join(inner_join(HUMAN_9606_idmapping %>% 
+                                 subset(Type == "Ensembl"), 
+                             HUMAN_9606_idmapping %>% 
+                                 subset(Type == "Gene_Name"), 
+                             by = "Uniprot")  %>% 
+                      dplyr::select(contains("ID")) %>% 
+                      distinct() %>% 
+                      set_names(c("gene_id","Gene_Name")), by = "gene_id")
+    top_id <- data.frame(Gene_Name = RNA_seq$Gene_Name,
+               gene_id = RNA_seq$gene_id,
+               Abundance = RNA_seq %>% dplyr::select(-c(gene_id,Gene_Name)) %>%  
+        rowSums())%>%  group_split(Gene_Name) %>% 
+        map_df(.x = .,~.x %>% arrange(desc(Abundance)) %>% head(1)) %>% pull(gene_id)
+    RNA_seq <- RNA_seq %>% subset((gene_id %in% top_id) & !duplicated(Gene_Name)) %>% 
+        na.omit() %>% dplyr::select(-gene_id)%>% remove_rownames()%>%
+        column_to_rownames("Gene_Name")  %>% `+`(.,0.01)%>%
+        `/`(.,matrixStats::rowMedians(as.matrix(.),na.rm = T)) %>% log10() %>% as.matrix
+    RNA_seq
+ 
+}
+
 #' @title Aligning_matrices
 #' @description Take two matrices, Subset for common columns/Rows, reorder and return
 #' @return Return a named list of the two matrices, in the same order they were given,
@@ -515,7 +544,7 @@ Factors_to_PTR_corr <- function(Factors_of_interest,PTRs_df, Proteins_df){
         set_names(c("Factor","Uniprot_PTR"))
     eIFCorrProtein_safe <- safely(eIFCorrProtein)
     library(future)
-    plan(multisession, workers = future::availableCores())
+    plan(multisession, workers = 6)
     eIF_correlations_f <-  future::future({map2(
         map(Combinations$Uniprot_PTR, ~PTRs[[.x]]),
         map(Combinations$Factor, ~Protein_df[[.x]]),eIFCorrProtein_safe)},

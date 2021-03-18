@@ -1,4 +1,4 @@
-pacman::p_load(targets,openxlsx,tarchetypes,ComplexHeatmap, magrittr,future)
+pacman::p_load(targets,openxlsx,tarchetypes,ComplexHeatmap, magrittr,future,readr)
 source(here::here("Codes","functions_minimal.R"))
 options(tidyverse.quiet = TRUE)
 tar_option_set(packages = c("biglm", "tidyverse"))
@@ -42,12 +42,19 @@ list(
         CCLE_proteins,
         loading_CCLE_prot(x= CCLE_prot_file)),
     tar_target(
-        CCLE_RNA_seq_file,#Raw from https://depmap.org/portal/download/ 2/11/2020
+        CCLE_RNA_seq_file_original,#Raw from https://depmap.org/portal/download/ 2/11/2020
         here::here("Datasets","Raw","CCLE_expression.csv"),
         format = "file"),
     tar_target(
-        CCLE_RNA_seq,
-        inner_join(sample_info[,1:2],read.csv(CCLE_RNA_seq_file), by = c("DepMap_ID" = "X"))[,-1] %>%
+        CCLE_RNA_seq_file,#Raw from https://portals.broadinstitute.org/ccle/data 3/18/2020
+        here::here("Datasets","Raw","CCLE_RNAseq_rsem_genes_tpm_20180929.txt"),
+        format = "file"),
+    tar_target(
+        CCLE_RNA_seq,#Raw from https://portals.broadinstitute.org/ccle/data 3/18/2020
+        loading_CCLE_TPM(CCLE_RNA_seq)),
+    tar_target(
+        CCLE_RNA_seq_original,
+        inner_join(sample_info[,1:2],read.csv(CCLE_RNA_seq_file_original), by = c("DepMap_ID" = "X"))[,-1] %>%
             column_to_rownames(var = "stripped_cell_line_name")  %>% t()  %>% 
             magrittr::set_rownames(str_match(rownames(.), "^([:graph:]*?)\\.")[,2]) %>% 
             .[!(rownames(.) %>% duplicated),] %>%
