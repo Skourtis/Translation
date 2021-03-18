@@ -51,7 +51,7 @@ list(
         format = "file"),
     tar_target(
         CCLE_RNA_seq,#Raw from https://portals.broadinstitute.org/ccle/data 3/18/2020
-        loading_CCLE_TPM(CCLE_RNA_seq)),
+        loading_CCLE_TPM(CCLE_RNA_seq_file)),
     tar_target(
         CCLE_RNA_seq_original,
         inner_join(sample_info[,1:2],read.csv(CCLE_RNA_seq_file_original), by = c("DepMap_ID" = "X"))[,-1] %>%
