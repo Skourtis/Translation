@@ -51,7 +51,7 @@ list(
         format = "file"),
     tar_target(
         CCLE_RNA_seq,#Raw from https://portals.broadinstitute.org/ccle/data 3/18/2020
-        loading_CCLE_TPM(CCLE_RNA_seq_file)),
+        loading_CCLE_TPM(CCLE_RNA_seq_file,HUMAN_9606_idmapping)),
     tar_target(
         CCLE_RNA_seq_original,
         inner_join(sample_info[,1:2],read.csv(CCLE_RNA_seq_file_original), by = c("DepMap_ID" = "X"))[,-1] %>%
@@ -110,7 +110,7 @@ list(
         format = "file"),
     tar_target(
         RNAi,
-        read.csv(RNAi_file) %>% mutate(Gene_name = str_match(Gene_name,"^([:graph:]*?) ")[,2]) %>%
+        utils::read.csv(RNAi_file) %>% mutate(Gene_name = str_match(Gene_name,"^([:graph:]*?) ")[,2]) %>%
             column_to_rownames(var = "Gene_name") %>% 
             setNames(str_match(colnames(.), "^([:graph:]*?)_")[,2])    ),
     tar_target(
@@ -139,10 +139,14 @@ list(
         format = "file"),
     tar_target(
         KEGG_pathways,
-        read_tsv(KEGG_path_file)),
+        readr::read_tsv(KEGG_path_file)),
+tar_target(
+        KEGG_genes_file,
+        here::here("Datasets","Raw","KEGG_genes.csv"),
+format = "file"),
     tar_target(
         KEGG_genes,
-        Retrieve_all_kegg_genes(KEGG_pathways %>% pull(Path_id))),
+        read_csv(KEGG_genes_file)),
     tar_target(
         Master_pathways_KEGG,
         KEGG_genes %>% pivot_longer(-pathway,names_to = "Type",values_to = "ID") %>% 
@@ -150,7 +154,7 @@ list(
             set_names(c("Path_ID","Type","ID","SubPathway","Pathway"))),
     tar_target(
         HUMAN_9606_idmapping,
-        read_tsv(HUMAN_9606_idmapping_file,
+        readr::read_tsv(HUMAN_9606_idmapping_file,
                  col_names = FALSE) %>%
             setNames(c("Uniprot", "Type", "ID"))),
     tar_target(
@@ -159,10 +163,7 @@ list(
         format = "file"),
     tar_target(
         Metabolite_mapping,
-        read_tsv(Metabolite_mapping_file) ),
-    tar_target(
-        humankegg_df,
-        read_tsv(Metabolite_mapping_file) ),
+        read.csv(Metabolite_mapping_file) ),
     tar_target(
         CCLE_prot_Intra_omics_corr_matrix,
                    Intra_omic_Feature_correlation(CCLE_proteins %>% 

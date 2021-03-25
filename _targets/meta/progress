@@ -1,3 +1,5 @@
 name|type|parent|branches|progress
-report|stem|report|0|running
-report|stem|report|0|built
+eTFs_PTR_corr|stem|eTFs_PTR_corr|0|started
+eTFs_PTR_corr|stem|eTFs_PTR_corr|0|built
+CCLE_prot_RNA_half_heatmap|stem|CCLE_prot_RNA_half_heatmap|0|started
+CCLE_prot_RNA_half_heatmap|stem|CCLE_prot_RNA_half_heatmap|0|built

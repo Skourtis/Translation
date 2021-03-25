@@ -3,7 +3,8 @@ pacman::p_load("biglm",
                "rmarkdown",
                "tarchetypes",
                "targets",
-               "tidyverse")
+               "tidyverse",
+"openxlsx")
 
 #' @title Load proteomics data
 #' @description Import and clean proteomic CCLE Data
@@ -11,23 +12,23 @@ pacman::p_load("biglm",
 #' @param ##--
 #' @examples #x <- data.frame(HEL = runif(5,0,1),MDAMB231 = runif(5,0,1), T47D = runif(5,0,1), Uniprot_Acc = c("O95758-4","P78368","O75145","Q99996","Q99996-2")) # gene_names
 loading_CCLE_prot <- function(x){
-    CCLE_proteins <- openxlsx::read.xlsx(tar_read(CCLE_prot_file), sheet =2) %>%
-        .[,!str_detect(colnames(.),"Peptides|Column")]
+        CCLE_proteins <- openxlsx::read.xlsx(x, sheet =2) %>%        .[,!str_detect(colnames(.),"Peptides|Column")]
     colnames(CCLE_proteins) <- str_remove_all(colnames(CCLE_proteins),"_TenPx..")
-    colnames(CCLE_proteins) <- str_match(colnames(CCLE_proteins),"^([:graph:]*?)_")[,2]
-    CCLE_proteins <- CCLE_proteins[,which(!duplicated(colnames(CCLE_proteins)))] ##Removing cell_lines with the same name
-    CCLE_proteins$Uniprot <- str_remove_all(CCLE_proteins$Uniprot,"-.")
-    CCLE_proteins <- CCLE_proteins %>% subset(!duplicated(Uniprot))
+    CCLE_proteins$Uniprot_Acc <- str_remove_all(CCLE_proteins$Uniprot_Acc,"-.")
+    CCLE_proteins <- CCLE_proteins %>% subset(!duplicated(Uniprot_Acc))
     rownames(CCLE_proteins) <- NULL
     CCLE_proteins <- CCLE_proteins %>%
-        column_to_rownames(var = "Uniprot") %>%
+        column_to_rownames(var = "Uniprot_Acc") %>%
         dplyr::select(-c(1:5)) 
+    colnames(CCLE_proteins) <- str_match(colnames(CCLE_proteins),"^([:graph:]*?)_")[,2]
+    CCLE_proteins <- CCLE_proteins[,which(!duplicated(colnames(CCLE_proteins)))] ##Removing cell_lines with the same name
     index_to_keep <- CCLE_proteins %>% is.na() %>%
     rowSums()<(ncol(CCLE_proteins)*0.75)
     CCLE_proteins %>% .[index_to_keep,] # removing lines with more than 75% NA]
 }
 
-loading_CCLE_TPM <- function(x){
+
+loading_CCLE_TPM <- function(x,y){
     RNA_seq <- read_tsv(x) %>% dplyr::select(-transcript_ids) %>% 
         mutate(gene_id = str_remove_all(gene_id,"\\.[:graph:]*$")) %>%
         column_to_rownames("gene_id") %>% 
@@ -35,9 +36,9 @@ loading_CCLE_TPM <- function(x){
     RNA_seq <- RNA_seq[rowSums(RNA_seq == 0) <= (ncol(RNA_seq)*0.75), ] %>%
         .[rowSums(.)>100,] %>% 
         rownames_to_column("gene_id")%>%
-        left_join(inner_join(HUMAN_9606_idmapping %>% 
+        left_join(inner_join(y %>% 
                                  subset(Type == "Ensembl"), 
-                             HUMAN_9606_idmapping %>% 
+                             y %>% 
                                  subset(Type == "Gene_Name"), 
                              by = "Uniprot")  %>% 
                       dplyr::select(contains("ID")) %>% 
@@ -469,7 +470,7 @@ Dataset_correlation <- function(Dataset_1,Dataset_2,pathways){
 # }
 # Graphite_extract(species = "hsapiens",
 #                  Database = "kegg")
-Retrieve_all_kegg_genes <- function(pathways){
+  Retrieve_all_kegg_genes <- function(pathways,Human_uniprot){
     genes_reactions <- data.frame(Gene_id = NULL,
                                   pathway = NULL,
                                   stringsAsFactors = F)
@@ -500,18 +501,18 @@ Retrieve_all_kegg_genes <- function(pathways){
     }
     Retrieve_Genes_KEGG_safe <- safely(Retrieve_Genes_KEGG)
     
-    Gene_pathways <- map(pathways ,Retrieve_Genes_KEGG_safe) %>%
+    map(pathways ,Retrieve_Genes_KEGG_safe) %>%
         map("result")%>%
         compact() %>% purrr::reduce(rbind) %>% 
-        left_join(subset(tar_read(HUMAN_9606_idmapping),Type == "KEGG") %>%
+        left_join(subset(Human_uniprot,Type == "KEGG") %>%
                       dplyr::select(-Type),by = c("Gene_id" = "ID")) %>%
         dplyr::select(-Gene_id)%>%
-        left_join(subset(tar_read(HUMAN_9606_idmapping),Type == "Gene_Name") %>%
+        left_join(subset(Human_uniprot,Type == "Gene_Name") %>%
                       dplyr::select(-Type),by = "Uniprot") %>% na.omit()
         
     
 }
-        
+
 #' @title Factors_to_PTR_corr
 #' @description Calculates pairwise correlation between all common cell lines between PTRs and Protein abundance
 #' @return Long dataframe with the Factor, Gene PTR and Correlation
@@ -544,7 +545,7 @@ Factors_to_PTR_corr <- function(Factors_of_interest,PTRs_df, Proteins_df){
         set_names(c("Factor","Uniprot_PTR"))
     eIFCorrProtein_safe <- safely(eIFCorrProtein)
     library(future)
-    plan(multisession, workers = 6)
+    future::plan(future::multisession)
     eIF_correlations_f <-  future::future({map2(
         map(Combinations$Uniprot_PTR, ~PTRs[[.x]]),
         map(Combinations$Factor, ~Protein_df[[.x]]),eIFCorrProtein_safe)},
