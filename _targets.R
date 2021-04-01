@@ -1,5 +1,5 @@
 pacman::p_load(targets,openxlsx,tarchetypes,ComplexHeatmap, magrittr,future,readr)
-source(here::here("Codes","functions_minimal.R"))
+source(fs::path_rel(here::here("Codes","functions_minimal.R")))
 options(tidyverse.quiet = TRUE)
 tar_option_set(packages = c("biglm", "tidyverse"))
 #in the console run targets::tar_visnetwork()
@@ -7,16 +7,16 @@ tar_option_set(packages = c("biglm", "tidyverse"))
 list(
     tar_target(
         sample_info_file, #Raw from https://depmap.org/portal/download/ downloaded 2/11/2020 
-        here::here("Datasets","Raw","sample_info.csv"),
+        fs::path_rel(here::here("Datasets","Raw","sample_info.csv")),
         format = "file"),
     tar_target(
         uniprot_factors, #Downloaded from uniprot by searching for specific
         purrr::map_df(.x = c("ribosome","proteasome","membrane","spliceosome","eukaryotic_translation"), 
-                                 ~read_tsv(file = here::here("Datasets","Raw",paste0("uniprot_",.x,"_factor.tab"))) %>% 
+                                 ~read_tsv(file = fs::path_rel(here::here("Datasets","Raw",paste0("uniprot_",.x,"_factor.tab")))) %>% 
                                      mutate(Type = .x))),
     tar_target(
         gene_clusters_eIFs_file,
-        here::here("Datasets","Processed","eIFS_gene_clusters.csv"),
+        fs::path_rel(here::here("Datasets","Processed","eIFS_gene_clusters.csv")),
         format = "file"),
     tar_target(
         gene_clusters_eIFs,
@@ -26,7 +26,7 @@ list(
         read.csv(sample_info_file, stringsAsFactors = FALSE)),
     tar_target(
         Metab_CCLE_file, ####Raw from https://portals.broadinstitute.org/ccle/data CCLE_metabolomics_20190502.csv 2/11/2020
-        here::here("Datasets","Raw","CCLE_metabolites_landscape_of_cancer.xlsx"),
+        fs::path_rel(here::here("Datasets","Raw","CCLE_metabolites_landscape_of_cancer.xlsx")),
         format = "file"),
     tar_target(
         Metab_CCLE,
@@ -36,18 +36,18 @@ list(
             column_to_rownames("X1")%>% t()    ),
     tar_target(
         CCLE_prot_file, #Raw from https://gygi.med.harvard.edu/publications/ccle 2/11/2020
-        here::here("Datasets","Raw","Table_S2_Protein_Quant_Normalized.xlsx"),
+        fs::path_rel(here::here("Datasets","Raw","Table_S2_Protein_Quant_Normalized.xlsx")),
         format = "file"),
     tar_target(
         CCLE_proteins,
         loading_CCLE_prot(x= CCLE_prot_file)),
     tar_target(
         CCLE_RNA_seq_file_original,#Raw from https://depmap.org/portal/download/ 2/11/2020
-        here::here("Datasets","Raw","CCLE_expression.csv"),
+        fs::path_rel(here::here("Datasets","Raw","CCLE_expression.csv")),
         format = "file"),
     tar_target(
         CCLE_RNA_seq_file,#Raw from https://portals.broadinstitute.org/ccle/data 3/18/2020
-        here::here("Datasets","Raw","CCLE_RNAseq_rsem_genes_tpm_20180929.txt"),
+        fs::path_rel(here::here("Datasets","Raw","CCLE_RNAseq_rsem_genes_tpm_20180929.txt")),
         format = "file"),
     tar_target(
         CCLE_RNA_seq,#Raw from https://portals.broadinstitute.org/ccle/data 3/18/2020
@@ -66,7 +66,7 @@ list(
             `/`(.,matrixStats::rowMedians(as.matrix(.),na.rm = T)) %>% log10() %>% as.matrix) ,    
     tar_target(
         NCI_60_metabolites_file,#Raw from  https://www.nature.com/articles/s41467-019-09695-9#Sec28 2/11/2020
-        here::here("Datasets","Raw","41467_2019_9695_MOESM2_ESM.xlsx"),
+        fs::path_rel(here::here("Datasets","Raw","41467_2019_9695_MOESM2_ESM.xlsx")),
         format = "file"),
     tar_target(
         NCI_60_metabolites,
@@ -77,7 +77,7 @@ list(
             mutate(Annotation.ID =  str_replace_all(Annotation.ID,"HMDB", "HMDB00")) ),
     tar_target(
         NCI_60_proteins_file,#Raw from https://depmap.org/portal/download/ 2/11/2020
-        here::here("Datasets","Raw","1-s2.0-S2589004219304407-mmc2.xlsx"),
+        fs::path_rel(here::here("Datasets","Raw","1-s2.0-S2589004219304407-mmc2.xlsx")),
         format = "file"),
     tar_target(
         NCI_60_proteins,
@@ -87,7 +87,7 @@ list(
             setNames(str_remove(colnames(.), "^[:graph:]*?_")) %>% log() %>% Z_transf()),
     tar_target(
         NCI_60_RNA_file,#Raw from https://discover.nci.nih.gov/cellminer/loadDownload.do 3/11/2020 - RNAseq Composite expression
-        here::here("Datasets","Raw","RNA__RNA_seq_composite_expression.xls"),
+        fs::path_rel(here::here("Datasets","Raw","RNA__RNA_seq_composite_expression.xls")),
         format = "file"),
     tar_target(
         NCI_60_RNA,
@@ -97,7 +97,7 @@ list(
             .[!(matrixStats::rowSds(as.matrix(.)) == 0),]),
     tar_target(
         Achilles_file,#Raw from https://depmap.org/portal/download/ 2/11/2020
-        here::here("Datasets","Raw","Achilles_gene_effect.csv"),
+        fs::path_rel(here::here("Datasets","Raw","Achilles_gene_effect.csv")),
         format = "file"),
     tar_target(
         Achilles,
@@ -106,7 +106,7 @@ list(
         magrittr::set_rownames(str_match(rownames(.), "^([:graph:]*?)\\.")[,2])),
     tar_target(
         RNAi_file,#Raw from https://depmap.org/portal/download/ 2/11/2020
-        here::here("Datasets","Raw","D2_combined_gene_dep_scores.csv"),
+        fs::path_rel(here::here("Datasets","Raw","D2_combined_gene_dep_scores.csv")),
         format = "file"),
     tar_target(
         RNAi,
@@ -115,7 +115,7 @@ list(
             setNames(str_match(colnames(.), "^([:graph:]*?)_")[,2])    ),
     tar_target(
         HUMAN_9606_idmapping_file,#Raw from Uniprot
-        here::here("Datasets","Raw","HUMAN_9606_idmapping.dat"),
+        fs::path_rel(here::here("Datasets","Raw","HUMAN_9606_idmapping.dat")),
         format = "file"),
     tar_target(
         CCLE_RNA_seq_mean_df_plot,
@@ -135,14 +135,14 @@ list(
             ggtitle("CCLE_proteins_mean_df_plot")),
     tar_target(
         KEGG_path_file,#Raw from Uniprot
-        here::here("Datasets","Raw","hsa_pathways.txt"),
+        fs::path_rel(here::here("Datasets","Raw","hsa_pathways.txt")),
         format = "file"),
     tar_target(
         KEGG_pathways,
         readr::read_tsv(KEGG_path_file)),
 tar_target(
         KEGG_genes_file,
-        here::here("Datasets","Raw","KEGG_genes.csv"),
+        fs::path_rel(here::here("Datasets","Raw","KEGG_genes.csv")),
 format = "file"),
     tar_target(
         KEGG_genes,
@@ -159,7 +159,7 @@ format = "file"),
             setNames(c("Uniprot", "Type", "ID"))),
     tar_target(
         Metabolite_mapping_file,#Raw from Uniprot
-        here::here("Datasets","Raw","CCLE_metabolites_mapped.csv"),
+        fs::path_rel(here::here("Datasets","Raw","CCLE_metabolites_mapped.csv")),
         format = "file"),
     tar_target(
         Metabolite_mapping,
@@ -261,5 +261,5 @@ format = "file"),
         eTFs_PTR_corr,
         Factors_to_PTR_corr(uniprot_factors %>% subset(str_detect(Type,"eukaryotic_translation")) %>%
                                 pull(Entry),PTR_CCLE, CCLE_proteins)),
-    tar_render(report, here::here("Output","report.Rmd"))
+    tar_render(report, fs::path_rel(here::here("Output","report.Rmd")))
 )

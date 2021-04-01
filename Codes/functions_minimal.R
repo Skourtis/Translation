@@ -52,7 +52,7 @@ loading_CCLE_TPM <- function(x,y){
     RNA_seq <- RNA_seq %>% subset((gene_id %in% top_id) & !duplicated(Gene_Name)) %>% 
         na.omit() %>% dplyr::select(-gene_id)%>% remove_rownames()%>%
         column_to_rownames("Gene_Name")  %>% `+`(.,0.01)%>%
-        `/`(.,matrixStats::rowMedians(as.matrix(.),na.rm = T)) %>% log10() %>% as.matrix
+        `/`(.,matrixStats::rowMedians(as.matrix(.),na.rm = T)) %>% log2() %>% as.matrix
     RNA_seq
  
 }
