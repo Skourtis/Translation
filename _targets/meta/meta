@@ -17,11 +17,9 @@ Metab_CCLE_file|stem|45f67d42a7b19101|b8dee74047a47370|c3b5fc02cdc369c1|17119805
 sample_info_file|stem|a5b3e545a8f35bfc|d06a0573e4900f2e|c3b5fc02cdc369c1|-1101635091|/nfs/users2/ssdelci/skourtis/Translation/Datasets/Raw/sample_info.csv|a64fffae0f182bcf|02a1d02151783e92|371576|file|vector|||0.002||
 Achilles_file|stem|a612876d122c2658|37296a1d54c6f6d4|c3b5fc02cdc369c1|-1213508192|/nfs/users2/ssdelci/skourtis/Translation/Datasets/Raw/Achilles_gene_effect.csv|0bcc1cc18d6e78cf|89ded7bae0bdd5f3|282073071|file|vector|||0.001||
 KEGG_genes_file|stem|7a5a55655b1a762f|4c810f0d99dc7769|c3b5fc02cdc369c1|1268366279|/nfs/users2/ssdelci/skourtis/Translation/Datasets/Raw/KEGG_genes.csv|f2a4627d7cc9744c|58a481729cf6fa41|1059659|file|vector|||0.002||
-Metabolite_mapping|stem|b794ee0bea00e9a9|b0ffec708d051354|eb28c4025d505c23|-731271698|_targets/objects/Metabolite_mapping|c36a7da47ee1fe62|65e969fcdae16690|4736|rds|vector|||0.004||
 HUMAN_9606_idmapping|stem|f82ad3a0a9870941|4ce0fdeb757da8a9|17242fd99bcf31f3|461325019|_targets/objects/HUMAN_9606_idmapping|2744e7cb92f40ef9|dec04badb89a7622|31815599|rds|vector|||9.107||
 CCLE_proteins|stem|2d15b1d6eea9db45|b7b578a867aa1d1c|fcd9aebe6a5573a0|-1838029496|_targets/objects/CCLE_proteins|1a49b53d4b7fdc72|4d6a9e0ccce9f575|26150883|rds|vector|||49.914||
 Metab_CCLE|stem|ee3f0be249c3bf21|dd6abc2717a17330|39bad513a9cbfe19|-1967062603|_targets/objects/Metab_CCLE|492731484ef3b44f|0ba3166beb070824|1498610|rds|vector|||1.121||
-sample_info|stem|02af7a40f0519df4|47084120f5eab88d|59639db863ff2a0d|1633701529|_targets/objects/sample_info|b0e51d8043519b5f|31384d9abe0e694f|86204|rds|vector|||0.017||
 KEGG_genes|stem|9c899fc2ca153a13|62eea111e7965331|5344a9104c4b4671|984569448|_targets/objects/KEGG_genes|6d9c2b92478d16d0|f5aafca722353854|190393|rds|vector|||0.029||
 CCLE_RNA_seq|stem|cc98d0ae4fffe7e7|67fe392712246396|61add267faa23774|-1580020269|_targets/objects/CCLE_RNA_seq|9d8a860b9c8f7f8b|91ef26a400558199|110548709|rds|vector|||31.103|The .data argument of add_column must have unique names as of tibble 3.0.0.Use .name_repair  minimal.This warning i|
 NCI_Metabo_Intra_omics_corr_matrix|stem|a6476179698c195a|2d7fc1eb74651e2d|4ee051b94b72da97|-937370076|_targets/objects/NCI_Metabo_Intra_omics_corr_matrix|e8f78951dd5f5c95|fc0a362c7cd0d063|20034037|rds|vector|||21.006||
@@ -45,7 +43,7 @@ Mean_sd_matrix|function|f5829b0545e49c26||||||||||||||
 Correlation_pairwise|function|7dacc10b9a7d0b03||||||||||||||
 get_lower_tri|function|756d5608a4b374cd||||||||||||||
 get_upper_tri|function|a8ccfb76dcc96c48||||||||||||||
-Factors_to_PTR_corr|function|573e22b86cd8be9d||||||||||||||
+Factors_to_PTR_corr|function|32f0bc6d9a6fa38a||||||||||||||
 Z_transf|function|a991b4ca03cbd9b4||||||||||||||
 Intra_omic_Feature_correlation|function|a65737d35cabf3c0||||||||||||||
 Aligning_two_matrices|function|eae8f8b13ffd6654||||||||||||||
@@ -62,7 +60,10 @@ KEGG_pathways|stem|71dbc8ec4d4e1ede|6cafeb941f75bb3c|779e47721dceb50a|1169053559
 CCLE_Metabo_Intra_omics_corr_matrix|stem|52f87c0fb7c85528|746c28a89d6942ea|1bebb8ee15c6307c|1262173875|_targets/objects/CCLE_Metabo_Intra_omics_corr_matrix|47110973eab89c8b|2e0ef1c7625be199|76413|rds|vector|||0.55||
 gene_clusters_eIFs|stem|6d28cfcbf524428b|0190579e63bac41e|b7a5a9eff9b412bf|-1748155860|_targets/objects/gene_clusters_eIFs|61c7fdf8116c8135|90289a23607c0f5f|71082|rds|vector|||0.026||
 uniprot_factors|stem|b124c51367422ab3|675f4f4a68aafa3a|352b509192c8ae8c|793344582|_targets/objects/uniprot_factors|a0e189a89adc3d08|5a00076799ea9576|89329|rds|vector|||0.328||
-eTFs_PTR_corr|stem||d2ff84508c54f7f6|804dc735e2f32404|-600089785||||0|rds|vector|||9.078||Initialization of plan failed, because the test future used for validation failed. The reason was Unexpected result of class
+eTFs_PTR_corr|stem|4c04108a7f3816f2|d2ff84508c54f7f6|d9ceae93f462601b|-600089785|_targets/objects/eTFs_PTR_corr|b8274c7c5c324bce|a53c3c65ebe33552|13860663|rds|vector|||69199.859||
+sample_info|stem|02af7a40f0519df4|47084120f5eab88d|59639db863ff2a0d|1633701529|_targets/objects/sample_info|b0e51d8043519b5f|31384d9abe0e694f|86204|rds|vector|||0.017||
+Metabolite_mapping|stem|b794ee0bea00e9a9|b0ffec708d051354|eb28c4025d505c23|-731271698|_targets/objects/Metabolite_mapping|c36a7da47ee1fe62|65e969fcdae16690|4736|rds|vector|||0.004||
+CCLE_prot_RNA_half_heatmap|stem|275a8a80428d6257|d589c64dd24d8463|e5bc2f87206c5fd2|-1799616232|_targets/objects/CCLE_prot_RNA_half_heatmap|80810294ff0fb966|11d4094fef5cb52b|18583283|rds|vector|||5.457||
 Mean_sd_matrix|function|f5829b0545e49c26
 Correlation_pairwise|function|7dacc10b9a7d0b03
 get_lower_tri|function|756d5608a4b374cd
@@ -74,17 +75,36 @@ Aligning_two_matrices|function|eae8f8b13ffd6654
 Retrieve_all_kegg_genes|function|946ed8dafe7e03a9
 produce_data|function|b28756938cb1d869
 Convert_df_to_heatmap|function|57f7b06abc732419
-loading_CCLE_TPM|function|070d97fec9e4b0d9
+loading_CCLE_TPM|function|286ff5d7ca3da12f
 loading_CCLE_prot|function|5c73279523c62474
 Dataset_correlation|function|865a43f6550cec65
 PTR_aligning_matrices|function|0b403b4130dcf788
-Metabolite_mapping_file|stem|d650daa7f44f1629|f74b414889fe72bd|c3b5fc02cdc369c1|107539083|/nfs/users2/ssdelci/skourtis/Translation/Datasets/Raw/CCLE_metabolites_mapped.csv|939d16d3e411501e|f0215abf7109b463|16930|file|vector|||0.002||
-KEGG_path_file|stem|1b63994c25d91e36|a098607be48654d7|c3b5fc02cdc369c1|-1711041613|/nfs/users2/ssdelci/skourtis/Translation/Datasets/Raw/hsa_pathways.txt|beef5aefe4a5cc62|051f5a36f2a31134|35287|file|vector|||0.001||
+Metabolite_mapping_file|stem|d650daa7f44f1629|d949c7d08ac4f81b|c3b5fc02cdc369c1|107539083|Datasets/Raw/CCLE_metabolites_mapped.csv|939d16d3e411501e|f0215abf7109b463|16930|file|vector|||0.005||
+HUMAN_9606_idmapping_file|stem|0466e301c1484ada|fd6ebabff3fadb6a|c3b5fc02cdc369c1|-678333092|Datasets/Raw/HUMAN_9606_idmapping.dat|eaf23bfb854c1f11|4eb1583d9215de31|164014802|file|vector|||0.004||
+RNAi_file|stem|db8fd8eb1c5cc9cf|5e9b36f8ff10d134|c3b5fc02cdc369c1|-254840369|Datasets/Raw/D2_combined_gene_dep_scores.csv|86953ce84c57f4b4|52ad5e1781a3c2bf|127597703|file|vector|||0.004||
+report|stem|bea3664676c04819|59a62ff15ae36420|4745aa592080ea1d|-237041703|Output/report.html*Output/report.Rmd|9bdb25d159bca2fa|7faa89a12d538a17|805405|file|vector|||7.029|unable to open connection to X11 display |
+NCI_60_metabolites_file|stem|9f293721d4abdeee|f828e7f633b830f9|c3b5fc02cdc369c1|1138282341|Datasets/Raw/41467_2019_9695_MOESM2_ESM.xlsx|727220ca9cbe0923|b46ce158121486a1|43087646|file|vector|||0.004||
+NCI_60_RNA_file|stem|209247b25b67b65b|2553f52dc952843b|c3b5fc02cdc369c1|-1521843706|Datasets/Raw/RNA__RNA_seq_composite_expression.xls|b2cbd8ac039552b3|04965dd8d448d193|29035008|file|vector|||0.007||
+NCI_60_proteins_file|stem|bb4a91bdd1d58068|50accec93f5e36fe|c3b5fc02cdc369c1|-1379885537|Datasets/Raw/1-s2.0-S2589004219304407-mmc2.xlsx|aae4fcaee743eb4d|172e451a6cde8a40|32943679|file|vector|||0.008||
+CCLE_RNA_seq_file|stem|5e658783b30341c1|622360506eb53edd|c3b5fc02cdc369c1|-598079998|Datasets/Raw/CCLE_RNAseq_rsem_genes_tpm_20180929.txt|90a53497a37bf363|b986d986d35a2722|770547250|file|vector|||0.006||
+KEGG_path_file|stem|1b63994c25d91e36|f983683cb88b044b|c3b5fc02cdc369c1|-1711041613|Datasets/Raw/hsa_pathways.txt|beef5aefe4a5cc62|051f5a36f2a31134|35287|file|vector|||0.006||
 KEGG_pathways|stem|71dbc8ec4d4e1ede|6cafeb941f75bb3c|779e47721dceb50a|1169053559|_targets/objects/KEGG_pathways|2d11ea9cf74c0e7f|f1a7c7dfc13860de|5753|rds|vector|||0.007||
+CCLE_prot_file|stem|034a5847d8915dab|f727ca4b8b9b45de|c3b5fc02cdc369c1|-188736315|Datasets/Raw/Table_S2_Protein_Quant_Normalized.xlsx|78284e022216889e|ec3489f1f568860e|60459647|file|vector|||0.006||
+CCLE_RNA_seq|stem|b60871265e51a59f|67fe392712246396|3b04df61eeb859bb|-1580020269|_targets/objects/CCLE_RNA_seq|2b9cf045d0e557df|133fa75622924c04|110726523|rds|vector|||41.665|The .data argument of add_column must have unique names as of tibble 3.0.0.Use .name_repair  minimal.This warning i|
+CCLE_RNA_Intra_omics_corr_matrix|stem|21889a8de1b709a2|ee64cfe47cfa255f|f67810921fd08b88|29420562|_targets/objects/CCLE_RNA_Intra_omics_corr_matrix|e91ba9e4084dac9d|d6471a64ea37e86b|215538951|rds|vector|||1842.7||
+CCLE_RNA_prot_aligned|stem|82d3c1cf7872d66a|fbf80fc11dd2b387|0bd2701b2f30a962|1503033707|_targets/objects/CCLE_RNA_prot_aligned|3993c785c4091f34|0e7b35f2f90b2db7|52238456|rds|vector|||0.407||
+PTR_CCLE|stem|bbc02025edb673e1|5d787d824b003934|d3cf0e5ac717650b|137829147|_targets/objects/PTR_CCLE|a582cb3d25e50814|618e26f01250a957|24891382|rds|vector|||0.013||
+PTR_mean_df_plot|stem|ec9400247c0aa7ff|46fe6de531e581ef|f26781cbf0e38eb7|-1214118701|_targets/objects/PTR_mean_df_plot|c031bf4bcb057fa5|abd49ee57aad51d9|25499215|rds|vector|||0.08||
+CCLE_RNA_seq_file_original|stem|4001514bd6558b66|7e152f4cbea19398|c3b5fc02cdc369c1|-1560481231|Datasets/Raw/CCLE_expression.csv|286661947b4fae3b|60d68e79587f3b8e|386571085|file|vector|||0.004||
+gene_clusters_eIFs_file|stem|4b18233e2763235d|e55844d096394c31|c3b5fc02cdc369c1|-517659420|Datasets/Processed/eIFS_gene_clusters.csv|da71b8527352253f|50e435aabad2bd5c|261680|file|vector|||0.004||
+Metab_CCLE_file|stem|45f67d42a7b19101|7c817d4f724fafef|c3b5fc02cdc369c1|1711980530|Datasets/Raw/CCLE_metabolites_landscape_of_cancer.xlsx|243dc59e519f7aac|39f4260805d6349a|23751110|file|vector|||0.004||
 CCLE_Metabo_Intra_omics_corr_matrix|stem|52f87c0fb7c85528|746c28a89d6942ea|1bebb8ee15c6307c|1262173875|_targets/objects/CCLE_Metabo_Intra_omics_corr_matrix|47110973eab89c8b|2e0ef1c7625be199|76413|rds|vector|||0.55||
 gene_clusters_eIFs|stem|6d28cfcbf524428b|0190579e63bac41e|b7a5a9eff9b412bf|-1748155860|_targets/objects/gene_clusters_eIFs|61c7fdf8116c8135|90289a23607c0f5f|71082|rds|vector|||0.026||
-uniprot_factors|stem|b124c51367422ab3|675f4f4a68aafa3a|352b509192c8ae8c|793344582|_targets/objects/uniprot_factors|a0e189a89adc3d08|5a00076799ea9576|89329|rds|vector|||0.328||
-eTFs_PTR_corr|stem|4c04108a7f3816f2|d2ff84508c54f7f6|d9ceae93f462601b|-600089785|_targets/objects/eTFs_PTR_corr|b8274c7c5c324bce|a53c3c65ebe33552|13860663|rds|vector|||69199.859||
+uniprot_factors|stem|b124c51367422ab3|90f65cedb88239dc|352b509192c8ae8c|793344582|_targets/objects/uniprot_factors|ca773c08864c7a16|5a00076799ea9576|89329|rds|vector|||0.143||
+CCLE_RNA_seq_mean_df_plot|stem|ae876efe11953dcb|f468217febc2c40e|a9935639bfcc604d|997227005|_targets/objects/CCLE_RNA_seq_mean_df_plot|858acba4b2f112e7|0b84478603108268|111737602|rds|vector|||0.385||
+eTFs_PTR_corr|stem|aa30c734d1f623ee|d2ff84508c54f7f6|058a2f1bb951b2ff|-600089785|_targets/objects/eTFs_PTR_corr|a14701c78f0f8120|e83bd4e212a45779|13859230|rds|vector|||69598.955||
+sample_info_file|stem|a5b3e545a8f35bfc|b46c543c8133b222|c3b5fc02cdc369c1|-1101635091|Datasets/Raw/sample_info.csv|a64fffae0f182bcf|02a1d02151783e92|371576|file|vector|||0.005||
 sample_info|stem|02af7a40f0519df4|47084120f5eab88d|59639db863ff2a0d|1633701529|_targets/objects/sample_info|b0e51d8043519b5f|31384d9abe0e694f|86204|rds|vector|||0.017||
+Achilles_file|stem|a612876d122c2658|366d91023b7eed8a|c3b5fc02cdc369c1|-1213508192|Datasets/Raw/Achilles_gene_effect.csv|0bcc1cc18d6e78cf|89ded7bae0bdd5f3|282073071|file|vector|||0.004||
 Metabolite_mapping|stem|b794ee0bea00e9a9|b0ffec708d051354|eb28c4025d505c23|-731271698|_targets/objects/Metabolite_mapping|c36a7da47ee1fe62|65e969fcdae16690|4736|rds|vector|||0.004||
-CCLE_prot_RNA_half_heatmap|stem|275a8a80428d6257|d589c64dd24d8463|e5bc2f87206c5fd2|-1799616232|_targets/objects/CCLE_prot_RNA_half_heatmap|80810294ff0fb966|11d4094fef5cb52b|18583283|rds|vector|||5.457||
+KEGG_genes_file|stem|7a5a55655b1a762f|e8cd12f8c800493d|c3b5fc02cdc369c1|1268366279|Datasets/Raw/KEGG_genes.csv|f2a4627d7cc9744c|58a481729cf6fa41|1059659|file|vector|||0.003||
