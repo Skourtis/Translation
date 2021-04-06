@@ -3,5 +3,4 @@ Datasets/Raw/*.dat
 Datasets/Raw/*.zip
 Datasets/Raw/*.csv
 Datasets/Raw/*.RData
-_targets/meta/*
 _targets/objects/*
