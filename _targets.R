@@ -1,4 +1,4 @@
-pacman::p_load(targets,openxlsx,tarchetypes,ComplexHeatmap, magrittr,future,readr)
+pacman::p_load(targets,openxlsx,tarchetypes,ComplexHeatmap, magrittr,future,readr,furrr,progressr,tidymodels)
 source(fs::path_rel(here::here("Codes","functions_minimal.R")))
 options(tidyverse.quiet = TRUE)
 tar_option_set(packages = c("biglm", "tidyverse"))
@@ -261,5 +261,8 @@ format = "file"),
         eTFs_PTR_corr,
         Factors_to_PTR_corr(uniprot_factors %>% subset(str_detect(Type,"eukaryotic_translation")) %>%
                                 pull(Entry),PTR_CCLE, CCLE_proteins)),
+    tar_target(
+        Ridge_eIFS_prediction,
+        Running_Ridge_eIFs(CCLE_proteins,PTR_CCLE,uniprot_factors)), 
     tar_render(report, fs::path_rel(here::here("Output","report.Rmd")))
 )

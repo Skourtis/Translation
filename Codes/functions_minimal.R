@@ -557,5 +557,121 @@ Factors_to_PTR_corr <- function(Factors_of_interest,PTRs_df, Proteins_df){
     eIF_correlations
 }
     
-
+Running_Ridge_eIFs <- function(Protein_matrix,PTR_matrix,Uniprot_factors){
+  Proteins <-  inner_join(Protein_matrix %>% t() %>%  
+                            as.data.frame() %>% 
+                            #dplyr::select(Uniprot) %>%  
+                            set_names(.,glue::glue("{colnames(.)}_Uniprot")) %>% 
+                            rownames_to_column("Cell_line") ,
+                          PTR_matrix %>% t() %>% as.data.frame %>%
+                            dplyr::select(any_of(Uniprot_factors %>% 
+                                                   subset(type = "eukaryotic_translation") %>% 
+                                                   pull("Gene names") %>% 
+                                                   str_split( " ") %>% 
+                                                   unlist %>% str_subset("EIF|ETF|EEF"))) %>% 
+                            
+                            rownames_to_column("Cell_line")) 
+  Proteins <-  select(Proteins,which((Proteins %>% 
+                                        is.na() %>% 
+                                        colSums())==0)) #%>% column_to_rownames("Cell_line") #%>% as.matrix()# <nrow(IDH1)/10))
+  list_of_Uniprot_models <- map(.x = colnames(Proteins) %>% 
+                                  str_subset("Uniprot"),
+                                ~dplyr::select(Proteins, contains(.x)|!contains("Uniprot"))) %>% set_names(colnames(Proteins) %>% 
+                                                                                                             str_subset("Uniprot"))
+  
+  Linear_model_function <- function(Protein_list){
+    
+    office_split <- initial_split(Protein_list)# , strata = season)
+    office_train <- training(office_split)
+    office_test <- testing(office_split)
+    
+    rec <- recipe(Protein_list) %>% 
+      update_role(contains("Uniprot"), 
+                  new_role = "outcome") %>% 
+      update_role(!contains("Uniprot"), 
+                  new_role = "predictor") %>% 
+      update_role(contains("Cell_line"), 
+                  new_role = "ID") %>% 
+      step_normalize(all_predictors()) #%>%
+    #step_nzv(all_predictors())
+    
+    
+    office_prep <- rec %>%
+      prep(strings_as_factors = FALSE)
+    
+    lasso_spec <- linear_reg(penalty = 0.1, mixture = 0) %>%
+      set_engine("glmnet")
+    wf <- workflow() %>%
+      add_recipe(rec)
+    lasso_fit <- wf %>%
+      add_model(lasso_spec) %>%
+      fit(data = office_train)
+    lasso_fit %>%
+      pull_workflow_fit() %>%
+      tidy()
+    set.seed(1234)
+    office_boot <- bootstraps(office_train)
+    
+    tune_spec <- linear_reg(penalty = tune(), mixture = 0) %>%
+      set_engine("glmnet")
+    
+    lambda_grid <- grid_regular(penalty(), levels = 10)
+    set.seed(2020)
+    lasso_grid <- tune_grid(
+      wf %>% add_model(tune_spec),
+      resamples = office_boot,
+      grid = lambda_grid
+    )
+    lasso_grid %>%
+      collect_metrics()
+    
+    lasso_grid %>%
+      collect_metrics() %>%
+      ggplot(aes(mixture, mean, color = .metric)) +
+      geom_errorbar(aes(
+        ymin = mean - std_err,
+        ymax = mean + std_err
+      ),
+      alpha = 0.5
+      ) +
+      geom_line(size = 1.5) +
+      facet_wrap(~.metric, scales = "free", nrow = 2) +
+      scale_x_log10() +
+      theme(legend.position = "none")
+    lowest_rmse <- lasso_grid %>%
+      select_best("rmse")
+    final_lasso <- finalize_workflow(
+      wf %>% add_model(tune_spec),
+      lowest_rmse
+    )
+    
+    importance <- final_lasso %>%
+      fit(office_train) %>%
+      pull_workflow_fit() %>%
+      vip::vi(lambda = lowest_rmse$penalty) %>%
+      mutate(
+        Importance = abs(Importance),
+        Variable = fct_reorder(Variable, Importance)
+      ) 
+    
+    final_fitted <- last_fit(
+      final_lasso,
+      office_split
+    ) %>%
+      collect_metrics()
+    list(importance = importance,
+         final_fitted = final_fitted)
+    
+  }
+  options(future.globals.maxSize= 891289600)
+  Linear_model_function_safe <- safely(Linear_model_function)
+  future::plan(future::multisession)
+  models <- furrr::future_map(list_of_Uniprot_models, 
+                              Linear_model_function_safe,
+                              .progress = TRUE,
+                              .options = furrr_options(seed = 1234))
+  #Linear_model_Ratio <- future::value(Linear_model_f)
+  plan(sequential)
+  models
+}
 
