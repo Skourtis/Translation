@@ -1,0 +1,63 @@
+---
+title: "Translational Output"
+subtitle: "Looking for factors controling translation of proteins"
+author: "Savvas Kourtis"
+institute: "CRG - Barcelona"
+date: "2021/04/28 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+---
+# R Code
+
+```{r comment='#'}
+library(targets,tarchetypes)
+testthat::test_file(here::here("tests","test_functions.R"))
+```
+Have any tests failed?
+---
+
+# CCLE_RNA_seq_mean_df_plot
+
+```{r cars, fig.height=4, dev='svg'}
+tar_read(CCLE_RNA_seq_mean_df_plot)
+```
+
+---
+
+```{r cars, fig.height=4, dev='svg'}
+tar_read(CCLE_prot_EIFs_genes_heatmap)
+```
+Are EIFs correlated with other proteins ?
+---
+
+```{r cars, fig.height=4, dev='svg'}
+tar_read(CCLE_RNA_EIFs_genes_heatmap)
+```
+Are EIFs correlated with other transcript?
+
+---
+
+# CCLE_prot_seq_mean_df_plot
+
+```{r cars, fig.height=4, dev='svg'}
+tar_read(CCLE_prot_seq_mean_df_plot)
+```
+
+---
+# R Plots
+
+```{r cars, fig.height=4, dev='svg'}
+tar_read(CCLE_prot_EIFs_genes_heatmap)
+```
+
+---

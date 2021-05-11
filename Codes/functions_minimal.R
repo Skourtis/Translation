@@ -5,6 +5,23 @@ pacman::p_load("biglm",
                "targets",
                "tidyverse",
 "openxlsx")
+#' @title Load Kuster Data
+#' @description Import and clean proteomic Kuster Data
+#' @return A list of mRNA,Protein, and PTR matrices against healthy tissue with gene names in row
+#' @param ##--
+#' @examples #x <- data.frame(HEL = runif(5,0,1),MDAMB231 = runif(5,0,1), T47D = runif(5,0,1), Uniprot_Acc = c("O95758-4","P78368","O75145","Q99996","Q99996-2")) # gene_names
+loading_Kuster <- function(file_name){
+  file <- read_tsv(file_name) %>% 
+    dplyr::select(!contains("Ensembl"))
+map(.x = c("_mRNA","_protein","_PTR"), 
+    ~file%>% 
+      column_to_rownames("GeneName") %>% 
+      dplyr::select(contains(.x)) %>%
+      set_names(str_remove_all(colnames(.),.x)) %>% 
+      subset(rowSums(is.na(.))<(ncol(.)/2)) %>% 
+      as.matrix())
+
+}
 
 #' @title Load proteomics data
 #' @description Import and clean proteomic CCLE Data
@@ -161,7 +178,7 @@ Mean_sd_matrix <- function(Data_matrix = NULL){
 
 
 #' @title df_to_Heatmap
-#' @description Creates heatmap from matrix with column and row names
+#' @description Creates heatmap from matrix with column and row names, reduces 
 #' @return Heatmap_object
 #' @param Data.frame with other optionals optional(Genes/Proteins of interest) 
 #' @examples Data_df <- data.frame(RANBP6 = c(1,0.16,-1),UNC119 = c(0.16,1,-0.25), HES4 = c(-1,0.25,1), row.names = c("RANBP6","UNC119","HES4"))
@@ -178,14 +195,18 @@ Convert_df_to_heatmap <- function(Data_df = NULL, Main_top_annotation = NULL,#2 
                                   show_names = c("both",'columns',"rows","none"),
                                   row_order = NULL, column_order = NULL,
                                   ...){ ### arguments to pass to heatmap
-    # Data_df <- CCLE_prot_Intra_omics_corr_matrix
-    # Heatmap_name = "eTFs Proteome against all proteins"
-    # Subset_col = NULL #vector of features/ samples to keep
-    # Subset_row = tar_read(uniprot_factors) %>% subset(Type == "eukaryotic_translation") %>%
-    #     pull(Entry)
-    # show_names = "rows"
-    # Main_top_annotation = tar_read(gene_clusters_eIFs) %>% dplyr::select(Uniprot, Pathways) %>%
-    #     rename(Genes = Uniprot)
+    # Data_df <- tar_read(CCLE_prot_Intra_omics_corr_matrix) %>% .[1:500,1:500]
+    # cluster = "both"
+    #  Heatmap_name = "eTFs Proteome against all proteins"
+    #  Subset_col = tar_read(KEGG_genes) %>%         pull(ID) #vector of features/ samples to keep
+    #  Subset_row = tar_read(KEGG_genes) %>%         pull(ID)
+    #  show_names = "rows"
+      # Main_top_annotation = tar_read(KEGG_genes) %>% dplyr::select(ID, pathway) %>%
+      #     set_names(c("Genes","Pathways")) %>% distinct(Genes, .keep_all= T)
+    #  SubAnnotation_top = NULL
+    #  SubAnnotation_side = NULL
+    #  Main_side_annotation = NULL
+    #  row_order = NULL
     if(is.null(Subset_col)){
         Subset_col <- colnames(Data_df)
     }
@@ -200,6 +221,7 @@ Convert_df_to_heatmap <- function(Data_df = NULL, Main_top_annotation = NULL,#2 
     set.seed(30)# to set random generator seed
     cl <- colors(distinct = TRUE)
     Creating_annotations <- function(Annotation,name){
+      #name = "top_main"
         #Annotation <- Main_top_annotation #########testing
         if(is.null(Annotation)){
             #return(1)
@@ -207,6 +229,8 @@ Convert_df_to_heatmap <- function(Data_df = NULL, Main_top_annotation = NULL,#2 
         } else if (str_detect(name,"top")) {
             joined <- left_join(as.data.frame(colnames(Data_df)) %>% set_names("Top"), 
                                 Annotation, by = c("Top" = "Genes"))
+            if(any(duplicated(joined$Top))){
+              stop("remove_duplicate_annotation")}
             joined[is.na(joined)] <- "Not in List"
             return(list(Pathways = joined %>% pull(Pathways),
                         Path_colours = sample(cl, length(unique(joined %>% pull(Pathways)))) %>%
@@ -214,6 +238,8 @@ Convert_df_to_heatmap <- function(Data_df = NULL, Main_top_annotation = NULL,#2 
         }else if (str_detect(name,"side")){
             joined <- left_join(as.data.frame(rownames(Data_df)) %>% set_names("Side"), 
                                 Annotation, by = c("Side" = "Genes"))
+            if(any(duplicated(joined$Side))){
+              stop("remove_duplicate_annotation")}
             joined[is.na(joined)] <- "Not in List"
             return(list(Pathways = joined %>% pull(Pathways),
                         Path_colours = sample(cl, length(unique(joined %>% pull(Pathways)))) %>%
@@ -556,7 +582,10 @@ Factors_to_PTR_corr <- function(Factors_of_interest,PTRs_df, Proteins_df){
     plan(sequential)
     eIF_correlations
 }
-    
+ 
+#Protein_matrix <- tar_read(CCLE_proteins)
+#PTR_matrix <- tar_read(PTR_CCLE)
+#Uniprot_factors <- tar_read(uniprot_factors)
 Running_Ridge_eIFs <- function(Protein_matrix,PTR_matrix,Uniprot_factors){
   Proteins <-  inner_join(Protein_matrix %>% t() %>%  
                             as.data.frame() %>% 
@@ -580,7 +609,7 @@ Running_Ridge_eIFs <- function(Protein_matrix,PTR_matrix,Uniprot_factors){
                                                                                                              str_subset("Uniprot"))
   
   Linear_model_function <- function(Protein_list){
-    
+    R.utils::withTimeout({
     office_split <- initial_split(Protein_list)# , strata = season)
     office_train <- training(office_split)
     office_test <- testing(office_split)
@@ -622,22 +651,22 @@ Running_Ridge_eIFs <- function(Protein_matrix,PTR_matrix,Uniprot_factors){
       resamples = office_boot,
       grid = lambda_grid
     )
-    lasso_grid %>%
-      collect_metrics()
-    
-    lasso_grid %>%
-      collect_metrics() %>%
-      ggplot(aes(mixture, mean, color = .metric)) +
-      geom_errorbar(aes(
-        ymin = mean - std_err,
-        ymax = mean + std_err
-      ),
-      alpha = 0.5
-      ) +
-      geom_line(size = 1.5) +
-      facet_wrap(~.metric, scales = "free", nrow = 2) +
-      scale_x_log10() +
-      theme(legend.position = "none")
+    # lasso_grid %>%
+    #   collect_metrics()
+    # 
+    # lasso_grid %>%
+    #   collect_metrics() %>%
+    #   ggplot(aes(mixture, mean, color = .metric)) +
+    #   geom_errorbar(aes(
+    #     ymin = mean - std_err,
+    #     ymax = mean + std_err
+    #   ),
+    #   alpha = 0.5
+    #   ) +
+    #   geom_line(size = 1.5) +
+    #   facet_wrap(~.metric, scales = "free", nrow = 2) +
+    #   scale_x_log10() +
+    #   theme(legend.position = "none")
     lowest_rmse <- lasso_grid %>%
       select_best("rmse")
     final_lasso <- finalize_workflow(
@@ -661,12 +690,13 @@ Running_Ridge_eIFs <- function(Protein_matrix,PTR_matrix,Uniprot_factors){
       collect_metrics()
     list(importance = importance,
          final_fitted = final_fitted)
-    
+    }, 
+    timeout = 10.08, onTimeout = "error")
   }
   options(future.globals.maxSize= 891289600)
   Linear_model_function_safe <- safely(Linear_model_function)
   future::plan(future::multisession)
-  models <- furrr::future_map(list_of_Uniprot_models, 
+  models <- furrr::future_map(list_of_Uniprot_models[1:100], 
                               Linear_model_function_safe,
                               .progress = TRUE,
                               .options = furrr_options(seed = 1234))
@@ -675,3 +705,11 @@ Running_Ridge_eIFs <- function(Protein_matrix,PTR_matrix,Uniprot_factors){
   models
 }
 
+Calc_Tissu_PTR <- function(df_pathway){
+  #df_pathway = pathway_PTR_Kuster %>% 
+  #    group_split(pathway) %>% .[[1]]
+  map_dbl(.x = unique(df_pathway$Tissue),
+          ~ks.test(df_pathway %>% subset(Tissue == .x) %>% pull(value),
+                   df_pathway %>% subset(Tissue != .x) %>% pull(value)) %>%
+            pluck("p.value")) %>% set_names(unique(df_pathway$Tissue))
+}

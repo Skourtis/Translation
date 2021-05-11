@@ -13,6 +13,6 @@ I have seen the hist, and it shows....
 #map(tar_read(omics), ~.x$Sample_Corr$Histogram)
 #map(tar_read(omics), ~.x$Feature_Corr$Histogram)
 #map(tar_read(omics), ~.x$Heatmap$Plot_Heatmap)
-
+tar_visnetwork()
 ```
 

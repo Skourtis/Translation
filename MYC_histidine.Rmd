@@ -1,0 +1,152 @@
+---
+title: "MYC_histidine"
+author: "Sdelci Lab"
+date: "`r Sys.Date()`"
+output:
+    html_document:
+      code_folding: hide
+      toc: true
+      toc_depth: 2
+      highlight: tango
+knit: (function(inputFile, encoding) { rmarkdown::render(inputFile, encoding = encoding, output_file = file.path(dirname(inputFile), 'MYC_histidine.html')) })
+
+---
+
+```{r setup}
+pacman::p_load(tidyverse,targets,tidytext,randtests,ggridges)
+targets_to_load <- c("Metab_CCLE",
+                     "CCLE_proteins",
+                     "CCLE_RNA_seq",
+                     "Achilles",
+                     "KEGG_genes",
+                     "KEGG_pathways",
+                     "sample_info")
+tar_load(Metab_CCLE);tar_load(CCLE_proteins);tar_load(CCLE_RNA_seq);tar_load(Achilles);tar_load(KEGG_genes);tar_load(KEGG_pathways);ttar_load(sample_info)
+
+genes_of_interest <- c("MYC",
+                       "BRD4",
+                      KEGG_genes %>% subset(pathway =="hsa00340") %>% pull(ID))
+tar_load(NCI_60_metabolites)
+
+CCLE_met_long <- Metab_CCLE %>% 
+    as.data.frame() %>% 
+    rownames_to_column("Metabolite") %>% 
+    subset(str_detect(Metabolite,"isti")) %>% 
+    pivot_longer(-Metabolite,names_to = "Cell_line",
+                 values_to = "Metab_Abundance")
+
+Proteins_long <- CCLE_proteins %>% as.data.frame() %>% 
+    rownames_to_column("Uniprot") %>% 
+    subset(Uniprot %in% c("P01106","O60885")) %>% 
+    pivot_longer(-Uniprot,names_to = "Cell_line",
+                 values_to = "Prot_Abundance") %>% na.omit()
+
+RNA_seq_long <- CCLE_RNA_seq %>% as.data.frame() %>% 
+    rownames_to_column("Gene_name") %>% 
+    subset(Gene_name %in% genes_of_interest) %>% 
+    pivot_longer(-Gene_name,names_to = "Cell_line",
+                 values_to = "RNA_Abundance") %>% na.omit()
+Achilles_long<- Achilles %>% as.data.frame() %>% 
+    rownames_to_column("Gene_KO") %>% 
+    #subset(Gene_KO %in% c("BRD4","MYC")) %>% 
+    mutate(Gene_KO = paste0(Gene_KO,"_KO")) %>% 
+    pivot_longer(-Gene_KO,names_to = "Cell_line",
+                 values_to = "Sensitivity")
+Achilles_long_BRD4_MYC <- Achilles %>% as.data.frame() %>% 
+    rownames_to_column("Gene_KO") %>% 
+    subset(Gene_KO %in% c("BRD4","MYC")) %>% 
+    mutate(Gene_KO = paste0(Gene_KO,"_KO")) %>% 
+    pivot_longer(-Gene_KO,names_to = "Cell_line",
+                 values_to = "Sensitivity")
+CCLE_met_long %>% 
+    left_join(Achilles_long_BRD4_MYC) %>% na.omit() %>% 
+    left_join(RNA_seq_long) %>% na.omit() %>% 
+    left_join(sample_info[,c("stripped_cell_line_name","lineage")], by = c("Cell_line" = "stripped_cell_line_name")) %>% 
+    subset(Gene_KO %in% c("MYC_KO") & Gene_name%in% c("MYC" )) %>% 
+    mutate(Cell_line = reorder_within(Cell_line, Metab_Abundance, Gene_KO)) %>%
+    ggplot(aes(x = Cell_line, 
+               y = Metab_Abundance, 
+               colour = Sensitivity)) +
+    geom_col() +
+    facet_wrap(~lineage) +
+    scale_colour_continuous(type = "viridis") +
+    scale_x_reordered() +
+    ggtitle("Cell lines BRD4/MYC expression against MYc/BRD4 Sensitivity KO (Hist Abundance)")
+
+CCLE_met_long %>% 
+    left_join(Achilles_long_BRD4_MYC) %>% na.omit() %>% 
+    left_join(RNA_seq_long) %>% na.omit() %>% 
+    subset(Gene_KO %in% c("MYC_KO") & !(Gene_name%in% c("BRD4","MYC" ))) %>% 
+    mutate(Gene_name = as.factor(Gene_name),
+           Cell_line = reorder_within(Cell_line, RNA_Abundance, Gene_name)) %>% 
+    ggplot(aes(x = Cell_line, 
+               y = RNA_Abundance, 
+               fill = Sensitivity)) +
+    geom_col(position = position_dodge(width = 0.95)) +
+    facet_wrap(~Gene_name,scales = "free_y") +theme(axis.text.y = element_blank(), axis.ticks = element_blank())+
+    coord_flip()+
+    scale_x_reordered()+
+    scale_y_continuous(expand = c(0,0)) +
+    scale_fill_continuous(low = "red", high = "blue") +
+    ggtitle("Cell lines order by enzymes  Histidine metabolism abundance against MYC sensitivity")
+```
+
+
+```{r randomness_of_gene_KO}
+# rank_testing <- function(Gene_OI){ #this function should test if the specific gene's KO distribution is statistically related to hist abundace
+#     #it should do a KS test of the genes KO values against random distributions and return a median p_value
+#     #Gene_OI <- "HDC_KO"
+#     pb$tick()$print()
+#     CCLE_met_long_enzy_plot %>%
+#         dplyr::select(Cell_line,Metab_Abundance ,Gene_KO,Sensitivity) %>% 
+#         distinct() %>% 
+#         subset(Gene_KO == Gene_OI) %>%
+#         arrange(Metab_Abundance) %>% pull(Sensitivity) %>% rank.test() %>%  .[["statistic"]]
+#    
+# }
+# 
+# CCLE_met_long_enzy_plot <- CCLE_met_long %>% 
+#     left_join(Achilles_long) %>% na.omit() 
+# 
+# pb <- progress_estimated(length(unique(CCLE_met_long_enzy_plot$Gene_KO)))
+# 
+genes_with_hist <- purrr::map_dbl(unique(CCLE_met_long_enzy_plot$Gene_KO),rank_testing) %>%
+    set_names(unique(CCLE_met_long_enzy_plot$Gene_KO) ) %>% sort
+genes_with_hist %>% hist()
+genes_with_hist["BRD4_KO"];genes_with_hist["MYC_KO"]
+
+KEGG_genes_path <- KEGG_pathways %>% 
+    subset(str_detect(Path_type,"metabolic")) %>% 
+    left_join(KEGG_genes[,-2], by = c("Path_id" = "pathway")) %>% 
+    dplyr::select(Path_description,ID) 
+
+genes_with_hist_with_pathways <- genes_with_hist_2 %>%
+    enframe %>%
+    mutate(name = str_remove(name,"_KO")) %>%
+    left_join(KEGG_genes_path, by = c("name" = "ID")) %>%
+    distinct() %>%
+    mutate(hist_pathway = if_else(str_detect(Path_description,'ist'),TRUE,FALSE),
+           Path_description = str_remove_all(Path_description, " Homo sapiens "))
+
+ggplot(genes_with_hist_with_pathways, aes(x = value, y = Path_description, fill = hist_pathway))+
+  geom_density_ridges(
+    jittered_points = TRUE,
+    position = position_points_jitter(width = 0.05, height = 0),
+    point_shape = '|', point_size = 1, point_alpha = 0.6, alpha = 0.3,
+  )
+
+```
+
+
+```{r furrr}
+plan(multisession, workers = 5)
+
+with_progress({
+  p <- progressor(steps = length(unique(CCLE_met_long_enzy_plot$Gene_KO)[1:10]))
+  
+  result <- future_map_dbl(unique(CCLE_met_long_enzy_plot$Gene_KO)[1:10], rank_testing) %>% 
+      set_names(unique(CCLE_met_long_enzy_plot$Gene_KO)[1:10])
+  })
+plan(sequential)
+
+```
