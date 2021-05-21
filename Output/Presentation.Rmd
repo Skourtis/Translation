@@ -13,13 +13,13 @@ output:
       countIncrementalSlides: false
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include=FALSE,message=FALSE, warning=FALSE, echo=FALSE}
 options(htmltools.dir.version = FALSE)
 ```
----
-# R Code
 
-```{r comment='#'}
+---
+
+```{r testing,message=FALSE, warning=FALSE, echo=FALSE}
 library(targets,tarchetypes)
 testthat::test_file(here::here("tests","test_functions.R"))
 ```
@@ -28,36 +28,94 @@ Have any tests failed?
 
 # CCLE_RNA_seq_mean_df_plot
 
-```{r cars, fig.height=4, dev='svg'}
+```{r visNetwork, fig.height=4, dev='svg',message=FALSE, warning=FALSE, echo=FALSE}
+tar_visnetwork()
+```
+
+---
+
+# CCLE_RNA_seq_mean_df_plot
+
+```{r cars, fig.height=4, dev='svg',message=FALSE, warning=FALSE, echo=FALSE}
 tar_read(CCLE_RNA_seq_mean_df_plot)
 ```
 
 ---
 
-```{r cars, fig.height=4, dev='svg'}
-tar_read(CCLE_prot_EIFs_genes_heatmap)
+```{r Kuster_RNA_seq_mean_df_plot, fig.height=4, dev='svg',message=FALSE, warning=FALSE, echo=FALSE}
+tar_read(Kuster_RNA_seq_mean_df_plot)
 ```
-Are EIFs correlated with other proteins ?
+
 ---
 
-```{r cars, fig.height=4, dev='svg'}
+```{r CCLE_proteins_mean_df_plot, fig.height=4, dev='svg',message=FALSE, warning=FALSE, echo=FALSE}
+tar_read(CCLE_proteins_mean_df_plot)
+```
+---
+# R Plots
+
+```{r Kuster_prot_mean_df_plot, fig.height=4, dev='svg',message=FALSE, warning=FALSE, echo=FALSE}
+tar_read(Kuster_prot_mean_df_plot)
+```
+
+---
+
+# PTR_mean_df_plot
+
+```{r PTR_mean_df_plot, fig.height=4, dev='svg',message=FALSE, warning=FALSE, echo=FALSE}
+tar_read(PTR_mean_df_plot)
+```
+
+---
+
+```{r Kuster_PTR_mean_df_plot, fig.height=4, dev='svg',message=FALSE, warning=FALSE, echo=FALSE}
+tar_read(Kuster_PTR_mean_df_plot)
+```
+
+---
+```{r CCLE_RNA_EIFs_genes_heatmap, fig.height=10, fig.width=10, dev='svg',message=FALSE, warning=FALSE, echo=FALSE}
 tar_read(CCLE_RNA_EIFs_genes_heatmap)
 ```
 Are EIFs correlated with other transcript?
 
 ---
-
-# CCLE_prot_seq_mean_df_plot
-
-```{r cars, fig.height=4, dev='svg'}
-tar_read(CCLE_prot_seq_mean_df_plot)
+```{r CCLE_prot_RNA_half_heatmap, fig.height=15, fig.width=15, dev='svg',message=FALSE, warning=FALSE, echo=FALSE}
+tar_read(CCLE_prot_RNA_half_heatmap)
 ```
-
 ---
-# R Plots
-
-```{r cars, fig.height=4, dev='svg'}
-tar_read(CCLE_prot_EIFs_genes_heatmap)
+```{r Kuster_prot_RNA_half_heatmap, fig.height=15,fig.width=15, dev='svg',message=FALSE, warning=FALSE, echo=FALSE}
+tar_read(Kuster_prot_RNA_half_heatmap)
 ```
-
 ---
+
+
+```{r PTR_metabo_pathways_CCLE_plot, fig.height=6, dev='svg',message=FALSE, warning=FALSE, echo=FALSE}
+tar_read(PTR_metabo_pathways_CCLE_plot)+theme(legend.position = "none")
+```
+---
+
+
+```{r PTR_metabo_pathways_Kuster_plot, fig.height=6, dev='svg',message=FALSE, warning=FALSE, echo=FALSE}
+tar_read(PTR_metabo_pathways_Kuster_plot) +theme(legend.position = "none")
+```
+---
+
+```{r mRNA_Prot_Cor_CCLE_within_plot, fig.height=6, dev='svg',message=FALSE, warning=FALSE, echo=FALSE}
+tar_read(mRNA_Prot_Cor_CCLE_within_plot)
+```
+---
+
+
+```{r mRNA_Prot_Cor_CCLE_plot, fig.height=6, dev='svg',message=FALSE, warning=FALSE, echo=FALSE}
+tar_read(mRNA_Prot_Cor_CCLE_plot)
+```
+---
+```{r mRNA_Prot_Cor_Kuster_plot, fig.height=6, dev='svg',message=FALSE, warning=FALSE, echo=FALSE}
+tar_read(mRNA_Prot_Cor_Kuster_plot)
+```
+---
+
+
+```{r healthy_cancer_corr_pathways_plot, fig.height=5, dev='svg',message=FALSE, warning=FALSE, echo=FALSE}
+tar_read(healthy_cancer_corr_pathways_plot)
+```
