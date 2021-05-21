@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Translational Output</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Savvas Kourtis" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+    <script src="libs/htmlwidgets/htmlwidgets.js"></script>
+    <link href="libs/vis/vis.css" rel="stylesheet" />
+    <script src="libs/vis/vis.min.js"></script>
+    <script src="libs/visNetwork-binding/visNetwork.js"></script>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Translational Output
+## Looking for factors controling translation of proteins
+### Savvas Kourtis
+### CRG - Barcelona
+### 2021/04/28 (updated: 2021-05-19)
+
+---
+
+
+
+
+---
+
+
+```
+## Error in get(genname, envir = envir) : object 'testthat_print' not found
+## v |  OK F W S | Context
+## 
+/ |   0       | test_functions
+- |   1       | test_functions
+| |   2   1   | test_functions
+\ |   3   3   | test_functions
+v |   4   3   | test_functions [2.1 s]
+## --------------------------------------------------------------------------------
+## test_functions.R:20: warning: Heatmap_Output
+## the condition has length &gt; 1 and only the first element will be used
+## 
+## test_functions.R:20: warning: Heatmap_Output
+## the condition has length &gt; 1 and only the first element will be used
+## 
+## test_functions.R:20: warning: Heatmap_Output
+## the condition has length &gt; 1 and only the first element will be used
+## --------------------------------------------------------------------------------
+## 
+## == Results =====================================================================
+## Duration: 2.3 s
+## 
+## OK:       4
+## Failed:   0
+## Warnings: 3
+## Skipped:  0
+```
+Have any tests failed?
+---
+
+# CCLE_RNA_seq_mean_df_plot
+
+<div id="htmlwidget-22f2a0842818bf006fc0" style="width:504px;height:288px;" class="visNetwork html-widget"></div>
+<script type="application/json" data-for="htmlwidget-22f2a0842818bf006fc0">{"x":{"nodes":{"name":["Achilles","Achilles_file","CCLE_Metabo_Intra_omics_corr_matrix","CCLE_Pathway_Cor_diff","CCLE_prot_EIFs_genes_heatmap","CCLE_prot_file","CCLE_prot_Intra_omics_corr_matrix","CCLE_prot_intracor_heatmap","CCLE_prot_RNA_half_heatmap","CCLE_prot_RNA_intracorr_half_matrix_ordered","CCLE_proteins","CCLE_proteins_mean_df_plot","CCLE_RNA_EIFs_genes_heatmap","CCLE_RNA_Intra_omics_corr_matrix","CCLE_RNA_intracor_heatmap","CCLE_RNA_prot_aligned","CCLE_RNA_prot_intracorr_aligned","CCLE_RNA_seq","CCLE_RNA_seq_file","CCLE_RNA_seq_file_original","CCLE_RNA_seq_mean_df_plot","CCLE_RNA_seq_original","gene_clusters_eIFs","gene_clusters_eIFs_file","healthy_cancer_corr_pathways","healthy_cancer_corr_pathways_plot","HUMAN_9606_idmapping","HUMAN_9606_idmapping_file","KEGG_genes","KEGG_genes_file","KEGG_path_file","KEGG_pathways","Kuster_Pathway_Cor_diff","Kuster_prot_mean_df_plot","Kuster_prot_RNA_half_heatmap","Kuster_prot_RNA_intracorr_half_matrix_ordered","Kuster_PTR_mean_df_plot","Kuster_RNA_prot_intracorr_aligned","Kuster_RNA_seq_mean_df_plot","Master_pathways_KEGG","Metab_CCLE","Metab_CCLE_file","Metabolite_mapping","Metabolite_mapping_file","mRNA_Kuster","mRNA_Kuster_Intra_omics_corr_matrix","mRNA_Prot_Cor_CCLE","mRNA_Prot_Cor_CCLE_plot","mRNA_Prot_Cor_CCLE_within","mRNA_Prot_Cor_CCLE_within_plot","mRNA_Prot_Cor_Kuster","mRNA_Prot_Cor_Kuster_plot","mRNA_PTR_Protein_Kuster","mRNA_PTR_Protein_Kuster_file","NCI_60_metabolites","NCI_60_metabolites_file","NCI_60_proteins","NCI_60_proteins_file","NCI_60_RNA","NCI_60_RNA_file","NCI_Metabo_Intra_omics_corr_matrix","NCI_prot_Intra_omics_corr_matrix","NCI_RNA_Intra_omics_corr_matrix","pathway_PTR_CCLE","pathway_PTR_Kuster","Presentation","Protein_Kuster","Protein_Kuster_Intra_omics_corr_matrix","PTR_CCLE","PTR_CCLE_Tissue","PTR_Kuster","PTR_Kuster_Intra_omics_corr_matrix","PTR_mean_df_plot","PTR_metabo_pathways_CCLE_plot","PTR_metabo_pathways_Kuster_plot","PTR_TCA_CCLE","PTR_TCA_Kuster","report","RNAi","RNAi_file","sample_info","sample_info_file","uniprot_factors","Aligning_two_matrices","Calc_path_PTR_Tissues","Calc_Tissu_PTR","Calcu_corr_diff_pathway","Convert_df_to_heatmap","Correlation_pairwise","Dataset_correlation","Factors_to_PTR_corr","get_lower_tri","get_upper_tri","Intra_omic_Feature_correlation","loading_CCLE_prot","loading_CCLE_TPM","loading_Kuster","Mean_sd_matrix","produce_data","PTR_aligning_matrices","Retrieve_all_kegg_genes","Running_Ridge_eIFs","Z_transf"],"type":["stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","function","function","function","function","function","function","function","function","function","function","function","function","function","function","function","function","function","function","function","function"],"status":["uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","running","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate"],"seconds":[148.2,0.004,0.2,3,2.19,0.006,130.63,1.75,0.48,0.45,46.892,0.114,0.1,589.61,0.52,0.37,1.15,109.88,0.006,0.004,0.26,106.23,0.11,0.02,1.06,2.39,9.56,0.004,0.093,0.003,0.006,6.25,3.7,0.03,0.92,0.4,0,0.2,0.14,0.07,3.28,0.004,0.028,0.005,0,9.06,23.33,0.02,31.92,0.01,0.39,0.01,0.61,0.01,5.67,0.004,5.14,0.008,6.45,0.007,7.15,4.47,199.95,0.17,0.64,398.54,0,7.03,0.03,19.33,0,7.59,0.1,1.15,0.11,33.73,0.06,68.22,38.12,0.004,0.074,0.005,3.15,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],"bytes":[106564064,282073071,76418,132078,1730580,60459647,145149594,394901,145052,41291,26150883,26764886,371530,215538965,246561,52238389,103953224,110734626,770547250,386571085,111743726,105624322,71083,270622,13714,103583,31815603,164014802,190393,1059659,35287,5648,109170,2094570,131519,34844,2126273,77175907,2081768,255550,1498612,23751110,4736,16930,1633314,55829078,145461,332356,1877332,3834930,108219,259381,4924589,6732040,678255,43087646,1460209,32943679,3201419,29035008,20034040,14509935,821312231,184150,217005,121260396,1645130,54521446,24892105,1480499,1678738,54968920,25500235,483061,546715,29978524,5373221,2139492,76012247,127597703,86204,371576,89455,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],"branches":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],"id":["Achilles","Achilles_file","CCLE_Metabo_Intra_omics_corr_matrix","CCLE_Pathway_Cor_diff","CCLE_prot_EIFs_genes_heatmap","CCLE_prot_file","CCLE_prot_Intra_omics_corr_matrix","CCLE_prot_intracor_heatmap","CCLE_prot_RNA_half_heatmap","CCLE_prot_RNA_intracorr_half_matrix_ordered","CCLE_proteins","CCLE_proteins_mean_df_plot","CCLE_RNA_EIFs_genes_heatmap","CCLE_RNA_Intra_omics_corr_matrix","CCLE_RNA_intracor_heatmap","CCLE_RNA_prot_aligned","CCLE_RNA_prot_intracorr_aligned","CCLE_RNA_seq","CCLE_RNA_seq_file","CCLE_RNA_seq_file_original","CCLE_RNA_seq_mean_df_plot","CCLE_RNA_seq_original","gene_clusters_eIFs","gene_clusters_eIFs_file","healthy_cancer_corr_pathways","healthy_cancer_corr_pathways_plot","HUMAN_9606_idmapping","HUMAN_9606_idmapping_file","KEGG_genes","KEGG_genes_file","KEGG_path_file","KEGG_pathways","Kuster_Pathway_Cor_diff","Kuster_prot_mean_df_plot","Kuster_prot_RNA_half_heatmap","Kuster_prot_RNA_intracorr_half_matrix_ordered","Kuster_PTR_mean_df_plot","Kuster_RNA_prot_intracorr_aligned","Kuster_RNA_seq_mean_df_plot","Master_pathways_KEGG","Metab_CCLE","Metab_CCLE_file","Metabolite_mapping","Metabolite_mapping_file","mRNA_Kuster","mRNA_Kuster_Intra_omics_corr_matrix","mRNA_Prot_Cor_CCLE","mRNA_Prot_Cor_CCLE_plot","mRNA_Prot_Cor_CCLE_within","mRNA_Prot_Cor_CCLE_within_plot","mRNA_Prot_Cor_Kuster","mRNA_Prot_Cor_Kuster_plot","mRNA_PTR_Protein_Kuster","mRNA_PTR_Protein_Kuster_file","NCI_60_metabolites","NCI_60_metabolites_file","NCI_60_proteins","NCI_60_proteins_file","NCI_60_RNA","NCI_60_RNA_file","NCI_Metabo_Intra_omics_corr_matrix","NCI_prot_Intra_omics_corr_matrix","NCI_RNA_Intra_omics_corr_matrix","pathway_PTR_CCLE","pathway_PTR_Kuster","Presentation","Protein_Kuster","Protein_Kuster_Intra_omics_corr_matrix","PTR_CCLE","PTR_CCLE_Tissue","PTR_Kuster","PTR_Kuster_Intra_omics_corr_matrix","PTR_mean_df_plot","PTR_metabo_pathways_CCLE_plot","PTR_metabo_pathways_Kuster_plot","PTR_TCA_CCLE","PTR_TCA_Kuster","report","RNAi","RNAi_file","sample_info","sample_info_file","uniprot_factors","Aligning_two_matrices","Calc_path_PTR_Tissues","Calc_Tissu_PTR","Calcu_corr_diff_pathway","Convert_df_to_heatmap","Correlation_pairwise","Dataset_correlation","Factors_to_PTR_corr","get_lower_tri","get_upper_tri","Intra_omic_Feature_correlation","loading_CCLE_prot","loading_CCLE_TPM","loading_Kuster","Mean_sd_matrix","produce_data","PTR_aligning_matrices","Retrieve_all_kegg_genes","Running_Ridge_eIFs","Z_transf"],"label":["Achilles","Achilles_file","CCLE_Metabo_Intra_omics_corr_matrix","CCLE_Pathway_Cor_diff","CCLE_prot_EIFs_genes_heatmap","CCLE_prot_file","CCLE_prot_Intra_omics_corr_matrix","CCLE_prot_intracor_heatmap","CCLE_prot_RNA_half_heatmap","CCLE_prot_RNA_intracorr_half_matrix_ordered","CCLE_proteins","CCLE_proteins_mean_df_plot","CCLE_RNA_EIFs_genes_heatmap","CCLE_RNA_Intra_omics_corr_matrix","CCLE_RNA_intracor_heatmap","CCLE_RNA_prot_aligned","CCLE_RNA_prot_intracorr_aligned","CCLE_RNA_seq","CCLE_RNA_seq_file","CCLE_RNA_seq_file_original","CCLE_RNA_seq_mean_df_plot","CCLE_RNA_seq_original","gene_clusters_eIFs","gene_clusters_eIFs_file","healthy_cancer_corr_pathways","healthy_cancer_corr_pathways_plot","HUMAN_9606_idmapping","HUMAN_9606_idmapping_file","KEGG_genes","KEGG_genes_file","KEGG_path_file","KEGG_pathways","Kuster_Pathway_Cor_diff","Kuster_prot_mean_df_plot","Kuster_prot_RNA_half_heatmap","Kuster_prot_RNA_intracorr_half_matrix_ordered","Kuster_PTR_mean_df_plot","Kuster_RNA_prot_intracorr_aligned","Kuster_RNA_seq_mean_df_plot","Master_pathways_KEGG","Metab_CCLE","Metab_CCLE_file","Metabolite_mapping","Metabolite_mapping_file","mRNA_Kuster","mRNA_Kuster_Intra_omics_corr_matrix","mRNA_Prot_Cor_CCLE","mRNA_Prot_Cor_CCLE_plot","mRNA_Prot_Cor_CCLE_within","mRNA_Prot_Cor_CCLE_within_plot","mRNA_Prot_Cor_Kuster","mRNA_Prot_Cor_Kuster_plot","mRNA_PTR_Protein_Kuster","mRNA_PTR_Protein_Kuster_file","NCI_60_metabolites","NCI_60_metabolites_file","NCI_60_proteins","NCI_60_proteins_file","NCI_60_RNA","NCI_60_RNA_file","NCI_Metabo_Intra_omics_corr_matrix","NCI_prot_Intra_omics_corr_matrix","NCI_RNA_Intra_omics_corr_matrix","pathway_PTR_CCLE","pathway_PTR_Kuster","Presentation","Protein_Kuster","Protein_Kuster_Intra_omics_corr_matrix","PTR_CCLE","PTR_CCLE_Tissue","PTR_Kuster","PTR_Kuster_Intra_omics_corr_matrix","PTR_mean_df_plot","PTR_metabo_pathways_CCLE_plot","PTR_metabo_pathways_Kuster_plot","PTR_TCA_CCLE","PTR_TCA_Kuster","report","RNAi","RNAi_file","sample_info","sample_info_file","uniprot_factors","Aligning_two_matrices","Calc_path_PTR_Tissues","Calc_Tissu_PTR","Calcu_corr_diff_pathway","Convert_df_to_heatmap","Correlation_pairwise","Dataset_correlation","Factors_to_PTR_corr","get_lower_tri","get_upper_tri","Intra_omic_Feature_correlation","loading_CCLE_prot","loading_CCLE_TPM","loading_Kuster","Mean_sd_matrix","produce_data","PTR_aligning_matrices","Retrieve_all_kegg_genes","Running_Ridge_eIFs","Z_transf"],"level":[3,1,3,6,4,1,3,4,7,6,2,3,5,4,5,4,5,3,1,1,4,3,2,1,7,8,2,1,2,1,1,2,5,4,7,6,5,5,4,3,2,1,2,1,3,4,5,6,5,6,4,5,2,1,2,1,2,1,2,1,3,3,3,7,5,9,3,4,5,6,4,5,6,8,6,6,5,0,2,1,2,1,1,1,1,0,1,1,1,2,0,1,1,1,1,1,1,1,0,2,0,0,1],"color":["#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#DC863B","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823"],"shape":["dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","triangle","triangle","triangle","triangle","triangle","triangle","triangle","triangle","triangle","triangle","triangle","triangle","triangle","triangle","triangle","triangle","triangle","triangle","triangle","triangle"]},"edges":{"from":["Correlation_pairwise","get_lower_tri","get_upper_tri","Aligning_two_matrices","Mean_sd_matrix","mRNA_Kuster","CCLE_RNA_prot_aligned","Achilles_file","sample_info","mRNA_Prot_Cor_CCLE_within","Calcu_corr_diff_pathway","KEGG_genes","mRNA_Prot_Cor_CCLE","Intra_omic_Feature_correlation","NCI_60_metabolites","pathway_PTR_Kuster","Mean_sd_matrix","PTR_Kuster","mRNA_PTR_Protein_Kuster","Metabolite_mapping_file","PTR_CCLE","sample_info","Aligning_two_matrices","mRNA_Kuster_Intra_omics_corr_matrix","Protein_Kuster_Intra_omics_corr_matrix","CCLE_prot_RNA_intracorr_half_matrix_ordered","Convert_df_to_heatmap","Master_pathways_KEGG","Intra_omic_Feature_correlation","PTR_Kuster","NCI_60_RNA_file","Calc_path_PTR_Tissues","KEGG_genes","KEGG_pathways","PTR_Kuster","NCI_60_metabolites_file","mRNA_Prot_Cor_CCLE","Metab_CCLE_file","CCLE_RNA_seq_file","HUMAN_9606_idmapping","loading_CCLE_TPM","CCLE_RNA_Intra_omics_corr_matrix","Convert_df_to_heatmap","Master_pathways_KEGG","CCLE_RNA_seq","Mean_sd_matrix","CCLE_prot_file","loading_CCLE_prot","CCLE_RNA_seq_file_original","sample_info","Intra_omic_Feature_correlation","Metab_CCLE","Intra_omic_Feature_correlation","mRNA_Kuster","CCLE_RNA_seq","Intra_omic_Feature_correlation","mRNA_Prot_Cor_Kuster","CCLE_RNA_prot_aligned","KEGG_genes","sample_info","CCLE_RNA_Intra_omics_corr_matrix","Convert_df_to_heatmap","gene_clusters_eIFs","uniprot_factors","Mean_sd_matrix","Protein_Kuster","get_lower_tri","get_upper_tri","Kuster_RNA_prot_intracorr_aligned","Master_pathways_KEGG","KEGG_genes","KEGG_pathways","KEGG_genes","PTR_CCLE","sample_info","KEGG_genes","PTR_Kuster","Intra_omic_Feature_correlation","NCI_60_proteins","CCLE_RNA_prot_aligned","KEGG_genes","sample_info","pathway_PTR_CCLE","KEGG_genes","mRNA_Kuster","Protein_Kuster","CCLE_proteins","HUMAN_9606_idmapping","Intra_omic_Feature_correlation","mRNA_Kuster","Protein_Kuster","Calcu_corr_diff_pathway","KEGG_genes","mRNA_Prot_Cor_Kuster","loading_Kuster","mRNA_PTR_Protein_Kuster_file","CCLE_RNA_prot_intracorr_aligned","get_lower_tri","get_upper_tri","Master_pathways_KEGG","CCLE_prot_Intra_omics_corr_matrix","Convert_df_to_heatmap","Master_pathways_KEGG","KEGG_genes_file","HUMAN_9606_idmapping_file","CCLE_prot_RNA_half_heatmap","CCLE_proteins_mean_df_plot","CCLE_RNA_EIFs_genes_heatmap","CCLE_RNA_seq_mean_df_plot","healthy_cancer_corr_pathways_plot","Kuster_prot_mean_df_plot","Kuster_prot_RNA_half_heatmap","Kuster_PTR_mean_df_plot","Kuster_RNA_seq_mean_df_plot","mRNA_Prot_Cor_CCLE_plot","mRNA_Prot_Cor_CCLE_within_plot","mRNA_Prot_Cor_Kuster_plot","PTR_mean_df_plot","PTR_metabo_pathways_CCLE_plot","PTR_metabo_pathways_Kuster_plot","mRNA_PTR_Protein_Kuster","Mean_sd_matrix","PTR_CCLE","sample_info_file","Aligning_two_matrices","CCLE_prot_Intra_omics_corr_matrix","CCLE_RNA_Intra_omics_corr_matrix","healthy_cancer_corr_pathways","NCI_60_proteins_file","Z_transf","KEGG_path_file","CCLE_Pathway_Cor_diff","KEGG_pathways","Kuster_Pathway_Cor_diff","gene_clusters_eIFs_file","Calc_path_PTR_Tissues","KEGG_genes","KEGG_pathways","PTR_CCLE_Tissue","Convert_df_to_heatmap","Kuster_prot_RNA_intracorr_half_matrix_ordered","Master_pathways_KEGG","RNAi_file","Aligning_two_matrices","CCLE_proteins","CCLE_RNA_seq","HUMAN_9606_idmapping","CCLE_prot_Intra_omics_corr_matrix","Convert_df_to_heatmap","gene_clusters_eIFs","uniprot_factors","CCLE_proteins","Mean_sd_matrix","Intra_omic_Feature_correlation","Protein_Kuster","Intra_omic_Feature_correlation","NCI_60_RNA"],"to":["Dataset_correlation","Dataset_correlation","Dataset_correlation","PTR_aligning_matrices","Kuster_RNA_seq_mean_df_plot","Kuster_RNA_seq_mean_df_plot","PTR_CCLE","Achilles","Achilles","mRNA_Prot_Cor_CCLE_within_plot","CCLE_Pathway_Cor_diff","CCLE_Pathway_Cor_diff","CCLE_Pathway_Cor_diff","NCI_Metabo_Intra_omics_corr_matrix","NCI_Metabo_Intra_omics_corr_matrix","PTR_metabo_pathways_Kuster_plot","Kuster_PTR_mean_df_plot","Kuster_PTR_mean_df_plot","Protein_Kuster","Metabolite_mapping","PTR_CCLE_Tissue","PTR_CCLE_Tissue","Kuster_RNA_prot_intracorr_aligned","Kuster_RNA_prot_intracorr_aligned","Kuster_RNA_prot_intracorr_aligned","CCLE_prot_RNA_half_heatmap","CCLE_prot_RNA_half_heatmap","CCLE_prot_RNA_half_heatmap","PTR_Kuster_Intra_omics_corr_matrix","PTR_Kuster_Intra_omics_corr_matrix","NCI_60_RNA","pathway_PTR_Kuster","pathway_PTR_Kuster","pathway_PTR_Kuster","pathway_PTR_Kuster","NCI_60_metabolites","mRNA_Prot_Cor_CCLE_plot","Metab_CCLE","CCLE_RNA_seq","CCLE_RNA_seq","CCLE_RNA_seq","CCLE_RNA_intracor_heatmap","CCLE_RNA_intracor_heatmap","CCLE_RNA_intracor_heatmap","CCLE_RNA_seq_mean_df_plot","CCLE_RNA_seq_mean_df_plot","CCLE_proteins","CCLE_proteins","CCLE_RNA_seq_original","CCLE_RNA_seq_original","CCLE_Metabo_Intra_omics_corr_matrix","CCLE_Metabo_Intra_omics_corr_matrix","mRNA_Kuster_Intra_omics_corr_matrix","mRNA_Kuster_Intra_omics_corr_matrix","CCLE_RNA_Intra_omics_corr_matrix","CCLE_RNA_Intra_omics_corr_matrix","mRNA_Prot_Cor_Kuster_plot","mRNA_Prot_Cor_CCLE_within","mRNA_Prot_Cor_CCLE_within","mRNA_Prot_Cor_CCLE_within","CCLE_RNA_EIFs_genes_heatmap","CCLE_RNA_EIFs_genes_heatmap","CCLE_RNA_EIFs_genes_heatmap","CCLE_RNA_EIFs_genes_heatmap","Kuster_prot_mean_df_plot","Kuster_prot_mean_df_plot","Kuster_prot_RNA_intracorr_half_matrix_ordered","Kuster_prot_RNA_intracorr_half_matrix_ordered","Kuster_prot_RNA_intracorr_half_matrix_ordered","Kuster_prot_RNA_intracorr_half_matrix_ordered","Master_pathways_KEGG","Master_pathways_KEGG","PTR_TCA_CCLE","PTR_TCA_CCLE","PTR_TCA_CCLE","PTR_TCA_Kuster","PTR_TCA_Kuster","NCI_prot_Intra_omics_corr_matrix","NCI_prot_Intra_omics_corr_matrix","mRNA_Prot_Cor_CCLE","mRNA_Prot_Cor_CCLE","mRNA_Prot_Cor_CCLE","PTR_metabo_pathways_CCLE_plot","mRNA_Prot_Cor_Kuster","mRNA_Prot_Cor_Kuster","mRNA_Prot_Cor_Kuster","CCLE_prot_Intra_omics_corr_matrix","CCLE_prot_Intra_omics_corr_matrix","CCLE_prot_Intra_omics_corr_matrix","PTR_Kuster","PTR_Kuster","Kuster_Pathway_Cor_diff","Kuster_Pathway_Cor_diff","Kuster_Pathway_Cor_diff","mRNA_PTR_Protein_Kuster","mRNA_PTR_Protein_Kuster","CCLE_prot_RNA_intracorr_half_matrix_ordered","CCLE_prot_RNA_intracorr_half_matrix_ordered","CCLE_prot_RNA_intracorr_half_matrix_ordered","CCLE_prot_RNA_intracorr_half_matrix_ordered","CCLE_prot_intracor_heatmap","CCLE_prot_intracor_heatmap","CCLE_prot_intracor_heatmap","KEGG_genes","HUMAN_9606_idmapping","Presentation","Presentation","Presentation","Presentation","Presentation","Presentation","Presentation","Presentation","Presentation","Presentation","Presentation","Presentation","Presentation","Presentation","Presentation","mRNA_Kuster","PTR_mean_df_plot","PTR_mean_df_plot","sample_info","CCLE_RNA_prot_intracorr_aligned","CCLE_RNA_prot_intracorr_aligned","CCLE_RNA_prot_intracorr_aligned","healthy_cancer_corr_pathways_plot","NCI_60_proteins","NCI_60_proteins","KEGG_pathways","healthy_cancer_corr_pathways","healthy_cancer_corr_pathways","healthy_cancer_corr_pathways","gene_clusters_eIFs","pathway_PTR_CCLE","pathway_PTR_CCLE","pathway_PTR_CCLE","pathway_PTR_CCLE","Kuster_prot_RNA_half_heatmap","Kuster_prot_RNA_half_heatmap","Kuster_prot_RNA_half_heatmap","RNAi","CCLE_RNA_prot_aligned","CCLE_RNA_prot_aligned","CCLE_RNA_prot_aligned","CCLE_RNA_prot_aligned","CCLE_prot_EIFs_genes_heatmap","CCLE_prot_EIFs_genes_heatmap","CCLE_prot_EIFs_genes_heatmap","CCLE_prot_EIFs_genes_heatmap","CCLE_proteins_mean_df_plot","CCLE_proteins_mean_df_plot","Protein_Kuster_Intra_omics_corr_matrix","Protein_Kuster_Intra_omics_corr_matrix","NCI_RNA_Intra_omics_corr_matrix","NCI_RNA_Intra_omics_corr_matrix"],"arrows":["to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to"]},"nodesToDataframe":true,"edgesToDataframe":true,"options":{"width":"100%","height":"100%","nodes":{"shape":"dot","physics":false},"manipulation":{"enabled":false},"edges":{"smooth":{"type":"cubicBezier","forceDirection":"horizontal"}},"physics":{"stabilization":false},"layout":{"hierarchical":{"enabled":true,"direction":"LR"}}},"groups":null,"width":null,"height":null,"idselection":{"enabled":false,"style":"width: 150px; height: 26px","useLabels":true,"main":"Select by id"},"byselection":{"enabled":false,"style":"width: 150px; height: 26px","multiple":false,"hideColor":"rgba(200,200,200,0.5)","highlight":false},"main":{"text":"","style":"font-family:Georgia, Times New Roman, Times, serif;font-weight:bold;font-size:20px;text-align:center;"},"submain":null,"footer":null,"background":"rgba(0, 0, 0, 0)","highlight":{"enabled":false,"hoverNearest":false,"degree":1,"algorithm":"all","hideColor":"rgba(200,200,200,0.5)","labelOnly":true},"collapse":{"enabled":true,"fit":false,"resetHighlight":true,"clusterOptions":null,"keepCoord":true,"labelSuffix":"(cluster)"},"legend":{"width":0.2,"useGroups":false,"position":"right","ncol":1,"stepX":100,"stepY":100,"zoom":true,"nodes":{"label":["Up to date","Running","Stem","Function"],"color":["#354823","#DC863B","#899DA4","#899DA4"],"shape":["dot","dot","dot","triangle"]},"nodesToDataframe":true}},"evals":[],"jsHooks":[]}</script>
+
+---
+
+# CCLE_RNA_seq_mean_df_plot
+
+![](Presentation_files/figure-html/cars-1.svg)&lt;!-- --&gt;
+
+---
+
+![](Presentation_files/figure-html/Kuster_RNA_seq_mean_df_plot-1.svg)&lt;!-- --&gt;
+
+---
+
+![](Presentation_files/figure-html/CCLE_proteins_mean_df_plot-1.svg)&lt;!-- --&gt;
+---
+# R Plots
+
+![](Presentation_files/figure-html/Kuster_prot_mean_df_plot-1.svg)&lt;!-- --&gt;
+
+---
+
+# PTR_mean_df_plot
+
+![](Presentation_files/figure-html/PTR_mean_df_plot-1.svg)&lt;!-- --&gt;
+
+---
+
+![](Presentation_files/figure-html/Kuster_PTR_mean_df_plot-1.svg)&lt;!-- --&gt;
+
+---
+![](Presentation_files/figure-html/CCLE_RNA_EIFs_genes_heatmap-1.svg)&lt;!-- --&gt;
+Are EIFs correlated with other transcript?
+
+---
+![](Presentation_files/figure-html/CCLE_prot_RNA_half_heatmap-1.svg)&lt;!-- --&gt;
+---
+![](Presentation_files/figure-html/Kuster_prot_RNA_half_heatmap-1.svg)&lt;!-- --&gt;
+---
+
+
+![](Presentation_files/figure-html/PTR_metabo_pathways_CCLE_plot-1.svg)&lt;!-- --&gt;
+---
+
+
+![](Presentation_files/figure-html/PTR_metabo_pathways_Kuster_plot-1.svg)&lt;!-- --&gt;
+---
+
+![](Presentation_files/figure-html/mRNA_Prot_Cor_CCLE_within_plot-1.svg)&lt;!-- --&gt;
+---
+
+
+![](Presentation_files/figure-html/mRNA_Prot_Cor_CCLE_plot-1.svg)&lt;!-- --&gt;
+---
+![](Presentation_files/figure-html/mRNA_Prot_Cor_Kuster_plot-1.svg)&lt;!-- --&gt;
+---
+
+
+![](Presentation_files/figure-html/healthy_cancer_corr_pathways_plot-1.svg)&lt;!-- --&gt;
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

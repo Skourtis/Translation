@@ -1,10 +1,10 @@
-pacman::p_load("biglm",
-               "readxl",
-               "rmarkdown",
-               "tarchetypes",
+pacman::p_load("biglm","R.utils",
+               "readxl","glmnet",
+               "rmarkdown","tidyr",
+               "tarchetypes","tidymodels",
                "targets",
                "tidyverse",
-"openxlsx")
+               "vip","openxlsx","OmnipathR")
 #' @title Load Kuster Data
 #' @description Import and clean proteomic Kuster Data
 #' @return A list of mRNA,Protein, and PTR matrices against healthy tissue with gene names in row
@@ -19,7 +19,8 @@ map(.x = c("_mRNA","_protein","_PTR"),
       dplyr::select(contains(.x)) %>%
       set_names(str_remove_all(colnames(.),.x)) %>% 
       subset(rowSums(is.na(.))<(ncol(.)/2)) %>% 
-      as.matrix())
+      as.matrix() %>%
+      `/`(.,matrixStats::rowMedians(as.matrix(.),na.rm = T)) %>% log2() %>% as.matrix)
 
 }
 
@@ -586,38 +587,41 @@ Factors_to_PTR_corr <- function(Factors_of_interest,PTRs_df, Proteins_df){
 #Protein_matrix <- tar_read(CCLE_proteins)
 #PTR_matrix <- tar_read(PTR_CCLE)
 #Uniprot_factors <- tar_read(uniprot_factors)
-Running_Ridge_eIFs <- function(Protein_matrix,PTR_matrix,Uniprot_factors){
-  Proteins <-  inner_join(Protein_matrix %>% t() %>%  
+Running_Ridge_eIFs <- function(Protein_matrix,PTR_matrix,CCLE_Complex_PCs){
+  #PTR_matrix = tar_read(PTR_Kuster)
+  #Protein_matrix = tar_read(Protein_Kuster)
+  #PC_matrix =CCLE_Complex_PCs
+  Proteins <-  inner_join(CCLE_Complex_PCs %>%  
                             as.data.frame() %>% 
                             #dplyr::select(Uniprot) %>%  
-                            set_names(.,glue::glue("{colnames(.)}_Uniprot")) %>% 
+                            set_names(.,glue::glue("{colnames(.)}_Independent")) %>% 
                             rownames_to_column("Cell_line") ,
-                          PTR_matrix %>% t() %>% as.data.frame %>%
-                            dplyr::select(any_of(Uniprot_factors %>% 
-                                                   subset(type = "eukaryotic_translation") %>% 
-                                                   pull("Gene names") %>% 
-                                                   str_split( " ") %>% 
-                                                   unlist %>% str_subset("EIF|ETF|EEF"))) %>% 
+                          PTR_matrix %>% t() %>% as.data.frame() %>%set_names(.,glue::glue("{colnames(.)}_PTR")) %>% 
                             
-                            rownames_to_column("Cell_line")) 
+                            rownames_to_column("Cell_line")) #%>% .[,1:50])# %>% column_to_rownames("Cell_line")
+  
   Proteins <-  select(Proteins,which((Proteins %>% 
                                         is.na() %>% 
                                         colSums())==0)) #%>% column_to_rownames("Cell_line") #%>% as.matrix()# <nrow(IDH1)/10))
   list_of_Uniprot_models <- map(.x = colnames(Proteins) %>% 
-                                  str_subset("Uniprot"),
-                                ~dplyr::select(Proteins, contains(.x)|!contains("Uniprot"))) %>% set_names(colnames(Proteins) %>% 
-                                                                                                             str_subset("Uniprot"))
+                                  str_subset("_PTR"),
+                                ~dplyr::select(Proteins, 
+                                               contains(.x)|
+                                                 contains("Independent")|
+                                                 contains("Cell_line"))) %>%
+        set_names(colnames(Proteins) %>%   str_subset("PTR"))
   
   Linear_model_function <- function(Protein_list){
     R.utils::withTimeout({
-    office_split <- initial_split(Protein_list)# , strata = season)
+    #  Protein_list = list_of_Uniprot_models[[1]]
+    office_split <- initial_split(Protein_list, prop = 5/8)# , strata = season)
     office_train <- training(office_split)
     office_test <- testing(office_split)
     
     rec <- recipe(Protein_list) %>% 
-      update_role(contains("Uniprot"), 
+      update_role(contains("_PTR"), 
                   new_role = "outcome") %>% 
-      update_role(!contains("Uniprot"), 
+      update_role(contains("_Independent"), 
                   new_role = "predictor") %>% 
       update_role(contains("Cell_line"), 
                   new_role = "ID") %>% 
@@ -686,24 +690,41 @@ Running_Ridge_eIFs <- function(Protein_matrix,PTR_matrix,Uniprot_factors){
     final_fitted <- last_fit(
       final_lasso,
       office_split
-    ) %>%
-      collect_metrics()
+    )
     list(importance = importance,
          final_fitted = final_fitted)
     }, 
-    timeout = 10.08, onTimeout = "error")
+    timeout =200.08, onTimeout = "error")
   }
   options(future.globals.maxSize= 891289600)
   Linear_model_function_safe <- safely(Linear_model_function)
   future::plan(future::multisession)
-  models <- furrr::future_map(list_of_Uniprot_models[1:100], 
+  models <- furrr::future_map(list_of_Uniprot_models, 
                               Linear_model_function_safe,
                               .progress = TRUE,
                               .options = furrr_options(seed = 1234))
   #Linear_model_Ratio <- future::value(Linear_model_f)
   plan(sequential)
   models
-}
+  #models %>% map("result") %>% compact() %>% map("final_fitted") %>% map(".metrics") %>% map_dbl(.x  = ., ~.x[[1]] %>% pull(".estimate") %>% .[2]) %>% hist()
+  }
+Calc_path_PTR_Tissues<-function(PTR_Tissue_Matrix, KEGG_genes, KEGG_pathways){
+  PTR_Tissue_Matrix %>% 
+    as.data.frame() %>%
+    rownames_to_column("GeneName") %>%
+    pivot_longer(-GeneName,names_to = "Tissue",values_to="value")%>%
+    left_join(KEGG_genes %>% dplyr::select(-Uniprot) %>% 
+                inner_join(KEGG_pathways %>%
+                             subset(Path_type =="metabolic") %>% 
+                             dplyr::select(Path_id,Path_description), by = c("pathway" = "Path_id")
+                ), by = c("GeneName" = "ID")) %>% 
+    na.omit() %>% distinct() %>% 
+    group_by(Tissue,pathway) %>% 
+    add_count(name="Genes_per_pathway") %>% 
+    subset(#pathway %in% unique(.$pathway)[1:50] &
+      Genes_per_pathway>15) %>% ungroup}
+
+
 
 Calc_Tissu_PTR <- function(df_pathway){
   #df_pathway = pathway_PTR_Kuster %>% 
@@ -713,3 +734,29 @@ Calc_Tissu_PTR <- function(df_pathway){
                    df_pathway %>% subset(Tissue != .x) %>% pull(value)) %>%
             pluck("p.value")) %>% set_names(unique(df_pathway$Tissue))
 }
+
+
+
+Calcu_corr_diff_pathway <- function(mRNA_prot_Cor_df,KEGG_genes){ #return difference of each gene to the median
+  purrr::map(.x = unique(KEGG_genes$pathway),~mRNA_prot_Cor_df %>%
+               arrange(-Gene_mRNA_prot) %>% ungroup()%>%
+               mutate(pathway_KEGG = if_else(GeneName %in% 
+                                               (KEGG_genes %>% subset(pathway == .x) %>% pull(ID)),
+                                             .x,
+                                             "OTHER"),
+                      mean_dif = Gene_mRNA_prot-median(Gene_mRNA_prot )) %>%
+               subset(pathway_KEGG == .x  ) %>% pull(mean_dif,GeneName))%>% 
+    set_names(unique(KEGG_genes$pathway)) %>% .[purrr::map_lgl(.x =., ~length(.x)>10)]
+}
+Extract_complex_uniprots <- function(Gene_Name,complex_df, total_list){
+  #Gene_Name = complexes_units[1]
+  complex_df %>% 
+    subset(str_detect(components_genesymbols, Gene_Name) &
+             name != "" #& !str_detect(components_genesymbols,paste(total_list %>% .[.!=Gene_Name],collapse = "|"))
+    ) %>% 
+    mutate(Complex_size = str_count(components,"_"),
+           components = str_split(components_genesymbols, "_")) %>%
+    arrange(-Complex_size) %>% head(1) %>% pull(components, name)
+  
+}
+

@@ -1,4 +1,4 @@
-pacman::p_load(targets,openxlsx,tarchetypes,ComplexHeatmap, magrittr,future,readr,furrr,progressr,tidymodels)
+pacman::p_load(targets,openxlsx,tarchetypes,ComplexHeatmap, magrittr,future,readr,furrr,progressr,tidymodels,xaringan, vip,OmnipathR)
 source(fs::path_rel(here::here("Codes","functions_minimal.R")))
 options(tidyverse.quiet = TRUE)
 tar_option_set(packages = c("biglm", "tidyverse"))
@@ -12,8 +12,15 @@ list(
     tar_target(
         uniprot_factors, #Downloaded from uniprot by searching for specific
         purrr::map_df(.x = c("ribosome","proteasome","membrane","spliceosome","eukaryotic_translation"), 
-                                 ~read_tsv(file = fs::path_rel(here::here("Datasets","Raw",paste0("uniprot_",.x,"_factor.tab")))) %>% 
-                                     mutate(Type = .x))),
+                      ~read_tsv(file = fs::path_rel(here::here("Datasets","Raw",paste0("uniprot_",.x,"_factor.tab")))) %>% 
+                          mutate(Type = .x))),
+    tar_target(
+        humanreactome_df_file,
+        fs::path_rel(here::here("Datasets","Raw","Reactome_pathways.csv")),
+        format = "file"),
+    tar_target(
+        humanreactome_df,
+        read_csv2(humanreactome_df_file)[,-1]),
     tar_target(
         gene_clusters_eIFs_file,
         fs::path_rel(here::here("Datasets","Processed","eIFS_gene_clusters.csv")),
@@ -49,7 +56,8 @@ list(
         mRNA_PTR_Protein_Kuster[[2]]),
     tar_target(
         PTR_Kuster,
-        mRNA_PTR_Protein_Kuster[[3]]),
+        #mRNA_PTR_Protein_Kuster[[3]] %>% `/`(.,matrixStats::rowMedians(as.matrix(.),na.rm = T)) %>% log2() %>% as.matrix 
+        Protein_Kuster - mRNA_Kuster),
     tar_target(
         CCLE_prot_file, #Raw from https://gygi.med.harvard.edu/publications/ccle 2/11/2020
         fs::path_rel(here::here("Datasets","Raw","Table_S2_Protein_Quant_Normalized.xlsx")),
@@ -118,8 +126,8 @@ list(
     tar_target(
         Achilles,
         inner_join(sample_info[,1:2],read.csv(Achilles_file), by = "DepMap_ID")[,-1] %>%
-        column_to_rownames(var = "stripped_cell_line_name") %>% t() %>%
-        magrittr::set_rownames(str_match(rownames(.), "^([:graph:]*?)\\.")[,2])),
+            column_to_rownames(var = "stripped_cell_line_name") %>% t() %>%
+            magrittr::set_rownames(str_match(rownames(.), "^([:graph:]*?)\\.")[,2])),
     tar_target(
         RNAi_file,#Raw from https://depmap.org/portal/download/ 2/11/2020
         fs::path_rel(here::here("Datasets","Raw","D2_combined_gene_dep_scores.csv")),
@@ -179,12 +187,12 @@ list(
         format = "file"),
     tar_target(
         KEGG_pathways,
-        readr::read_tsv(KEGG_path_file) %>% 
-            mutate(Path_description = stringr::str_remove_all(Path_description," - Homo sapiens \\(human\\)"))),
-tar_target(
+        readr::read_tsv(KEGG_path_file) %>%
+            mutate(Path_description = str_remove(Path_description, " - Homo sapiens \\(human\\)"))),
+    tar_target(
         KEGG_genes_file,
         fs::path_rel(here::here("Datasets","Raw","KEGG_genes.csv")),
-format = "file"),
+        format = "file"),
     tar_target(
         KEGG_genes,
         read_csv(KEGG_genes_file)),
@@ -196,7 +204,7 @@ format = "file"),
     tar_target(
         HUMAN_9606_idmapping,
         readr::read_tsv(HUMAN_9606_idmapping_file,
-                 col_names = FALSE) %>%
+                        col_names = FALSE) %>%
             setNames(c("Uniprot", "Type", "ID"))),
     tar_target(
         Metabolite_mapping_file,#Raw from Uniprot
@@ -207,17 +215,17 @@ format = "file"),
         read.csv(Metabolite_mapping_file) ),
     tar_target(
         CCLE_prot_Intra_omics_corr_matrix,
-                   Intra_omic_Feature_correlation(CCLE_proteins %>% 
-                                                      rownames_to_column("Uniprot")%>%
-                                                      left_join(HUMAN_9606_idmapping%>% 
-                                                                    subset(Type == "Gene_Name") %>% 
-                                                                    distinct(Uniprot, .keep_all = T) %>% 
-                                                                    dplyr::select(-Type)) %>%
-                                                      dplyr::select(-Uniprot) %>% 
-                                                      distinct(ID, .keep_all = T) %>% 
-                                                      subset(!is.na(ID)) %>% 
-                                                      remove_rownames()%>%
-                                                      column_to_rownames("ID"))),
+        Intra_omic_Feature_correlation(CCLE_proteins %>% 
+                                           rownames_to_column("Uniprot")%>%
+                                           left_join(HUMAN_9606_idmapping%>% 
+                                                         subset(Type == "Gene_Name") %>% 
+                                                         distinct(Uniprot, .keep_all = T) %>% 
+                                                         dplyr::select(-Type)) %>%
+                                           dplyr::select(-Uniprot) %>% 
+                                           distinct(ID, .keep_all = T) %>% 
+                                           subset(!is.na(ID)) %>% 
+                                           remove_rownames()%>%
+                                           column_to_rownames("ID"))),
     tar_target(
         CCLE_RNA_Intra_omics_corr_matrix,
         Intra_omic_Feature_correlation(CCLE_RNA_seq %>%  #removes genes below 25% SD
@@ -226,18 +234,18 @@ format = "file"),
     tar_target(
         mRNA_Kuster_Intra_omics_corr_matrix,
         Intra_omic_Feature_correlation(mRNA_Kuster %>%  #removes genes below 25% SD
-                                       subset(.,(mRNA_Kuster %>% matrixStats::rowSds(na.rm = T)) > 
-                                                  (mRNA_Kuster %>% matrixStats::rowSds(na.rm = T) %>% quantile(., c(.25),na.rm = T))))),
+                                           subset(.,(mRNA_Kuster %>% matrixStats::rowSds(na.rm = T)) > 
+                                                      (mRNA_Kuster %>% matrixStats::rowSds(na.rm = T) %>% quantile(., c(.25),na.rm = T))))),
     tar_target(
-       Protein_Kuster_Intra_omics_corr_matrix ,
+        Protein_Kuster_Intra_omics_corr_matrix ,
         Intra_omic_Feature_correlation(Protein_Kuster %>%  #removes genes below 25% SD
-                                       subset(.,(Protein_Kuster %>% matrixStats::rowSds(na.rm = T)) > 
-                                                  (Protein_Kuster %>% matrixStats::rowSds(na.rm = T) %>% quantile(., c(.25),na.rm = T))))),
-tar_target(
-    PTR_Kuster_Intra_omics_corr_matrix ,
-    Intra_omic_Feature_correlation(PTR_Kuster %>%  #removes genes below 25% SD
-                                       subset(.,(PTR_Kuster %>% matrixStats::rowSds(na.rm = T)) > 
-                                                  (PTR_Kuster %>% matrixStats::rowSds(na.rm = T) %>% quantile(., c(.25),na.rm = T))))),
+                                           subset(.,(Protein_Kuster %>% matrixStats::rowSds(na.rm = T)) > 
+                                                      (Protein_Kuster %>% matrixStats::rowSds(na.rm = T) %>% quantile(., c(.25),na.rm = T))))),
+    tar_target(
+        PTR_Kuster_Intra_omics_corr_matrix ,
+        Intra_omic_Feature_correlation(PTR_Kuster %>%  #removes genes below 25% SD
+                                           subset(.,(PTR_Kuster %>% matrixStats::rowSds(na.rm = T)) > 
+                                                      (PTR_Kuster %>% matrixStats::rowSds(na.rm = T) %>% quantile(., c(.25),na.rm = T))))),
     tar_target(
         NCI_Metabo_Intra_omics_corr_matrix,
         Intra_omic_Feature_correlation(NCI_60_metabolites %>%
@@ -317,7 +325,7 @@ tar_target(
                               column_order = Master_pathways_KEGG %>% 
                                   subset(str_detect(Pathway,"Metabolism") & str_detect(SubPathway,"TCA|Oxidative|Purine|Pyrimidine|Pentose|Glycol|Amino") & (ID %in% rownames(CCLE_prot_Intra_omics_corr_matrix))) %>% 
                                   pull(ID) %>% unique())),
-
+    
     tar_target(
         CCLE_RNA_prot_aligned,
         CCLE_proteins %>% 
@@ -364,7 +372,7 @@ tar_target(
                                        TRUE~  "OTHER")) %>% 
             ggplot(aes(x = PTR, fill = pathway))+ geom_density(alpha = 0.5)+
             ggtitle("TCA PTR Across Healthy tissues")+facet_wrap("Tissue")),
-
+    
     tar_target(
         CCLE_RNA_prot_intracorr_aligned,
         Aligning_two_matrices(CCLE_prot_Intra_omics_corr_matrix,CCLE_RNA_Intra_omics_corr_matrix)),
@@ -375,11 +383,11 @@ tar_target(
                                                                       pull(ID) %>% unique(),Master_pathways_KEGG %>% 
                                                                       subset(str_detect(Pathway,"Metabolism") & str_detect(SubPathway,"TCA|Purine|Oxidative|Pyrimidine|Pentose|Glycol|Amino") & (ID %in% rownames(.x))) %>% 
                                                                       pull(ID) %>% unique()]) %$% 
-        add(get_lower_tri(.[[1]]) %>% replace_na(0),
-            get_upper_tri(.[[2]]) %>% replace_na(0))),
+            add(get_lower_tri(.[[1]]) %>% replace_na(0),
+                get_upper_tri(.[[2]]) %>% replace_na(0))),
     tar_target(
         CCLE_prot_RNA_half_heatmap,
-        Convert_df_to_heatmap(Data_df = CCLE_prot_RNA_intracorr_half_matrix_ordered, Heatmap_name = "Half_matrix",
+        Convert_df_to_heatmap(Data_df = CCLE_prot_RNA_intracorr_half_matrix_ordered, Heatmap_name = "CCLE_Half_matrix",
                               Subset_col = Master_pathways_KEGG %>% 
                                   subset(str_detect(Pathway,"Metabolism") & str_detect(SubPathway,"TCA|Oxidative|Purine|Pyrimidine|Pentose|Glycol|Amino")) %>% pull(ID), #KEGG metabolism genes
                               Subset_row = Master_pathways_KEGG %>% 
@@ -399,19 +407,19 @@ tar_target(
     tar_target(
         Kuster_RNA_prot_intracorr_aligned,
         Aligning_two_matrices(Protein_Kuster_Intra_omics_corr_matrix,mRNA_Kuster_Intra_omics_corr_matrix)),
-
+    
     tar_target(
         Kuster_prot_RNA_intracorr_half_matrix_ordered,
         Kuster_RNA_prot_intracorr_aligned %>% purrr::map(.x = .,~.x[Master_pathways_KEGG %>% 
-                                                                      subset(str_detect(Pathway,"Metabolism") & str_detect(SubPathway,"TCA|Oxidative|Purine|Pyrimidine|Pentose|Glycol|Amino") & (ID %in% rownames(.x))) %>% 
-                                                                      pull(ID) %>% unique(),Master_pathways_KEGG %>% 
-                                                                      subset(str_detect(Pathway,"Metabolism") & str_detect(SubPathway,"TCA|Oxidative|Purine|Pyrimidine|Pentose|Glycol|Amino") & (ID %in% rownames(.x))) %>% 
-                                                                      pull(ID) %>% unique()]) %$% 
+                                                                        subset(str_detect(Pathway,"Metabolism") & str_detect(SubPathway,"TCA|Oxidative|Purine|Pyrimidine|Pentose|Glycol|Amino") & (ID %in% rownames(.x))) %>% 
+                                                                        pull(ID) %>% unique(),Master_pathways_KEGG %>% 
+                                                                        subset(str_detect(Pathway,"Metabolism") & str_detect(SubPathway,"TCA|Oxidative|Purine|Pyrimidine|Pentose|Glycol|Amino") & (ID %in% rownames(.x))) %>% 
+                                                                        pull(ID) %>% unique()]) %$% 
             add(get_lower_tri(.[[1]]) %>% replace_na(0),
                 get_upper_tri(.[[2]]) %>% replace_na(0))),
     tar_target(
         Kuster_prot_RNA_half_heatmap,
-        Convert_df_to_heatmap(Data_df = Kuster_prot_RNA_intracorr_half_matrix_ordered, Heatmap_name = "Half_matrix",
+        Convert_df_to_heatmap(Data_df = Kuster_prot_RNA_intracorr_half_matrix_ordered, Heatmap_name = "Kuster_Half_matrix",
                               Subset_col = Master_pathways_KEGG %>% 
                                   subset(str_detect(Pathway,"Metabolism") & str_detect(SubPathway,"TCA|Purine|Pyrimidine|Pentose|Glycol|Oxidative|Amino")) %>% pull(ID), #KEGG metabolism genes
                               Subset_row = Master_pathways_KEGG %>% 
@@ -457,39 +465,106 @@ tar_target(
         ggplot(mRNA_Prot_Cor_Kuster,aes(x = Gene_mRNA_prot, fill = pathway))+
             geom_density(alpha = 0.5)+
             ggtitle("TCA mRNA protein Correlations Across Healthy tissues")),
-tar_target(
-    mRNA_Prot_Cor_CCLE,
-    CCLE_RNA_prot_aligned[[1]] %>%
-        as.data.frame() %>%  
-        rownames_to_column("GeneName") %>% 
-        pivot_longer(-GeneName,names_to = "Cell_line",values_to = "mRNA") %>% 
-        inner_join(CCLE_RNA_prot_aligned[[2]] %>%
-                       as.data.frame() %>%  
-                       rownames_to_column("GeneName") %>% 
-                       pivot_longer(-GeneName,names_to = "Cell_line",
-                                    values_to = "Protein"), 
-                   by = c("GeneName","Cell_line")) %>%
-        mutate(GeneName = factor(GeneName,unique(GeneName))) %>% 
-        na.omit() %>% 
-        left_join(sample_info[,c("stripped_cell_line_name","lineage")],by = c("Cell_line" = "stripped_cell_line_name")) %>%
-        add_count(GeneName,lineage)%>%
-        subset(n>5)%>%
-        group_by(GeneName,lineage) %>% 
-        summarise(Gene_mRNA_prot = cor(mRNA,Protein)) %>% 
-        na.omit() %>% 
-        mutate(pathway = case_when(GeneName %in% (KEGG_genes %>%
-                                                subset(pathway == "hsa00020") %>% 
-                                                pull(ID))~ "TCA",
-                               GeneName %in% (KEGG_genes %>%
-                                                  subset(pathway == "hsa00190") %>% 
-                                                  pull(ID))~ "OXPHOS",
-                               TRUE~  "OTHER"))),
+    tar_target(
+        mRNA_Prot_Cor_CCLE_within,
+        CCLE_RNA_prot_aligned[[1]] %>%
+            as.data.frame() %>%  
+            rownames_to_column("GeneName") %>% 
+            pivot_longer(-GeneName,names_to = "Cell_line",values_to = "mRNA") %>% 
+            inner_join(CCLE_RNA_prot_aligned[[2]] %>%
+                           as.data.frame() %>%  
+                           rownames_to_column("GeneName") %>% 
+                           pivot_longer(-GeneName,names_to = "Cell_line",
+                                        values_to = "Protein"), 
+                       by = c("GeneName","Cell_line")) %>%
+            mutate(GeneName = factor(GeneName,unique(GeneName))) %>% 
+            na.omit() %>% 
+            left_join(sample_info[,c("stripped_cell_line_name","lineage")],by = c("Cell_line" = "stripped_cell_line_name")) %>%
+            add_count(GeneName,lineage)%>%
+            subset(n>5)%>%
+            group_by(GeneName,lineage) %>% 
+            summarise(Gene_mRNA_prot = cor(mRNA,Protein)) %>% 
+            na.omit() %>% 
+            mutate(pathway = case_when(GeneName %in% (KEGG_genes %>%
+                                                          subset(pathway == "hsa00020") %>% 
+                                                          pull(ID))~ "TCA",
+                                       GeneName %in% (KEGG_genes %>%
+                                                          subset(pathway == "hsa00190") %>% 
+                                                          pull(ID))~ "OXPHOS",
+                                       TRUE~  "OTHER"))),
+    tar_target(
+        mRNA_Prot_Cor_CCLE_within_plot,
+        ggplot(mRNA_Prot_Cor_CCLE_within,aes(x = Gene_mRNA_prot, fill = pathway))+
+            geom_density(alpha = 0.5)+
+            facet_wrap("lineage")+
+            ggtitle("pathway mRNA protein Correlations Within Cancer tissues")),
+    tar_target(
+        mRNA_Prot_Cor_CCLE,
+        CCLE_RNA_prot_aligned[[1]] %>%
+            as.data.frame() %>%  
+            rownames_to_column("GeneName") %>% 
+            pivot_longer(-GeneName,names_to = "Cell_line",values_to = "mRNA") %>% 
+            inner_join(CCLE_RNA_prot_aligned[[2]] %>%
+                           as.data.frame() %>%  
+                           rownames_to_column("GeneName") %>% 
+                           pivot_longer(-GeneName,names_to = "Cell_line",
+                                        values_to = "Protein"), 
+                       by = c("GeneName","Cell_line")) %>%
+            mutate(GeneName = factor(GeneName,unique(GeneName))) %>% 
+            na.omit() %>% 
+            left_join(sample_info[,c("stripped_cell_line_name","lineage")],by = c("Cell_line" = "stripped_cell_line_name")) %>%
+            add_count(GeneName,lineage)%>%
+            subset(n>5)%>%
+            group_by(GeneName,lineage) %>% 
+            summarise(Average_mRNA_per_tissue = median(mRNA),
+                      Average_protein_per_tissue = median(Protein)) %>%
+            ungroup() %>%
+            group_by(GeneName) %>%
+            summarise(Gene_mRNA_prot = cor(Average_mRNA_per_tissue,Average_protein_per_tissue)) %>% 
+            na.omit() %>% 
+            mutate(pathway = case_when(GeneName %in% (KEGG_genes %>%
+                                                          subset(pathway == "hsa00020") %>% 
+                                                          pull(ID))~ "TCA",
+                                       GeneName %in% (KEGG_genes %>%
+                                                          subset(pathway == "hsa00190") %>% 
+                                                          pull(ID))~ "OXPHOS",
+                                       TRUE~  "OTHER"))),
     tar_target(
         mRNA_Prot_Cor_CCLE_plot,
         ggplot(mRNA_Prot_Cor_CCLE,aes(x = Gene_mRNA_prot, fill = pathway))+
-        geom_density(alpha = 0.5)+
-        facet_wrap("lineage")+
-        ggtitle("pathway mRNA protein Correlations Across Cancer tissues")),
+            geom_density(alpha = 0.5)+
+            #facet_wrap("lineage")+
+            ggtitle("pathway mRNA protein Correlations between Cancer tissues")),
+    tar_target(
+        CCLE_Pathway_Cor_diff,
+        Calcu_corr_diff_pathway(mRNA_Prot_Cor_CCLE,KEGG_genes)),
+    tar_target(
+        Kuster_Pathway_Cor_diff,
+        Calcu_corr_diff_pathway(mRNA_Prot_Cor_Kuster,KEGG_genes)),
+    tar_target(
+        healthy_cancer_corr_pathways,
+        purrr::map_dfr(.x = intersect(names(Kuster_Pathway_Cor_diff),
+                                      names(CCLE_Pathway_Cor_diff)),
+                       ~data.frame(Path_id = .x,
+                                   p_value = ks.test(Kuster_Pathway_Cor_diff[[.x]],
+                                                     CCLE_Pathway_Cor_diff[[.x]]) %>% 
+                                       pluck("p.value"),
+                                   Healthy  = median(Kuster_Pathway_Cor_diff[[.x]]),
+                                   Cancer = median(CCLE_Pathway_Cor_diff[[.x]])) %>%
+                           mutate(In_Cancer = Cancer-Healthy)) %>% left_join(KEGG_pathways) ),
+    tar_target(
+        healthy_cancer_corr_pathways_plot,
+        healthy_cancer_corr_pathways %>%
+            subset(Path_type == "metabolic") %>%
+            arrange(p_value) %>%
+            mutate(Path_id = factor(Path_id,Path_id)) %$%
+            ggplot(.,aes(x = Path_id,y = -log10(p_value+0.00000000000000000001), label = Path_description, colour = In_Cancer,))+
+            scale_color_distiller(type = "div", limit = max(abs(healthy_cancer_corr_pathways$In_Cancer)) * c(-1, 1))+
+            geom_point()+
+            ggrepel::geom_text_repel(data = . %>% head(7))+
+            ggtitle("Distribution difference of mRNA Prot corr between healthy and cancer",
+                    subtitle = "Ks.test of each pathway difference to median, add colour if up or down")),
+    
     tar_target(
         PTR_mean_df_plot,
         Mean_sd_matrix(PTR_CCLE) %>%
@@ -498,48 +573,87 @@ tar_target(
             xlab("Mean across Cell lines") +
             ylab("SD across Cell lines")+
             ggtitle("PTR_df_plot")),
-    tar_target(
-        pathway_PTR_Kuster, #df with Kuster PTRs with genes annotated per KEGG pathway/ Tissue
-        PTR_Kuster %>% 
-            as.data.frame() %>%
-            rownames_to_column("GeneName") %>%
-            pivot_longer(-GeneName,names_to = "Tissue",values_to="value")%>%
-            left_join(KEGG_genes %>% dplyr::select(-Uniprot) %>% 
-                          inner_join(KEGG_pathways %>%
-                                         subset(Path_type =="metabolic") %>% 
-                                         dplyr::select(Path_id,Path_description), by = c("pathway" = "Path_id")
-                          ), by = c("GeneName" = "ID")) %>% 
-            na.omit() %>% distinct() %>% 
-            group_by(Tissue,pathway) %>% 
-            add_count(name="Genes_per_pathway") %>% 
-            subset(Genes_per_pathway>15) %>% ungroup),
-    tar_target(
-        PTR_different_pathways_test, ##ks.test checking  if PTR between pathways is similar
-        purrr::map_dbl(.x = unique(pathway_PTR_Kuster$pathway),
-                                             ~ks.test(pathway_PTR_Kuster %>% subset(pathway == .x) %>% pull(value),
-                                                      pathway_PTR_Kuster %>% subset(pathway != .x) %>% pull(value)) %>%
-                                                 pluck("p.value")) %>% set_names(unique(pathway_PTR_Kuster$pathway))),
-    tar_target(
-        Tissue_pathway_PTR_test, #checking which tissues have different PTRs in which pathways
-        pathway_PTR_Kuster %>% 
-            group_split(pathway)  %>%
-            purrr::map(.x = .,Calc_Tissu_PTR ) %>% 
-            set_names(unique(pathway_PTR_Kuster$pathway))),
-    tar_target(
-        PTR_Kuster_Pathway_plot,
-            ggplot(pathway_PTR_Kuster,aes(x = value, y = Tissue,fill = Tissue))+
-            ggridges::geom_density_ridges(rel_min_height = 0.01,alpha = 0.5)+
-            geom_vline( xintercept = 5) +
-            ggtitle("Metabolism PTR Across Healthy tissues", 
-                    subtitle = "subsetted for more that 15 genes per pathway")+
-            facet_wrap("Path_description") + theme_bw()),
-    
     # tar_target(
     #     eTFs_PTR_corr,
     #     Factors_to_PTR_corr(uniprot_factors %>% subset(str_detect(Type,"eukaryotic_translation")) %>%
     #                             pull(Entry),PTR_CCLE, CCLE_proteins)),
     # tar_target(
     #     Ridge_eIFS_prediction,
-    #     Running_Ridge_eIFs(CCLE_proteins,PTR_CCLE,uniprot_factors)), 
+    #     Running_Ridge_eIFs(CCLE_proteins,PTR_CCLE,uniprot_factors)),
+    tar_target(
+        PTR_CCLE_Tissue,
+        PTR_CCLE%>% t() %>% as.data.frame() %>%
+            rownames_to_column("Cell_line") %>%
+            left_join(sample_info[,c("stripped_cell_line_name","lineage")],by = c("Cell_line" = "stripped_cell_line_name")) %>%
+            dplyr::select(-Cell_line) %>%
+            pivot_longer(cols =-lineage, names_to = "GeneName", values_to= "Abundance") %>%
+            add_count(GeneName,lineage)%>%
+            subset(n>5)%>%
+            group_by(GeneName,lineage) %>% 
+            summarise(Avg_PTR = median(Abundance,na.rm = T)) %>%
+            ungroup()  %>% pivot_wider(names_from = "lineage", values_from = "Avg_PTR") %>%
+            column_to_rownames("GeneName") %>% as.matrix()),
+    tar_target(
+        pathway_PTR_CCLE,
+        Calc_path_PTR_Tissues(PTR_CCLE_Tissue , KEGG_genes,KEGG_pathways)),
+    tar_target(
+        PTR_metabo_pathways_CCLE_plot,
+        ggplot(pathway_PTR_CCLE,aes(x = value, y = Tissue,fill = Tissue))+
+            ggridges::geom_density_ridges(rel_min_height = 0.01,alpha = 0.5)+
+            geom_vline( xintercept = 0) +
+            ggtitle("Metabolism PTR Across Cancer tissues", 
+                    subtitle = "subsetted for more that 15 genes per pathway")+
+            facet_wrap("Path_description") + theme_bw()+
+            theme(axis.text.y=element_blank(),
+                  axis.ticks.y=element_blank())),
+    tar_target(
+        PTR_metabo_pathways_Kuster_plot,
+        ggplot(pathway_PTR_Kuster,aes(x = value, y = Tissue,fill = Tissue))+
+            ggridges::geom_density_ridges(rel_min_height = 0.01,alpha = 0.5)+
+            geom_vline( xintercept = 5) +
+            ggtitle("Metabolism PTR Across Healthy tissues", 
+                    subtitle = "subsetted for more that 15 genes per pathway")+
+            facet_wrap("Path_description") + theme_bw()+
+            theme(axis.text.y=element_blank(),
+                  axis.ticks.y=element_blank())),
+    tar_target(
+        complexes, 
+        import_omnipath_complexes(resources=c("CORUM")) %>%
+            mutate(name = janitor::make_clean_names(name))),
+    tar_target(
+        complexes_units,
+        c(Proteosome = "PSMA1",
+                        Initiation1 = "EIF1",
+                        Initiation2 = "EIF2",
+                        Initiation3 = "EIF3",
+                        #Initiation4 = "EIF4",
+                        #Elongation = "EEF1",
+                        Splicing = "ACIN1",
+                        Ribosome_60 = "RPL10",
+                        Ribosme_40 = "RPS10",
+                        Tubulin = "TUBG1")),
+    tar_target(
+        Complex_complete_units,
+        purrr::map(.x = complexes_units,~Extract_complex_uniprots(.x,complexes,complexes_units)) %>%
+            unlist(recursive = F)),
+    tar_target(
+        Kuster_Complex_PCs,
+        purrr::imap_dfc(.x=Complex_complete_units, ~Get_PC_complexes(.x,.y,Protein_Kuster))),
+    tar_target(
+        CCLE_Complex_PCs,
+        purrr::imap_dfc(.x=Complex_complete_units, ~Get_PC_complexes(.x,.y,CCLE_RNA_prot_aligned[[1]]))),
+    tar_target(
+        Kuster_PC_corr,
+        pheatmap::pheatmap(cor(Kuster_Complex_PCs), show_colnames = F)),
+    tar_target(
+        CCLE_PC_corr,
+        pheatmap::pheatmap(cor(CCLE_Complex_PCs), show_colnames = F)),
+    tar_target(
+        pathway_PTR_Kuster,
+        Calc_path_PTR_Tissues(PTR_Kuster, KEGG_genes,KEGG_pathways)),
+    tar_target(
+        PTR_Kuster_ridge_proteins,
+        Running_Ridge_eIFs(Protein_Kuster,PTR_Kuster,Kuster_Complex_PCs)),
+    tar_render(Presentation, fs::path_rel(here::here("Output","Presentation.Rmd"))),
     tar_render(report, fs::path_rel(here::here("Output","report.Rmd")))
 )

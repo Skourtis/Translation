@@ -27,37 +27,26 @@ pca_fit %>%
     theme_half_open(12) + background_grid()
 tar_load(PTR_CCLE)
 PCA_dataset <- pca_fit$rotation[1:2]
-PTR_CCLE_na_rm <- PTR_CCLE %>% subset(is.na(.) %>% rowSums<(ncol(.)/4)) #%>% is.na() %>% table() 
-PTR_CCLE_na_rm_2 <- PTR_CCLE_na_rm %>% t() %>% as.data.frame() %>%  rownames_to_column("Cell_line")
-tar_load(CCLE_proteins)
-hist_of_R2 <- function(x){
+PTR_CCLE_na_rm <- PTR_CCLE %>% subset(is.na(.) %>% rowSums<(ncol(.)/4)) %>% #is.na() %>% table() 
+ t() %>% as.data.frame() %>%  rownames_to_column("Cell_line")
+tar_read(PTR_Kuster)  %>% subset(is.na(.) %>% rowSums<(ncol(.)/4)) %>% #is.na() %>% table() 
+  t() %>% as.data.frame() %>%  rownames_to_column("Cell_line")
 
-    #x = "Eukaryotic Translation Termination"
-pca_fit_original <- CCLE_proteins%>% 
-    subset(.,rownames(.) %in% (humanreactome_df %>%  subset(Reactome_Pathway == x) %>% 
-                                   pull(Uniprot))) %>%  # (uniprot_factors %>% subset(str_detect(Type,"plice" )) %>% pull(Entry))) %>%
-    subset(is.na(.) %>% rowSums<(ncol(.)/4))%>% as.matrix() %>%  
-    impute::impute.knn() %>% .[["data"]] %>% t()%>% prcomp()
+tar_load(Protein_Kuster)
 
-# pca_fit_original %>%
-#     broom::tidy(matrix = "eigenvalues") %>%
-#     ggplot(aes(PC, percent)) +
-#     geom_col(fill = "#56B4E9", alpha = 0.8) +
-#     scale_x_continuous(breaks = 1:9) +
-#     scale_y_continuous(
-#         labels = scales::percent_format(),
-#         expand = expansion(mult = c(0, 0.01))
-#     ) +
-#     cowplot::theme_minimal_hgrid(12)
-#pca_fit_original$x[,1:3]
-
-Combined_for_multivariate <- inner_join(PTR_CCLE_na_rm_2,
-                                        pca_fit_original$x[,1:3] %>% as.data.frame() %>%  rownames_to_column("Cell_line")) %>% 
+Combined_for_multivariate <- inner_join(  tar_read(PTR_Kuster)  %>%
+                                            subset(is.na(.) %>% rowSums<(ncol(.)/4)) %>% #is.na() %>% table() 
+                                            t() %>% as.data.frame() %>%
+                                            dplyr::select(-matches("[a-z]", ignore.case = FALSE)) %>%
+                                            rownames_to_column("Cell_line")
+                                            ,
+                                        CCLE_Complex_PCs %>% as.data.frame() %>%  rownames_to_column("Cell_line")) %>% 
     column_to_rownames("Cell_line") %>% as.matrix() %>% impute::impute.knn() %>% .[["data"]] %>% as.data.frame() %>% 
-    set_names(.,str_remove_all(colnames(.),"-"))
+    set_names(.,str_remove_all(colnames(.),"-|\\.")) 
+  
 
 #Combined_for_multivariate[,c(7:10,7480:7482)] %>% pairs()
-#Combined_for_multivariate[,c(11:23,7480:7482)] %>% pairs()
+Combined_for_multivariate[,c(11:23,ncol(PTR_Kuster):ncol(PTR_Kuster)+5)] %>% pairs()
 # ami_data <- read.table("http://static.lib.virginia.edu/statlab/materials/data/ami_data.DAT")
 # names(ami_data) <- c("TOT","AMI","GEN","AMT","PR","DIAP","QRS")
 # summary(ami_data)
@@ -65,13 +54,33 @@ Combined_for_multivariate <- inner_join(PTR_CCLE_na_rm_2,
 
 #mlm1 <- lm(cbind(TOT, AMI) ~ GEN + AMT + PR + DIAP + QRS, data = ami_data)
 #summary(mlm1)
-Ind <-  colnames(Combined_for_multivariate) %>% .[(ncol(Combined_for_multivariate)-2):ncol(Combined_for_multivariate)]
-Dep <-  colnames(Combined_for_multivariate) %>% .[1:(ncol(Combined_for_multivariate)-3)]
+Ind <-  colnames(Combined_for_multivariate) %>% str_subset("^PC(1|2|3|4)")
+Dep <-  colnames(Combined_for_multivariate) %>% str_subset("^PC[0-9]",negate= T) %>% unique()
+
 fo <- sprintf("cbind(%s) ~ %s",toString(Dep),paste(Ind,collapse = "+"))
 mlm2 <- do.call("lm",list(fo,quote(Combined_for_multivariate)))
-list(PCs =  broom::tidy(mlm2) %>% mutate(Pred_class = x),
-     R2 = map_dbl(summary(mlm2),"adj.r.squared") %>% set_names(Dep) %>% stack() %>% set_names(c("R2","Predicted")) %>% mutate(Pred_class = x))
-}     
+testing<-list(PCs =  broom::tidy(mlm2), #%>% mutate(Pred_class = x),
+     R2 = map_dbl(summary(mlm2),"adj.r.squared") %>% set_names(Dep) %>% stack() %>% set_names(c("R2","GeneName")))# %>% mutate(Pred_class = x))
+testing$R2 %>% subset(R2>0) %>%  left_join(KEGG_genes %>% dplyr::select(-Uniprot) %>% 
+            inner_join(KEGG_pathways %>%
+                         subset(Path_type =="metabolic") %>% 
+                         dplyr::select(Path_id,Path_description), by = c("pathway" = "Path_id")
+            ) %>% distinct(), by = c("GeneName" = "ID")) %>%
+  group_by(pathway) %>% 
+  add_count(name="Genes_per_pathway") %>% 
+  subset(#pathway %in% unique(.$pathway)[1:50] &
+    Genes_per_pathway>15) %>% ungroup %>%
+  ggplot(aes(x = R2, y = Path_description,fill = Path_description))+
+  ggridges::geom_density_ridges(rel_min_height = 0.01,alpha = 0.5)+
+  geom_vline( xintercept = 0) +
+  ggtitle("Metabolism PTR Across Cancer tissues", 
+          subtitle = "subsetted for more that 15 genes per pathway")
+highly_predicted <- testing$R2 %>% subset(R2>0.9999) %>% pull(GeneName) %>% as.character()
+testing$PCs %>% subset(response %in% highly_predicted) %>%
+  pivot_wider(id_cols = "response", names_from = "term", values_from = "estimate") %>% 
+  column_to_rownames("response") %>%
+ComplexHeatmap::Heatmap()
+#testing$R2$R2[testing$R2$R2<0]<- 0  
 #mlm2 <- lm.fit(cbind(Combined_for_multivariate[,1:3]),Combined_for_multivariate[,Dep)
 #R2 <- map_dbl(summary(mlm2),"adj.r.squared") %>% set_names(Dep)
 

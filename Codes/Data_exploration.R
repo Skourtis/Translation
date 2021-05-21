@@ -209,28 +209,12 @@ purrr::map(c("KEGG_genes","PTR_Kuster","KEGG_pathways"), tar_load)
 targets::tar_load(KEGG_genes)
 targets::tar_load(KEGG_pathways)
 tar_load(PTR_Kuster)
-
-pathway_PTR_Kuster <- PTR_Kuster %>% 
-    as.data.frame() %>%
-    rownames_to_column("GeneName") %>%
-    pivot_longer(-GeneName,names_to = "Tissue",values_to="value")%>%
-    left_join(KEGG_genes %>% dplyr::select(-Uniprot) %>% 
-                  inner_join(KEGG_pathways %>%
-                                 subset(Path_type =="metabolic") %>% 
-                                 dplyr::select(Path_id,Path_description), by = c("pathway" = "Path_id")
-                                 ), by = c("GeneName" = "ID")) %>% 
-    na.omit() %>% distinct() %>% 
-    group_by(Tissue,pathway) %>% 
-    add_count(name="Genes_per_pathway") %>% 
-    subset(#pathway %in% unique(.$pathway)[1:50] &
-        Genes_per_pathway>15) %>% ungroup
-
-
+#### testing which pathways are different overall #### needs to be doen on unnormalised data
 PTR_different_pathways <- purrr::map(.x = unique(pathway_PTR_Kuster$pathway),
            ~ks.test(pathway_PTR_Kuster %>% subset(pathway == .x) %>% pull(value),
                     pathway_PTR_Kuster %>% subset(pathway != .x) %>% pull(value)) %>%
                pluck("p.value")) %>% set_names(unique(pathway_PTR_Kuster$pathway))
-Tissue_pathway_PTR_test <- pathway_PTR_Kuster %>% 
+Tissue_pathway_PTR_test <- pathway_PTR_CCLE %>% 
     group_split(pathway)  %>%
     purrr::map(.x = .,Calc_Tissu_PTR ) %>% 
     set_names(unique(pathway_PTR_Kuster$pathway))
@@ -242,12 +226,21 @@ Calc_Tissu_PTR <- function(df_pathway){
             df_pathway %>% subset(Tissue != .x) %>% pull(value)) %>%
             pluck("p.value")) %>% set_names(unique(df_pathway$Tissue))
 }
+####
+Get_PC_complexes <- function(Identifiers,Class_Name, Data_Matrix){
+    #Data_Matrix =  CCLE_proteins
+    #Identifiers = Complex_complete_units[[1]] %>% unlist()
     
-ggplot(pathway_PTR_Kuster,aes(x = value, y = Tissue,fill = Tissue))+
-    ggridges::geom_density_ridges(rel_min_height = 0.01,alpha = 0.5)+
-    geom_vline( xintercept = 5) +
-    ggtitle("Metabolism PTR Across Healthy tissues", 
-            subtitle = "subsetted for more that 15 genes per pathway")+
-    facet_wrap("Path_description") + theme_bw()
+    pca_fit_original <- Data_Matrix%>% 
+        subset(.,rownames(.) %in% unlist(Identifiers)) %>%
+        subset(is.na(.) %>% rowSums<(ncol(.)/4))%>% as.matrix() %>%  
+        impute::impute.knn() %>% .[["data"]] %>% t()%>% prcomp()
     
+    PC_for_60<-pca_fit_original %>%
+        broom::tidy(matrix = "eigenvalues") %>%
+        subset(cumulative>0.6) %>% head(1) %>% pull(PC)
+    pca_fit_original$x[,1:PC_for_60] %>% as.data.frame() %>% set_names(.,paste0(colnames(.),Class_Name))
+}
 
+BiocManager::install("OmnipathR")
+library(OmnipathR)
